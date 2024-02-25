@@ -10,26 +10,30 @@ import {
     VStack,
     Flex,
     Container,
-    Box
+    Box,
+    Card
 } from '@chakra-ui/react'
 
-export default function GridComponent() {
+export default function GridComponent({ title, color }) {
     return (
-        <Container
+        <Card
             minH={"175px"}
             w={"290px"}
-            bg={useColorModeValue('white', 'gray.900')}
             boxShadow={'2xl'}
             overflow={'hidden'}
-            onClick={() => { console.log('Container clicked!') }}
+            onClick={() => { console.log(color) }}
             fontSize={'20px'}
-            backgroundColor={'orange'}
+            backgroundColor={color}
+            border={'1px'}
+            textColor={'white'}
+            fontWeight={'bold'}
+            _hover={{ backgroundColor: 'white', textColor: 'black' }}
+            transition={'0.3s'}
+
         >
-
-
-            Rozwazni i Romantyczni
-
-
-        </Container >
+            <Center h="100%">
+                {title}
+            </Center>
+        </Card >
     )
 }
