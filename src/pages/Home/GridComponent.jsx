@@ -14,24 +14,28 @@ import {
     Card
 } from '@chakra-ui/react'
 
-export default function GridComponent({ title, color }) {
+export default function GridComponent({ title, color, id, onMouseEnter, onMouseLeave }) {
     return (
         <Card
-            minH={"175px"}
-            w={"290px"}
-            boxShadow={'2xl'}
+            rounded={0}
+            minH={"165px"}
+            w={"295px"}
+            shadow={'1xl'}
             overflow={'hidden'}
-            onClick={() => { console.log(color) }}
-            fontSize={'20px'}
+            onClick={() => { console.log(id) }}
+            fontSize={'2xl'}
             backgroundColor={color}
-            border={'1px'}
+            borderColor={'white'}
+            borderWidth={'3px'}
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
             textColor={'white'}
-            fontWeight={'bold'}
-            _hover={{ backgroundColor: 'white', textColor: 'black' }}
+
+            _hover={{ backgroundColor: 'white', textColor: 'black', borderWidth: '3px', borderColor: color }}
             transition={'0.3s'}
 
         >
-            <Center h="100%">
+            <Center h="100%" p={10} >
                 {title}
             </Center>
         </Card >
