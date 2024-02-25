@@ -8,27 +8,27 @@ import Contact from '../pages/Kontakt';
 
 export const routes = [
     {
-        path: '/',
+        path: '/FKP/',
         element: <HomePage />
     },
     {
-        path: '/aktualnosci',
+        path: '/FKP/aktualnosci',
         element: <Blog />
     },
     {
-        path: '/fundacja',
+        path: '/FKP/fundacja',
         element: <Fundacja />
     },
     {
-        path: '/przyjaciele',
+        path: '/FKP/przyjaciele',
         element: <Friends />
     },
     {
-        path: '/wesprzyj',
+        path: '/FKP/wesprzyj',
         element: <HelpUs />
     },
     {
-        path: '/kontakt',
+        path: '/FKP/kontakt',
         element: <Contact />
     }
 ]
