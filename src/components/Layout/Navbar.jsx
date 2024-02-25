@@ -215,22 +215,22 @@ const MobileNavItem = ({ label, children, href }) => {
 const NAV_ITEMS = [
     {
         label: 'Aktualności',
-        href: '/aktualnosci',
+        href: '/FKP/aktualnosci',
     },
     {
         label: 'Fundacja',
-        href: '/fundacja',
+        href: '/FKP/fundacja',
     },
     {
         label: 'Przyjaciele i Partnerzy',
-        href: '/przyjaciele',
+        href: '/FKP/przyjaciele',
     },
     {
         label: 'Wesprzyj nas',
-        href: '/wesprzyj',
+        href: '/FKP/wesprzyj',
     },
     {
         label: 'Kontakt',
-        href: '/kontakt',
+        href: '/FKP/kontakt',
     },
 ]
