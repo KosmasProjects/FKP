@@ -1,9 +1,7 @@
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import Layout from './components/Layout'
 import { routes } from './config/router'
-// import NotFoundPage from './pages/NotFound'
 import Providers from './components/Providers'
-import { useEffect } from 'react'
 import NotFound from './pages/NotFound'
 
 
