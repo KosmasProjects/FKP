@@ -9,8 +9,8 @@ export default function HomePage() {
 
     return (
         <>
-            <Header />
             <MyGrid />
+            <Header />
             <Container h={40}></Container>
         </>
     );
