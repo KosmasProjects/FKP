@@ -1,5 +1,3 @@
-'use client'
-
 import { ReactElement } from 'react'
 import { Box, SimpleGrid, Icon, Text, Stack, Flex, Card } from '@chakra-ui/react'
 import { AiOutlineMail, AiOutlineHome, AiOutlinePhone } from "react-icons/ai";
