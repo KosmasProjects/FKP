@@ -45,7 +45,7 @@ export default function MyGrid() {
         <>
             <Global styles={globalStyles} />
             <Center>
-                <Container maxW={'1500px'} pb={'100px'}>
+                <Container maxW={'1500px'} pb={'20px'}>
                     <HStack justifyContent={'center'} alignItems={'start'} spacing={0}>
                         <Grid>
                             <TextGridComponent title={"Programy historyczne"} />
