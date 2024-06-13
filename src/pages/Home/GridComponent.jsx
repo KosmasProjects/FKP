@@ -11,22 +11,27 @@ import {
     Flex,
     Container,
     Box,
-    Card
+    Card,
+    HStack,
+    Icon
+
 } from '@chakra-ui/react'
+import { FaRegSmile } from "react-icons/fa"; // import the icon you want to use
+
 
 export default function GridComponent({ title, color, id, onMouseEnter, onMouseLeave }) {
     return (
         <Card
             rounded={0}
-            minH={"165px"}
-            w={"295px"}
+            h={"100px"}
+            w={"242px"}
             shadow={'1xl'}
             overflow={'hidden'}
             onClick={() => { console.log(id) }}
-            fontSize={'2xl'}
+            fontSize={'20px'}
             backgroundColor={color}
             borderColor={'white'}
-            borderWidth={'3px'}
+            borderWidth={'1px'}
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
             textColor={'white'}
@@ -35,9 +40,13 @@ export default function GridComponent({ title, color, id, onMouseEnter, onMouseL
             transition={'0.3s'}
 
         >
-            <Center h="100%" p={10} >
-                {title}
-            </Center>
+            
+<Center h="100%" p={10}>
+    <HStack spacing="24px">
+        <Heading fontSize={'20px'}>{title}</Heading>
+        <Icon as={FaRegSmile} /> {/* replace FaRegSmile with the icon you want */}
+    </HStack>
+</Center>
         </Card >
     )
 }

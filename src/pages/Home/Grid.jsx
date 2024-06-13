@@ -3,6 +3,7 @@ import GridComponent from "./GridComponent";
 import { useState } from 'react';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import { Global, css } from '@emotion/react';
+import TextGridComponent from "./TextGridComponent";
 
 
 
@@ -27,51 +28,46 @@ const globalStyles = css`
   }
 `;
 
+const link = "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/007-Marcin-Rurarz-Fotografia-WB23.jpg";
 
 export default function MyGrid() {
-    const [imageSrc, setImageSrc] = useState('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    const [imageSrc, setImageSrc] = useState(link);
 
     const handleMouseEnter = (newImageSrc) => {
         setImageSrc(newImageSrc);
     }
 
     const handleMouseLeave = () => {
-        setImageSrc('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+        setImageSrc(link);
     }
 
     return (
         <>
             <Global styles={globalStyles} />
             <Center>
-                <Container maxW={'1500px'} py={'50px'} >
-                    <Box>
-                        <HStack mx={2} justifyContent={'space-between'} alignItems={'center'} spacing={0}>
-
-
-                        </HStack>
-                    </Box>
-
-                    <HStack justifyContent={'center'} alignItems={'center'} spacing={0}>
+                <Container maxW={'1500px'} pb={'100px'}>
+                    <HStack justifyContent={'center'} alignItems={'start'} spacing={0}>
                         <Grid>
-                            <Text textAlign={'center'} fontSize={'2xl'} >Programy historyczne</Text>
-                            <GridComponent title={"Rozważni i romantyczni"} color={"orange"} id={1} onMouseEnter={() => handleMouseEnter('https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')} onMouseLeave={handleMouseLeave} />
-                            <GridComponent title={"Wspólna sprawa’44"} color={"yellow.700"} id={2} onMouseEnter={() => handleMouseEnter('https://www.shutterstock.com/shutterstock/photos/2265006343/display_1500/stock-photo-pendant-lights-hanging-on-ceiling-in-modern-kitchen-and-cushions-arranged-on-sofa-in-living-room-2265006343.jpg')} onMouseLeave={handleMouseLeave} />
-                            <GridComponent title={"Bimbą w historię"} color={"blue.400"} id={3} onMouseEnter={() => handleMouseEnter('https://www.shutterstock.com/shutterstock/photos/168161747/display_1500/stock-photo-high-angle-view-of-an-artist-drawing-something-on-graphic-tablet-at-the-office-168161747.jpg')} onMouseLeave={handleMouseLeave} />
+                            <TextGridComponent title={"Programy historyczne"} />
+                            <GridComponent title={"Rozważni i romantyczni"} color={"orange.400"} id={1} onMouseEnter={() => handleMouseEnter('https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/ROZWAZNI-ROMANTYCZNI_logo-poziom_cmyk.ai')} onMouseLeave={handleMouseLeave} />
+                            <GridComponent title={"Wspólna sprawa’44"} color={"yellow.400"} id={2} onMouseEnter={() => handleMouseEnter('https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/007-Marcin-Rurarz-Fotografia-WB23.jpg')} onMouseLeave={handleMouseLeave} />
+                            <GridComponent title={"Bimbą w historię"} color={"blue.400"} id={3} onMouseEnter={() => handleMouseEnter('https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/Bimba-w-historie.png')} onMouseLeave={handleMouseLeave} />
+                            <GridComponent title={"Poznańskie legendy "} color={"green.400"} id={7} onMouseEnter={() => handleMouseEnter('https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/Katedra PODPIS.jpg')} onMouseLeave={handleMouseLeave} />
                         </Grid>
-                        <Box position="relative" height="530px" width="900px" p={0} m={0} margin={0} padding={0} >
+                        <Box position="relative" height="440px" width="700px" p={0} m={0} margin={0} padding={0} backgroundColor='white.900' border="1px solid white">
                             <TransitionGroup>
                                 <CSSTransition
                                     key={imageSrc}
                                     timeout={500}
                                     classNames="fade"
                                 >
-                                    {/* Set the Image to be absolutely positioned */}
                                     <Box as="div" position="absolute" width="100%" height="100%" margin={0} padding={0}>
                                         <Image
                                             h="100%"
                                             w="100%"
                                             src={imageSrc}
                                             alt="Example"
+                                            objectFit={'contain'}
                                         />
                                     </Box>
                                 </CSSTransition>
@@ -79,22 +75,14 @@ export default function MyGrid() {
                         </Box>
 
                         <Grid>
-                            <Text textAlign={'center'} fontSize={'2xl'}>Programy miejskie</Text>
-                            <GridComponent title={"Pomniki Poznania "} color={"teal.600"} id={4} onMouseEnter={() => handleMouseEnter('https://www.shutterstock.com/shutterstock/photos/2265006343/display_1500/stock-photo-pendant-lights-hanging-on-ceiling-in-modern-kitchen-and-cushions-arranged-on-sofa-in-living-room-2265006343.jpg')} onMouseLeave={handleMouseLeave} />
-                            <GridComponent title={"Ulicznik poznański"} color={"purple.600"} id={5} onMouseEnter={() => handleMouseEnter('https://www.shutterstock.com/shutterstock/photos/168161747/display_1500/stock-photo-high-angle-view-of-an-artist-drawing-something-on-graphic-tablet-at-the-office-168161747.jpg')} onMouseLeave={handleMouseLeave} />
-                            <GridComponent title={"Poznań wart Poznania"} color={"pink.600"} id={6} onMouseEnter={() => handleMouseEnter('https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')} onMouseLeave={handleMouseLeave} />
+                        <TextGridComponent title={"Programy miejskie"} />
+                            <GridComponent title={"Pomniki Poznania "} color={"teal.400"} id={4} onMouseEnter={() => handleMouseEnter('https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/pomniki-stary-marych-T75_9128.jpg')} onMouseLeave={handleMouseLeave} />
+                            <GridComponent title={"Ulicznik poznański"} color={"purple.400"} id={5} onMouseEnter={() => handleMouseEnter('https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/ULICZNIK_POZNANSKI_logo-poziom_CMYK.jpg')} onMouseLeave={handleMouseLeave} />
+                            <GridComponent title={"Poznań wart Poznania"} color={"pink.400"} id={6} onMouseEnter={() => handleMouseEnter('https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')} onMouseLeave={handleMouseLeave} />
+                            <GridComponent title={"Herstoria warta Poznania"} color={"blue.400"} id={9} onMouseEnter={() => handleMouseEnter('https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/003. Włodarczyk 2018-01-04.jpg')} onMouseLeave={handleMouseLeave} />
                         </Grid>
                     </HStack>
-                    <Center p={0}> {/* Center the last grid */}
-                        <Grid templateColumns={"repeat(3, 1fr)"}>
-                            <GridComponent title={"Poznańskie legendy "} color={"green.600"} id={7} onMouseEnter={() => handleMouseEnter('https://www.shutterstock.com/shutterstock/photos/2265006343/display_1500/stock-photo-pendant-lights-hanging-on-ceiling-in-modern-kitchen-and-cushions-arranged-on-sofa-in-living-room-2265006343.jpg')} onMouseLeave={handleMouseLeave} />
-                            <GridComponent title={"Literacki Poznań"} color={"orange.600"} id={8} onMouseEnter={() => handleMouseEnter('https://www.shutterstock.com/shutterstock/photos/168161747/display_1500/stock-photo-high-angle-view-of-an-artist-drawing-something-on-graphic-tablet-at-the-office-168161747.jpg')} onMouseLeave={handleMouseLeave} />
-                            <GridComponent title={"Herstoria warta Poznania"} color={"blue.600"} id={9} onMouseEnter={() => handleMouseEnter('https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')} onMouseLeave={handleMouseLeave} />
-                        </Grid>
-                    </Center>
-                    <Center>
-                        <Text fontSize={'2xl'}>Poznańskie opowieści</Text>
-                    </Center>
+                    
                 </Container>
             </Center>
         </>

@@ -32,7 +32,7 @@ export default function Navbar() {
             <Flex
                 bg={useColorModeValue('white', 'gray.800')}
                 color={useColorModeValue('gray.600', 'white')}
-                minH={'60px'}
+                minH={'100px'}
                 py={{ base: 2 }}
                 px={{ base: 4 }}
                 borderBottom={1}
@@ -75,7 +75,7 @@ const DesktopNav = () => {
     const popoverContentBgColor = useColorModeValue('white', 'gray.800')
 
     return (
-        <Stack direction={'row'} spacing={4} alignItems={'center'}>
+        <Stack direction={'row'} spacing={12} alignItems={'center'}>
             {NAV_ITEMS.map((navItem) => (
                 <Box key={navItem.label}>
                     <Popover trigger={'hover'} placement={'bottom-start'}>
