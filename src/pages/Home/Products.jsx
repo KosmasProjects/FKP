@@ -17,13 +17,13 @@ export default function Products() {
 
     return (
         <Center>
-            <Box maxW="100%" overflowX="scroll" overflowY="hidden" marginX={'50px'} p={'20px'} marginY={'20px'} bgColor={'white'}>
+            <Box maxW="100%" overflowX="scroll" overflowY="hidden" marginX={'50px'} p={'20px'} marginY={'20px'} bgColor={'gray.300'}>
                 <Flex direction="row" spacing={10}>
                     {items.map((item, index) => (
                         <Box minW={'200px'}  p={5}>
                             <VStack
                                 key={index}
-                                bg="white"
+                                bg="gray.100"
                                 p={4}
                                 boxShadow="md"
                             >
