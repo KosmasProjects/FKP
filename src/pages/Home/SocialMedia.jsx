@@ -9,11 +9,10 @@ import {
   ModalOverlay,
   ModalContent,
   Stack,
-  ModalHeader,
   ModalCloseButton,
   ModalBody,
   useDisclosure,
-  HStack,
+  Spacer,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
 
@@ -91,7 +90,16 @@ export default function Team() {
       >
         <Flex direction="row" spacing={10}>
           {items.map((item, index) => (
-            <Box minW={"270px"} p={5} onClick={() => handleBoxClick(item)}>
+            <Box
+              w={"270px"}
+              p={5}
+              onClick={() => handleBoxClick(item)}
+              _hover={{
+                cursor: "pointer",
+                transform: "scale(1.05)",
+                transition: "all 0.2s",
+              }}
+            >
               <VStack
                 key={index}
                 borderRadius={"5px"}
@@ -123,31 +131,42 @@ export default function Team() {
           ))}
         </Flex>
       </Box>
-    <Modal isOpen={isOpen} onClose={onClose} size={"3xl"} motionPreset="slideInBottom">
+      <Modal
+        isOpen={isOpen}
+        onClose={onClose}
+        size={"3xl"}
+        motionPreset="slideInBottom"
+        isCentered
+      >
         <ModalOverlay />
         <ModalContent>
-            
-            <ModalCloseButton />
-            <ModalBody>
-                <Stack direction={{ base: "column", md: "row" }} spacing={4} alignContent={'start'} p={5}>
-                    <VStack w={'100%'}>
-                        <Image
-                            boxSize="200px"
-                            objectFit="cover"
-                            src={selectedItem?.image}
-                            alt={selectedItem?.name}
-                            borderRadius="full"
-                        />
-                    </VStack>
-                    <VStack w={'100%'} alignItems={'start'}> 
-                    <Text fontSize={"2xl"} textAlign="center">{selectedItem?.name}</Text>
-                    <Text fontWeight={'bold'}>{selectedItem?.group}</Text>
-                    <Text>{selectedItem?.description}</Text>
-                    </VStack>
-                </Stack>
-            </ModalBody>
+          <ModalCloseButton />
+          <ModalBody>
+            <Stack
+              direction={{ base: "column", md: "row" }}
+              spacing={4}
+              alignContent={"start"}
+              p={5}
+            >
+              <Image
+                boxSize="200px"
+                objectFit="cover"
+                src={selectedItem?.image}
+                alt={selectedItem?.name}
+                borderRadius="full"
+              />
+              <Spacer />
+              <VStack w={"100%"} alignItems={"start"}>
+                <Text fontSize={"2xl"} textAlign="center">
+                  {selectedItem?.name}
+                </Text>
+                <Text fontWeight={"bold"}>{selectedItem?.group}</Text>
+                <Text>{selectedItem?.description}</Text>
+              </VStack>
+            </Stack>
+          </ModalBody>
         </ModalContent>
-    </Modal>
+      </Modal>
     </Center>
   );
 }

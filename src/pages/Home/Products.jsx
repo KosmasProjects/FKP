@@ -121,7 +121,16 @@ export default function Products() {
       >
         <Flex direction="row" spacing={10}>
           {items.map((item, index) => (
-            <Box p={5} key={index} onClick={() => handleBoxClick(item)}>
+            <Box
+              p={5}
+              key={index}
+              onClick={() => handleBoxClick(item)}
+              _hover={{
+                cursor: "pointer",
+                transform: "scale(1.05)",
+                transition: "all 0.2s",
+              }}
+            >
               <VStack
                 bg="gray.100"
                 p={4}
@@ -147,11 +156,11 @@ export default function Products() {
         </Flex>
       </Box>
 
-      <Modal isOpen={isOpen} onClose={onClose} size={"2xl"}>
+      <Modal isOpen={isOpen} onClose={onClose} size={"2xl"} isCentered>
         <ModalOverlay />
         <ModalContent>
           <ModalCloseButton />
-          <ModalBody mt={'30px'} pb={"20px"}>
+          <ModalBody mt={"30px"} pb={"20px"}>
             <Center>
               <Image
                 h={"200px"}
@@ -164,9 +173,11 @@ export default function Products() {
               <Text fontSize={"2xl"} fontWeight={"bold"} textAlign="center">
                 {selectedItem?.name}
               </Text>
-                <Text fontWeight={"semi-bold"}>autor: {selectedItem?.autor}</Text>
+              <Text fontWeight={"semi-bold"}>autor: {selectedItem?.autor}</Text>
               <Text>{selectedItem?.details}</Text>
-              <Text fontWeight={"bold"} fontSize={'20px'}>{selectedItem?.price}</Text>
+              <Text fontWeight={"bold"} fontSize={"20px"}>
+                {selectedItem?.price}
+              </Text>
             </VStack>
           </ModalBody>
         </ModalContent>
