@@ -1,46 +1,82 @@
-import { Box, VStack, Image, Text, Flex, Center } from "@chakra-ui/react";
-import React from "react";
+import {
+  Box,
+  VStack,
+  Image,
+  Text,
+  Flex,
+  Center,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  Stack,
+  ModalHeader,
+  ModalCloseButton,
+  ModalBody,
+  useDisclosure,
+  HStack,
+} from "@chakra-ui/react";
+import React, { useState } from "react";
 
 export default function Team() {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const [selectedItem, setSelectedItem] = useState(null);
+
   const items = [
     {
       name: "Paweł Cieliczko",
       image:
         "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/DSC_7070.jpg",
-      group: "Zarząd",
+      group: "Zarząd Fundacji Kochania Poznania",
+      description:
+        "Paweł Cieliczko - prezes zarządu Fundacji Kochania Poznania. Historyk, publicysta, autor książek, wykładowca, pasjonat historii Poznania i Wielkopolski.",
     },
     {
       name: "Elwira Fronczak",
       image:
         "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/okladka_Czerwcowe ulice.jpg",
       group: "Stowarzyszenie Husaria",
+      description:
+        "Paweł Cieliczko - prezes zarządu Fundacji Kochania Poznania. Historyk, publicysta, autor książek, wykładowca, pasjonat historii Poznania i Wielkopolski.",
     },
     {
       name: "Katarzyna Słupianek-Cieliczko",
       image:
         "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/okladka_Czerwcowe ulice.jpg",
       group: "Stowarzyszenie Husaria",
+      description:
+        "Paweł Cieliczko - prezes zarządu Fundacji Kochania Poznania. Historyk, publicysta, autor książek, wykładowca, pasjonat historii Poznania i Wielkopolski.",
     },
     {
       name: "Paweł Cieliczko",
       image:
         "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/rekografiazeznakiem086.jpg",
       group: "Stowarzyszenie Husaria",
+      description:
+        "Paweł Cieliczko - prezes zarządu Fundacji Kochania Poznania. Historyk, publicysta, autor książek, wykładowca, pasjonat historii Poznania i Wielkopolski.",
     },
     {
       name: "Paweł Cieliczko",
       image:
         "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/Fronczak.png",
       group: "Stowarzyszenie Husaria",
+      description:
+        "Paweł Cieliczko - prezes zarządu Fundacji Kochania Poznania. Historyk, publicysta, autor książek, wykładowca, pasjonat historii Poznania i Wielkopolski.",
     },
     {
       name: "Paweł Cieliczko",
       image:
         "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/okladka_Czerwcowe ulice.jpg",
       group: "Stowarzyszenie Husaria",
+      description:
+        "Paweł Cieliczko - prezes zarządu Fundacji Kochania Poznania. Historyk, publicysta, autor książek, wykładowca, pasjonat historii Poznania i Wielkopolski.",
     },
     // Add more items here
   ];
+
+  const handleBoxClick = (item) => {
+    setSelectedItem(item);
+    onOpen();
+  };
 
   return (
     <Center>
@@ -51,10 +87,11 @@ export default function Team() {
         marginX={"50px"}
         p={"20px"}
         marginY={"20px"}
+        backgroundColor={"blue.400"}
       >
         <Flex direction="row" spacing={10}>
           {items.map((item, index) => (
-            <Box minW={"270px"} p={5}>
+            <Box minW={"270px"} p={5} onClick={() => handleBoxClick(item)}>
               <VStack
                 key={index}
                 borderRadius={"5px"}
@@ -86,6 +123,31 @@ export default function Team() {
           ))}
         </Flex>
       </Box>
+    <Modal isOpen={isOpen} onClose={onClose} size={"3xl"} motionPreset="slideInBottom">
+        <ModalOverlay />
+        <ModalContent>
+            
+            <ModalCloseButton />
+            <ModalBody>
+                <Stack direction={{ base: "column", md: "row" }} spacing={4} alignContent={'start'} p={5}>
+                    <VStack w={'100%'}>
+                        <Image
+                            boxSize="200px"
+                            objectFit="cover"
+                            src={selectedItem?.image}
+                            alt={selectedItem?.name}
+                            borderRadius="full"
+                        />
+                    </VStack>
+                    <VStack w={'100%'} alignItems={'start'}> 
+                    <Text fontSize={"2xl"} textAlign="center">{selectedItem?.name}</Text>
+                    <Text fontWeight={'bold'}>{selectedItem?.group}</Text>
+                    <Text>{selectedItem?.description}</Text>
+                    </VStack>
+                </Stack>
+            </ModalBody>
+        </ModalContent>
+    </Modal>
     </Center>
   );
 }

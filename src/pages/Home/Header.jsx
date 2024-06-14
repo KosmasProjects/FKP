@@ -1,4 +1,3 @@
-
 import {
   Button,
   Container,
@@ -46,7 +45,18 @@ export default function Header() {
               </Text>
             </Heading>
             <Text fontSize={{ base: "md", lg: "lg" }} color={"gray.500"}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tristique diam in augue sodales ullamcorper. Donec tincidunt hendrerit diam aliquet tincidunt. Cras libero massa, scelerisque vitae leo vel, dapibus cursus nisl. In eget blandit tellus. Cras in tellus vitae arcu varius egestas vel ac sem. Aenean sit amet lorem nec libero lacinia sagittis id sit amet risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin blandit mauris ante, a feugiat odio congue vestibulum. Maecenas tincidunt rutrum nunc, id lacinia eros mollis et. In nec faucibus augue. Cras ut nisl sit amet sapien consectetur aliquet. Aliquam erat volutpat. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+              tristique diam in augue sodales ullamcorper. Donec tincidunt
+              hendrerit diam aliquet tincidunt. Cras libero massa, scelerisque
+              vitae leo vel, dapibus cursus nisl. In eget blandit tellus. Cras
+              in tellus vitae arcu varius egestas vel ac sem. Aenean sit amet
+              lorem nec libero lacinia sagittis id sit amet risus. Interdum et
+              malesuada fames ac ante ipsum primis in faucibus. Proin blandit
+              mauris ante, a feugiat odio congue vestibulum. Maecenas tincidunt
+              rutrum nunc, id lacinia eros mollis et. In nec faucibus augue.
+              Cras ut nisl sit amet sapien consectetur aliquet. Aliquam erat
+              volutpat. Interdum et malesuada fames ac ante ipsum primis in
+              faucibus.
             </Text>
             <Stack direction={{ base: "column", md: "row" }} spacing={4}>
               <Button
@@ -62,41 +72,39 @@ export default function Header() {
               <Button rounded={"full"}>Wesprzyj nas</Button>
             </Stack>
             <Stack direction={{ base: "column", md: "row" }} spacing={5}>
-              
-
               <IconButton
-              bgColor={'blue.400'}
-              borderRadius={'full'}
-              color={'white'}
+                bgColor={"blue.400"}
+                borderRadius={"full"}
+                color={"white"}
                 as="a"
-                href="https://www.facebook.com"
+                href="https://www.facebook.com/FundacjaKochaniaPoznania/?locale=pl_PL"
                 aria-label="Facebook"
                 icon={<FaFacebook />}
               />
               <IconButton
-                bgColor={'blue.400'}
-                borderRadius={'full'}
-                color={'white'}
+                bgColor={"blue.400"}
+                borderRadius={"full"}
+                color={"white"}
                 as="a"
-                href="https://www.instagram.com"
+                href="https://www.instagram.com/fundacja_kochania_poznania/"
                 aria-label="Instagram"
                 icon={<FaInstagram />}
               />
               <IconButton
-                              bgColor={'blue.400'}
-                              borderRadius={'full'}
-                              color={'white'}
+                bgColor={"blue.400"}
+                borderRadius={"full"}
+                color={"white"}
                 as="a"
-                href="https://www.linkedin.com"
+                href="https://www.linkedin.com/company/fundacja-kochania-poznania/about/"
                 aria-label="LinkedIn"
                 icon={<FaLinkedin />}
               />
               <IconButton
-                              bgColor={'blue.400'}
-                              borderRadius={'full'}
-                              color={'white'}
+                bgColor={"blue.400"}
+                borderRadius={"full"}
+                color={"white"}
                 as="a"
-                href="https://www.youtube.com"
+                href="https://www.youtube.com/@fundacjakochaniapoznania5820"
                 aria-label="YouTube"
                 icon={<FaYoutube />}
               />
