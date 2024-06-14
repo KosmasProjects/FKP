@@ -66,7 +66,8 @@ export default function Header() {
             alt={"Login Image"}
             objectFit={"cover"}
             src={
-              "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/027-Marcin-Rurarz-Fotografia-WB23.jpg"
+              // "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/027-Marcin-Rurarz-Fotografia-WB23.jpg"
+              "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/244-Marcin-Rurarz-Fotografia-WB23.jpg"
             }
           />
         </Flex>

@@ -5,7 +5,7 @@ export default function Products() {
     const items = [
         { name: "Historie Doktora Granatowicza", price: "19.99zł", image: "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/SKipinan ko22020912400.png" },
         { name: "Czerwcowe Ulice", price: "29.99zł", image: "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/okladka_Czerwcowe ulice.jpg" },
-        { name: "Czerwcowe Ulice", price: "29.99zł", image: "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/okladka_Czerwcowe ulice.jpg" },
+        { name: "Historia grupy MTP", price: "29.99zł", image: "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/MTP_okladka-eksponaty.pdf" },
         { name: "Czerwcowe Ulice", price: "29.99zł", image: "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/okladka_Czerwcowe ulice.jpg" },
         { name: "Czerwcowe Ulice", price: "29.99zł", image: "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/okladka_Czerwcowe ulice.jpg" },
         { name: "Czerwcowe Ulice", price: "29.99zł", image: "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/okladka_Czerwcowe ulice.jpg" },
@@ -20,15 +20,16 @@ export default function Products() {
             <Box maxW="100%" overflowX="scroll" overflowY="hidden" marginX={'50px'} p={'20px'} marginY={'20px'} bgColor={'gray.300'}>
                 <Flex direction="row" spacing={10}>
                     {items.map((item, index) => (
-                        <Box minW={'200px'}  p={5}>
+                        <Box p={5} key={index}>
                             <VStack
-                                key={index}
                                 bg="gray.100"
                                 p={4}
                                 boxShadow="md"
+                                w={'200px'}
+                                h={'250px'}
                             >
-                                <Image boxSize="100px" objectFit="cover" src={item.image} alt={item.name} />
-                                <Text textAlign={'center'} >{item.name}</Text>
+                                <Image boxSize="auto" w={'full'} h={'120px'} objectFit="contain" src={item.image} alt={item.name} />
+                                <Text textAlign={'center'} fontSize={'18px'} >{item.name}</Text>
                                 <Text fontWeight={'bold'}>{item.price}</Text>
                             </VStack>
                         </Box>

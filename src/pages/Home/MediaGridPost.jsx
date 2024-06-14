@@ -25,6 +25,7 @@ export default function MediaPost({
     date,
     image,
     link,
+    category,
     source,
 }) {
     const truncatedTitle = title.length > 40 ? title.substring(0, 38) + "..." : title;
@@ -32,10 +33,12 @@ export default function MediaPost({
     const [isHovered, setIsHovered] = useState(false);
 
     return (
+        <VStack>
+            <Text fontSize={'2xl'} fontWeight={'bold'} >{category}</Text>
         <Card
             rounded={0}
             h={"300px"}
-            w={"600px"}
+            w={"400px"}
             bgImage={`url(${image})`}
             bgSize="cover"
             bgPosition="center"
@@ -64,7 +67,7 @@ export default function MediaPost({
                 h={'250px'}
                 backgroundColor="white"
                 className="hover-content"
-                transform={"translateY(200px)"}
+                transform={"translateY(180px)"}
                 textColor={"black"}
                 alignContent={'space-evenly'}
                 transition="transform 0.3s"
@@ -82,5 +85,7 @@ export default function MediaPost({
                 </HStack>
             </VStack>
         </Card>
+        </VStack>
+        
     );
 }
