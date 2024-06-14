@@ -78,7 +78,7 @@ export default function MyGrid() {
                         <TextGridComponent title={"Programy miejskie"} />
                             <GridComponent title={"Pomniki Poznania "} color={"teal.400"} id={4} onMouseEnter={() => handleMouseEnter('https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/pomniki-stary-marych-T75_9128.jpg')} onMouseLeave={handleMouseLeave} />
                             <GridComponent title={"Ulicznik poznański"} color={"purple.400"} id={5} onMouseEnter={() => handleMouseEnter('https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/ULICZNIK_POZNANSKI_logo-poziom_CMYK.jpg')} onMouseLeave={handleMouseLeave} />
-                            <GridComponent title={"Poznań wart Poznania"} color={"pink.400"} id={6} onMouseEnter={() => handleMouseEnter('https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')} onMouseLeave={handleMouseLeave} />
+                            <GridComponent title={"Literacki Poznań"} color={"pink.400"} id={6} onMouseEnter={() => handleMouseEnter('https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/literackiPoznanPawel.jpg')} onMouseLeave={handleMouseLeave} />
                             <GridComponent title={"Herstoria warta Poznania"} color={"blue.400"} id={9} onMouseEnter={() => handleMouseEnter('https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/003. Włodarczyk 2018-01-04.jpg')} onMouseLeave={handleMouseLeave} />
                         </Grid>
                     </HStack>

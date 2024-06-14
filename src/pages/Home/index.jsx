@@ -12,24 +12,34 @@ export default function HomePage() {
     <>
       <MyGrid />
       <Center>
-        <Text fontSize="4xl" fontWeight="bold">
+        <Text textAlign={'center'} fontSize="4xl" fontWeight="bold">
           Nasze publikacje
         </Text>
       </Center>
       <Products />
       <Header />
       <Center>
-        <Text fontSize="4xl" fontWeight="bold" marginTop={'50px'}>
+        <Text textAlign={'center'} fontSize="4xl" fontWeight="bold" marginTop={'50px'}>
+          Zespół
+        </Text>
+      </Center>
+      <Team />
+      <Center>
+        <Text textAlign={'center'} fontSize="4xl" fontWeight="bold" marginTop={'50px'}>
           Fundacja w mediach
         </Text>
       </Center>
       <MediaPosts />
       <Center>
-        <Text fontSize="4xl" fontWeight="bold" marginTop={'50px'}>
-          Zespół
+        <Text textAlign={'center'} fontSize="4xl" fontWeight="bold" marginTop={'50px'}>
+          Przyjaciele Fundacji
         </Text>
       </Center>
-      <Team />
+      <Center>
+        <Text textAlign={'center'} fontSize="4xl" fontWeight="bold" marginTop={'50px'}>
+          Partnerzy Fundacji
+        </Text>
+      </Center>
 
       <Container h={40}></Container>
     </>

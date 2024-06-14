@@ -4,11 +4,13 @@ import {
   Container,
   Flex,
   Heading,
+  IconButton,
   Image,
   Stack,
   Text,
   useBreakpointValue,
 } from "@chakra-ui/react";
+import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 
 export default function Header() {
   return (
@@ -58,6 +60,46 @@ export default function Header() {
                 Aktualności
               </Button>
               <Button rounded={"full"}>Wesprzyj nas</Button>
+            </Stack>
+            <Stack direction={{ base: "column", md: "row" }} spacing={5}>
+              
+
+              <IconButton
+              bgColor={'blue.400'}
+              borderRadius={'full'}
+              color={'white'}
+                as="a"
+                href="https://www.facebook.com"
+                aria-label="Facebook"
+                icon={<FaFacebook />}
+              />
+              <IconButton
+                bgColor={'blue.400'}
+                borderRadius={'full'}
+                color={'white'}
+                as="a"
+                href="https://www.instagram.com"
+                aria-label="Instagram"
+                icon={<FaInstagram />}
+              />
+              <IconButton
+                              bgColor={'blue.400'}
+                              borderRadius={'full'}
+                              color={'white'}
+                as="a"
+                href="https://www.linkedin.com"
+                aria-label="LinkedIn"
+                icon={<FaLinkedin />}
+              />
+              <IconButton
+                              bgColor={'blue.400'}
+                              borderRadius={'full'}
+                              color={'white'}
+                as="a"
+                href="https://www.youtube.com"
+                aria-label="YouTube"
+                icon={<FaYoutube />}
+              />
             </Stack>
           </Stack>
         </Flex>
