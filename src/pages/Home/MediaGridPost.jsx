@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 import {
     Button,
     Center,
@@ -28,6 +30,11 @@ export default function MediaPost({
     category,
     source,
 }) {
+    const navigate = useNavigate();
+
+    const handleCardClick = () => {
+        navigate(link);
+    };
     const truncatedTitle = title.length > 40 ? title.substring(0, 38) + "..." : title;
 
     const [isHovered, setIsHovered] = useState(false);
@@ -59,6 +66,7 @@ export default function MediaPost({
             justifyContent={"flex-end"}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
+            onClick={handleCardClick}
         >
             <VStack
                 overflowY={"scroll"}

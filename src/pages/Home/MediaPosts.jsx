@@ -22,7 +22,7 @@ export default function MediaPosts() {
               "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/007-Marcin-Rurarz-Fotografia-WB23.jpg"
             }
             date={"01-01-2024"}
-            link={""}
+            link={"/FKP/mowia-o-nas"}
             source={"Radio Poznan"}
             category={"Mówią o nas"}
           />

@@ -9,6 +9,7 @@ import Friends from './pages/Przyjaciele';
 import HelpUs from './pages/Wesprzyj';
 import Contact from './pages/Kontakt';
 import { RouterProvider } from 'react-router-dom'
+import TalkingAboutUs from './pages/MowiaONas';
 
 const router = createBrowserRouter(
   [{
@@ -38,6 +39,10 @@ const router = createBrowserRouter(
       {
         path: '/FKP/kontakt',
         element: <Contact />
+      },
+      {
+        path: '/FKP/mowia-o-nas',
+        element: <TalkingAboutUs />
       }
     ]
   },
