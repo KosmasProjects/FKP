@@ -4,6 +4,7 @@ import AudioPlayer from "react-h5-audio-player";
 import { Card, Text, Spacer, HStack, Image, Center, } from "@chakra-ui/react";
 import "react-h5-audio-player/lib/styles.css";
 import { css } from "@emotion/react";
+import Logo from "../../components/Logo";
 
 export default function Player({ title, description, date, radioName, link }) {
   const theme = useTheme();
@@ -29,14 +30,13 @@ export default function Player({ title, description, date, radioName, link }) {
       </Text>
       <Center>
         <HStack spacing={"80px"}>
-      <Image mb={"20px"}  h={"250px"}  src="https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/DSC_7070.jpg"></Image>
+      <Image mb={"20px"}  h={"250px"}  src="https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/IMG_3179.JPG"></Image>
       <Image mb={"20px"}  h={"250px"}  src="https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/ULICZNIK_POZNANSKI_logo-pion_CMYK.svg"></Image>
         </HStack>
       </Center>
       <AudioPlayer
         src={link}
         onPlay={(e) => console.log("onPlay")}
-        // other props here
       />
       <Spacer />
       <HStack mt={30}>

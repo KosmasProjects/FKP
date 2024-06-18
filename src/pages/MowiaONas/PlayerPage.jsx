@@ -3,19 +3,14 @@ import { useParams } from "react-router-dom";
 import Player from "./Player";
 
 export default function PlayerPage() {
-    // Get the playerId param from the URL.
     let { playerId } = useParams();
 
-    // Fetch or determine the player data based on playerId.
-    // This is just an example. Replace it with your actual data fetching logic.
     let playerData = fetchPlayerData(playerId);
 
-    // Pass the player data to Player
     return <Player {...playerData} />;
 }
 
 function fetchPlayerData(playerId) {
-    // Define the data for each player
     const players = {
         '1': { title: 'Ulice Poznania 1', description: 'Odcinek 4 Podcastu o ulicach Poznania z własną historią', date: '01-02-2024', radioName: 'Radio Poznan', link: 'https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/Ulice_Poznania_21.04.mp3' },
         '2': { title: 'Ulice Poznania 2', description: 'Odcinek 5 Podcastu o ulicach Poznania z własną historią', date: '01-02-2024', radioName: 'Radio Poznan', link: 'https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/Ulice_Poznania_28.04.mp3' },

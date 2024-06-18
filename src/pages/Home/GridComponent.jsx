@@ -23,7 +23,9 @@ import {
   ModalBody,
   useDisclosure,
 } from "@chakra-ui/react";
-import { FaRegSmile } from "react-icons/fa"; // import the icon you want to use
+
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function GridComponent({
   title,
@@ -33,8 +35,19 @@ export default function GridComponent({
   onMouseLeave,
   logo,
   image,
+  propsite,
+  buttonLabel
 }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    console.log(propsite);
+    console.log("klik");
+
+    navigate(propsite);
+  };
 
   return (
     <>
@@ -78,7 +91,7 @@ export default function GridComponent({
         <ModalContent>
           <ModalCloseButton />
           <ModalHeader fontSize={"40px"}>
-            <HStack w={'90%'}>
+            <HStack w={"90%"}>
               <Text>{title}</Text>
               <Spacer />
               <Image h={"120px"} src={logo} alt></Image>
@@ -104,6 +117,7 @@ export default function GridComponent({
                 </HStack>
               </Center>
             </VStack>
+                  <Button colorScheme="blue" m={2} onClick={handleClick} >{buttonLabel}</Button>
             {/* Add the content you want to display in the modal here */}
           </ModalBody>
         </ModalContent>
