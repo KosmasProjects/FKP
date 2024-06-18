@@ -10,6 +10,7 @@ import HelpUs from './pages/Wesprzyj';
 import Contact from './pages/Kontakt';
 import { RouterProvider } from 'react-router-dom'
 import TalkingAboutUs from './pages/MowiaONas';
+import PlayerPage from './pages/MowiaONas/PlayerPage';
 
 const router = createBrowserRouter(
   [{
@@ -42,7 +43,13 @@ const router = createBrowserRouter(
       },
       {
         path: '/FKP/mowia-o-nas',
-        element: <TalkingAboutUs />
+        element: <TalkingAboutUs />,
+        children: [
+          {
+            path: 'player/:playerId',
+            element: <PlayerPage />
+          }
+        ]
       }
     ]
   },
