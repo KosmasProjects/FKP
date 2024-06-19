@@ -1,11 +1,20 @@
 import React from "react";
 import { Route, Routes, Link } from "react-router-dom";
-import { Container, Flex, Text, Button } from "@chakra-ui/react";
+import { Container, Flex, Text, Button, Center } from "@chakra-ui/react";
 import PlayerPage from "./PlayerPage"; // import PlayerPage
+import GridMowiaONas from "./GridMowiaONas";
+
+
 
 export default function TalkingAboutUs() {
   return (
+    <>
+    <GridMowiaONas />
+    <Center>
+      <Text fontSize="4xl" fontWeight={'bold'} color={"blue.400"}>Ulicznik Poznański</Text>
+    </Center>
     <Container maxW={"5xl"} pb={'50px'}>
+      
       <Flex direction="column" alignItems="start" justifyContent="start" >
         <Container p={4} maxW={'5xl'} bg={'transparent'} my={4} rounded={'lg'}>
           <Text fontSize="4xl" fontWeight={'bold'} color={"blue.400"} >Uliczne Podcasty</Text>
@@ -23,5 +32,6 @@ export default function TalkingAboutUs() {
         <Route path="player/:playerId" element={<PlayerPage />} />
       </Routes>
     </Container>
+    </>
   );
 }

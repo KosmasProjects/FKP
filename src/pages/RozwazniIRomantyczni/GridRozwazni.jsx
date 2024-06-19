@@ -1,18 +1,19 @@
+import React, { useState } from "react";
 import {
-  Grid,
-  Container,
-  Image,
-  Flex,
+  Box,
   HStack,
   Center,
+  Container,
+  Image,
+  Grid,
+  Spacer,
   Text,
-  Box,
+  Flex,
 } from "@chakra-ui/react";
-import GridComponent from "./GridComponent";
-import { useState } from "react";
+import GridComponent from "../Home/GridComponent";
+import TextGridComponent from "../Home/TextGridComponent";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import { Global, css } from "@emotion/react";
-import TextGridComponent from "./TextGridComponent";
 
 const globalStyles = css`
   .fade-enter {
@@ -35,10 +36,9 @@ const globalStyles = css`
   }
 `;
 
-const link =
-  "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/007-Marcin-Rurarz-Fotografia-WB23.jpg";
-
-export default function MyGrid() {
+export default function GridRozwazni() {
+  const link =
+    "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/007-Marcin-Rurarz-Fotografia-WB23.jpg";
   const [imageSrc, setImageSrc] = useState(link);
 
   const handleMouseEnter = (newImageSrc) => {
@@ -58,8 +58,7 @@ export default function MyGrid() {
             <Grid>
               <TextGridComponent title={"Programy historyczne"} />
               <GridComponent
-                title={"Rozważni i romantyczni"}
-                propsite={"/FKP/rozwazniiromantyczni"}
+                title={"Rozwani"}
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/ROZWAZNI-ROMANTYCZNI_logo-pion_cmyk.svg"
                 }
@@ -73,8 +72,7 @@ export default function MyGrid() {
                 onMouseLeave={handleMouseLeave}
               />
               <GridComponent
-                title={"Wspólna sprawa’44"}
-                propsite={"/FKP/ws44"}
+                title={"Romantyczni"}
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/WS'44_logo_CMYK_biel+czerw.svg"
                 }
@@ -88,7 +86,7 @@ export default function MyGrid() {
                 onMouseLeave={handleMouseLeave}
               />
               <GridComponent
-                title={"Bimbą w historię"}
+                title={"osoba"}
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/BIMBA-W-HISTORIE_logo-pion_rgb.png"
                 }
@@ -102,7 +100,7 @@ export default function MyGrid() {
                 onMouseLeave={handleMouseLeave}
               />
               <GridComponent
-                title={"Poznańskie legendy "}
+                title={"Osoba 2"}
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/logopomniki.png"
                 }
@@ -150,9 +148,9 @@ export default function MyGrid() {
             </Box>
 
             <Grid>
-              <TextGridComponent title={"Programy miejskie"} />
+              <TextGridComponent title={"Piątkowo"} />
               <GridComponent
-                title={"Pomniki Poznania "}
+                title={"Cos tam"}
                 image={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/pomniki-stary-marych-T75_9128.jpg"
                 }
@@ -169,13 +167,13 @@ export default function MyGrid() {
                 onMouseLeave={handleMouseLeave}
               />
               <GridComponent
-                title={"Ulicznik poznański"}
+                title={"Lorem Ipsum"}
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/ULICZNIK_POZNANSKI_logo-pion_CMYK.svg"
                 }
                 propsite={"/FKP/mowia-o-nas"}
                 buttonLabel={"Posłuchaj Podcastów"}
-                color={"green.400"} p
+                color={"green.400"}
                 id={5}
                 onMouseEnter={() =>
                   handleMouseEnter(
@@ -185,7 +183,7 @@ export default function MyGrid() {
                 onMouseLeave={handleMouseLeave}
               />
               <GridComponent
-                title={"Literacki Poznań"}
+                title={"Nie wiem"}
                 color={"pink.400"}
                 id={6}
                 onMouseEnter={() =>
@@ -196,7 +194,7 @@ export default function MyGrid() {
                 onMouseLeave={handleMouseLeave}
               />
               <GridComponent
-                title={"Herstoria warta Poznania"}
+                title={"Wymysl"}
                 color={"purple.400"}
                 id={9}
                 onMouseEnter={() =>

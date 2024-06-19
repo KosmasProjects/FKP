@@ -11,6 +11,8 @@ import Contact from './pages/Kontakt';
 import { RouterProvider } from 'react-router-dom'
 import TalkingAboutUs from './pages/MowiaONas';
 import PlayerPage from './pages/MowiaONas/PlayerPage';
+import RozwazniIRomantyczni from './pages/RozwazniIRomantyczni';
+import WspolnaSprawa from './pages/WspolnaSprawa/index.jsx';
 
 const router = createBrowserRouter(
   [{
@@ -50,7 +52,39 @@ const router = createBrowserRouter(
             element: <PlayerPage />
           }
         ]
-      }
+      },
+      {
+        path: '/FKP/rozwazniiromantyczni',
+        element: <RozwazniIRomantyczni />
+      },
+      {
+        path: '/FKP/ws44',
+        element: <WspolnaSprawa />
+      },
+      {
+        path: '/FKP/bimbawhistorie',
+        element: <Contact />
+      },
+      {
+        path: '/FKP/poznanskielegendy',
+        element: <Contact />
+      },
+      {
+        path: '/FKP/pomnikipoznania',
+        element: <Contact />
+      },
+      {
+        path: '/FKP/ulicznikpoznanski',
+        element: <Contact />
+      },
+      {
+        path: '/FKP/literackipoznan',
+        element: <Contact />
+      },
+      {
+        path: '/FKP/herstoriawartapoznania',
+        element: <Contact />
+      },
     ]
   },
   ]

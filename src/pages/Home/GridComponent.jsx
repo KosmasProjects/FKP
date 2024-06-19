@@ -30,34 +30,28 @@ import { useNavigate } from "react-router-dom";
 export default function GridComponent({
   title,
   color,
-  id,
   onMouseEnter,
   onMouseLeave,
   logo,
-  image,
   propsite,
-  buttonLabel
 }) {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  // const { isOpen, onOpen, onClose } = useDisclosure();
 
   const navigate = useNavigate();
 
   const handleClick = () => {
-    console.log(propsite);
-    console.log("klik");
-
     navigate(propsite);
   };
 
   return (
     <>
       <Card
+        onClick={handleClick}
         rounded={0}
         h={"100px"}
         w={"242px"}
         shadow={"1xl"}
         overflow={"hidden"}
-        onClick={onOpen}
         fontSize={"20px"}
         backgroundColor={color}
         borderColor={"white"}
@@ -73,8 +67,7 @@ export default function GridComponent({
         }}
         transition={"0.3s"}
       >
-        <Center h="100%" p={5}>
-          <HStack spacing="5px" alignItems={"stretch"}>
+          <HStack h={"100%"} spacing="5px" justifyContent={"space-between"} alignItems={"center"} px={"18px"}>
             <Heading fontSize={"20px"}>{title}</Heading>
             <Image
               height={"50px"}
@@ -83,10 +76,9 @@ export default function GridComponent({
               fontSize={"10px"}
             />{" "}
           </HStack>
-        </Center>
       </Card>
 
-      <Modal isOpen={isOpen} onClose={onClose} size={"5xl"}>
+      {/* <Modal isOpen={isOpen} onClose={onClose} size={"5xl"}>
         <ModalOverlay />
         <ModalContent>
           <ModalCloseButton />
@@ -118,10 +110,9 @@ export default function GridComponent({
               </Center>
             </VStack>
                   <Button colorScheme="blue" m={2} onClick={handleClick} >{buttonLabel}</Button>
-            {/* Add the content you want to display in the modal here */}
           </ModalBody>
         </ModalContent>
-      </Modal>
+      </Modal> */}
     </>
   );
 }
