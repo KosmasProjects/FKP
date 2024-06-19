@@ -1,18 +1,19 @@
+import React, { useState } from "react";
 import {
-  Grid,
-  Container,
-  Image,
-  Flex,
+  Box,
   HStack,
   Center,
+  Container,
+  Image,
+  Grid,
+  Spacer,
   Text,
-  Box,
+  Flex,
 } from "@chakra-ui/react";
-import GridComponent from "./GridComponent";
-import { useState } from "react";
+import GridComponent from "../Home/GridComponent";
+import TextGridComponent from "../Home/TextGridComponent";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import { Global, css } from "@emotion/react";
-import TextGridComponent from "./TextGridComponent";
 
 const globalStyles = css`
   .fade-enter {
@@ -35,10 +36,9 @@ const globalStyles = css`
   }
 `;
 
-const link =
-  "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/007-Marcin-Rurarz-Fotografia-WB23.jpg";
-
-export default function MyGrid() {
+export default function GridLiteracki() {
+  const link =
+    "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/007-Marcin-Rurarz-Fotografia-WB23.jpg";
   const [imageSrc, setImageSrc] = useState(link);
 
   const handleMouseEnter = (newImageSrc) => {
@@ -58,12 +58,11 @@ export default function MyGrid() {
             <Grid>
               <TextGridComponent title={"Programy historyczne"} />
               <GridComponent
-                title={"Rozważni i romantyczni"}
-                propsite={"/FKP/rozwazniiromantyczni"}
+                title={"Pomniki Historyczne"}
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/ROZWAZNI-ROMANTYCZNI_logo-pion_cmyk.svg"
                 }
-                color={"blue.400"}
+                color={"orange.700"}
                 id={1}
                 onMouseEnter={() =>
                   handleMouseEnter(
@@ -73,12 +72,11 @@ export default function MyGrid() {
                 onMouseLeave={handleMouseLeave}
               />
               <GridComponent
-                title={"Wspólna sprawa’44"}
-                propsite={"/FKP/ws44"}
+                title={"Kamienie Pamięci"}
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/WS'44_logo_CMYK_biel+czerw.svg"
                 }
-                color={"orange.700"}
+                color={"blue.400"}
                 id={2}
                 onMouseEnter={() =>
                   handleMouseEnter(
@@ -88,12 +86,11 @@ export default function MyGrid() {
                 onMouseLeave={handleMouseLeave}
               />
               <GridComponent
-                propsite={"/FKP/bimbawhistorie"}
-                title={"Bimbą w historię"}
+                title={"Tablice Pamięci"}
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/BIMBA-W-HISTORIE_logo-pion_rgb.png"
                 }
-                color={"orange.400"}
+                color={"green.600"}
                 id={3}
                 onMouseEnter={() =>
                   handleMouseEnter(
@@ -103,20 +100,19 @@ export default function MyGrid() {
                 onMouseLeave={handleMouseLeave}
               />
               <GridComponent
-                propsite={"/FKP/poznanskielegendy"}
-                title={"Poznańskie legendy "}
+                title={"Kobiety na Pomnikach"}
                 logo={
-                    "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/logopomniki.png"
+                  "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/logopomniki.png"
                 }
-                color={"green.600"}
+                color={"orange.400"}
                 id={7}
                 onMouseEnter={() =>
-                    handleMouseEnter(
-                        "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/Katedra PODPIS.jpg"
-                        )
-                    }
-                    onMouseLeave={handleMouseLeave}
-                    />
+                  handleMouseEnter(
+                    "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/Katedra PODPIS.jpg"
+                  )
+                }
+                onMouseLeave={handleMouseLeave}
+              />
             </Grid>
             <Box
               position="relative"
@@ -128,7 +124,7 @@ export default function MyGrid() {
               padding={0}
               backgroundColor="white.900"
               border="1px solid white"
-              >
+            >
               <TransitionGroup>
                 <CSSTransition key={imageSrc} timeout={500} classNames="fade">
                   <Box
@@ -138,48 +134,46 @@ export default function MyGrid() {
                     height="100%"
                     margin={0}
                     padding={0}
-                    >
+                  >
                     <Image
                       h="100%"
                       w="100%"
                       src={imageSrc}
                       alt="Example"
                       objectFit={"contain"}
-                      />
+                    />
                   </Box>
                 </CSSTransition>
               </TransitionGroup>
             </Box>
 
             <Grid>
-              <TextGridComponent title={"Programy miejskie"} />
+              <TextGridComponent title={"Piątkowo"} />
               <GridComponent
-                title={"Pomniki Poznania "}
-                propsite={"/FKP/pomnikipoznania"}
+                title={"Monumenty"}
                 image={
-                    "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/pomniki-stary-marych-T75_9128.jpg"
+                  "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/pomniki-stary-marych-T75_9128.jpg"
                 }
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/logopomniki.png"
                 }
-                color={"teal.400"}
                 id={4}
                 onMouseEnter={() =>
                   handleMouseEnter(
                     "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/pomniki-stary-marych-T75_9128.jpg"
                   )
                 }
+                color={"green.400"}
                 onMouseLeave={handleMouseLeave}
               />
               <GridComponent
-                title={"Ulicznik poznański"}
+                title={"Pomniki Patriotyczne"}
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/ULICZNIK_POZNANSKI_logo-pion_CMYK.svg"
                 }
-                propsite={"/FKP/ulicznikpoznanski"}
+                color={"teal.400"}
+                propsite={"/FKP/mowia-o-nas"}
                 buttonLabel={"Posłuchaj Podcastów"}
-                color={"green.400"}
-                p
                 id={5}
                 onMouseEnter={() =>
                   handleMouseEnter(
@@ -189,10 +183,8 @@ export default function MyGrid() {
                 onMouseLeave={handleMouseLeave}
               />
               <GridComponent
-                title={"Literacki Poznań"}
-                propsite={"/FKP/literackipoznan"}
-
-                color={"pink.400"}
+                color={"purple.400"}
+                title={"Nasze Tablice"}
                 id={6}
                 onMouseEnter={() =>
                   handleMouseEnter(
@@ -202,11 +194,9 @@ export default function MyGrid() {
                 onMouseLeave={handleMouseLeave}
               />
               <GridComponent
-                title={"Herstoria warta Poznania"}
-                color={"purple.400"}
-                propsite={"/FKP/herstoriawartapoznania"}
-
+                title={"Nasze Pomniki"}
                 id={9}
+                color={"pink.400"}
                 onMouseEnter={() =>
                   handleMouseEnter(
                     "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/003. Włodarczyk 2018-01-04.jpg"

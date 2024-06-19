@@ -10,33 +10,59 @@ import Team from "./SocialMedia";
 export default function HomePage() {
   return (
     <>
+      <Center>
+        <Text fontSize="4xl" fontWeight={"bold"} color={"blue.400"} mb={5}> 
+          Fundacja Kochania Poznania
+
+        </Text>
+      </Center>
       <MyGrid />
       <Center>
-        <Text textAlign={'center'} fontSize="4xl" fontWeight="bold">
+        <Text textAlign={"center"} fontSize="4xl" fontWeight="bold">
           Nasze publikacje
         </Text>
       </Center>
       <Products />
       <Header />
       <Center>
-        <Text textAlign={'center'} fontSize="4xl" fontWeight="bold" marginTop={'50px'}>
+        <Text
+          textAlign={"center"}
+          fontSize="4xl"
+          fontWeight="bold"
+          marginTop={"50px"}
+        >
           Zespół
         </Text>
       </Center>
       <Team />
       <Center>
-        <Text textAlign={'center'} fontSize="4xl" fontWeight="bold" marginTop={'50px'}>
+        <Text
+          textAlign={"center"}
+          fontSize="4xl"
+          fontWeight="bold"
+          marginTop={"50px"}
+        >
           Fundacja w mediach
         </Text>
       </Center>
       <MediaPosts />
       <Center>
-        <Text textAlign={'center'} fontSize="4xl" fontWeight="bold" marginTop={'50px'}>
+        <Text
+          textAlign={"center"}
+          fontSize="4xl"
+          fontWeight="bold"
+          marginTop={"50px"}
+        >
           Przyjaciele Fundacji
         </Text>
       </Center>
       <Center>
-        <Text textAlign={'center'} fontSize="4xl" fontWeight="bold" marginTop={'50px'}>
+        <Text
+          textAlign={"center"}
+          fontSize="4xl"
+          fontWeight="bold"
+          marginTop={"50px"}
+        >
           Partnerzy Fundacji
         </Text>
       </Center>

@@ -13,6 +13,11 @@ import TalkingAboutUs from './pages/MowiaONas';
 import PlayerPage from './pages/MowiaONas/PlayerPage';
 import RozwazniIRomantyczni from './pages/RozwazniIRomantyczni';
 import WspolnaSprawa from './pages/WspolnaSprawa/index.jsx';
+import BimbaWHistorie from './pages/BimbaWHistorie/index.jsx';
+import PoznanskieLegendy from './pages/PoznanskieLegendy/index.jsx';
+import PomnikiPoznania from './pages/PomnikiPoznania/index.jsx';
+import Herstoria from './pages/HerstoriaWartaPoznania/index.jsx';
+import LiterackiPoznan from './pages/LiterackiPoznan/index.jsx';
 
 const router = createBrowserRouter(
   [{
@@ -63,27 +68,27 @@ const router = createBrowserRouter(
       },
       {
         path: '/FKP/bimbawhistorie',
-        element: <Contact />
+        element: <BimbaWHistorie />
       },
       {
         path: '/FKP/poznanskielegendy',
-        element: <Contact />
+        element: <PoznanskieLegendy />
       },
       {
         path: '/FKP/pomnikipoznania',
-        element: <Contact />
+        element: <PomnikiPoznania />
       },
       {
         path: '/FKP/ulicznikpoznanski',
-        element: <Contact />
+        element: <TalkingAboutUs />
       },
       {
         path: '/FKP/literackipoznan',
-        element: <Contact />
+        element: <LiterackiPoznan />
       },
       {
         path: '/FKP/herstoriawartapoznania',
-        element: <Contact />
+        element: <Herstoria />
       },
     ]
   },

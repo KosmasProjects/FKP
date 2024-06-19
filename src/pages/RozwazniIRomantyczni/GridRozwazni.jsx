@@ -62,7 +62,7 @@ export default function GridRozwazni() {
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/ROZWAZNI-ROMANTYCZNI_logo-pion_cmyk.svg"
                 }
-                color={"blue.400"}
+                color={"orange.700"}
                 id={1}
                 onMouseEnter={() =>
                   handleMouseEnter(
@@ -76,7 +76,7 @@ export default function GridRozwazni() {
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/WS'44_logo_CMYK_biel+czerw.svg"
                 }
-                color={"orange.700"}
+                color={"blue.400"}
                 id={2}
                 onMouseEnter={() =>
                   handleMouseEnter(
@@ -90,7 +90,7 @@ export default function GridRozwazni() {
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/BIMBA-W-HISTORIE_logo-pion_rgb.png"
                 }
-                color={"orange.400"}
+                color={"green.600"}
                 id={3}
                 onMouseEnter={() =>
                   handleMouseEnter(
@@ -104,7 +104,7 @@ export default function GridRozwazni() {
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/logopomniki.png"
                 }
-                color={"green.600"}
+                color={"orange.400"}
                 id={7}
                 onMouseEnter={() =>
                   handleMouseEnter(
@@ -157,13 +157,13 @@ export default function GridRozwazni() {
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/logopomniki.png"
                 }
-                color={"teal.400"}
                 id={4}
                 onMouseEnter={() =>
                   handleMouseEnter(
                     "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/pomniki-stary-marych-T75_9128.jpg"
                   )
                 }
+                color={"green.400"}
                 onMouseLeave={handleMouseLeave}
               />
               <GridComponent
@@ -171,9 +171,9 @@ export default function GridRozwazni() {
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/ULICZNIK_POZNANSKI_logo-pion_CMYK.svg"
                 }
+                color={"teal.400"}
                 propsite={"/FKP/mowia-o-nas"}
                 buttonLabel={"Posłuchaj Podcastów"}
-                color={"green.400"}
                 id={5}
                 onMouseEnter={() =>
                   handleMouseEnter(
@@ -183,8 +183,8 @@ export default function GridRozwazni() {
                 onMouseLeave={handleMouseLeave}
               />
               <GridComponent
+                color={"purple.400"}
                 title={"Nie wiem"}
-                color={"pink.400"}
                 id={6}
                 onMouseEnter={() =>
                   handleMouseEnter(
@@ -195,8 +195,8 @@ export default function GridRozwazni() {
               />
               <GridComponent
                 title={"Wymysl"}
-                color={"purple.400"}
                 id={9}
+                color={"pink.400"}
                 onMouseEnter={() =>
                   handleMouseEnter(
                     "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/003. Włodarczyk 2018-01-04.jpg"

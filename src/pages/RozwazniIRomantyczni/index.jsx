@@ -6,12 +6,12 @@ import GridRozwazni from "./GridRozwazni";
 export default function RozwazniIRomantyczni() {
   return (
     <>
-        <GridRozwazni />
         <Center>
-          <Text fontSize="4xl" fontWeight={"bold"} color={"blue.400"}>
+          <Text fontSize="4xl" fontWeight={"bold"} color={"blue.400"} mb={5}>
             Rozwani i Romantyczni
           </Text>
         </Center>
+        <GridRozwazni />
       <Container maxW={"5xl"} pb={"200px"}>
       </Container>
     </>
