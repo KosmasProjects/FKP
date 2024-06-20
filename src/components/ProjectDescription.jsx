@@ -21,7 +21,7 @@ export default function ProjectDescription({
   ytlink,
 }) {
   return (
-    <Container maxW={"5xl"} pb={"200px"} pt={"60px"}>
+    <Container maxW={"5xl"} pb={"20px"} pt={"60px"}>
       {/* <Center>
         <Text fontSize="4xl" fontWeight={"bold"} color={color} mb={5}>
           {title}

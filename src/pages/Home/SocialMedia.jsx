@@ -92,7 +92,19 @@ export default function Team() {
 
   return (
     <Center>
-      <Grid templateColumns="repeat(5, 1fr)" rowGap={4} gap={10} maxW="100%">
+      <Grid
+        templateColumns={[
+          "repeat(1, 1fr)",
+          "repeat(2, 1fr)",
+          "repeat(3, 1fr)",
+          "repeat(4, 1fr)",
+          "repeat(5, 1fr)",
+        ]}
+        rowGap={4}
+        gap={10}
+        maxW="100%"
+      >
+        {" "}
         {items.map((item, index) => (
           <PersonCard item={item} />
         ))}

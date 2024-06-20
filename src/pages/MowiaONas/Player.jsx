@@ -6,6 +6,7 @@ import "react-h5-audio-player/lib/styles.css";
 import { css } from "@emotion/react";
 import Logo from "../../components/Logo";
 
+
 export default function Player({ title, description, date, radioName, link }) {
   const theme = useTheme();
   const playerStyles = css`
