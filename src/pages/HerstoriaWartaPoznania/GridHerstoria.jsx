@@ -48,6 +48,7 @@ export default function GridHerstoria() {
   const handleMouseLeave = () => {
     setImageSrc(link);
   };
+  const color = "purple";
 
   return (
     <>
@@ -62,7 +63,7 @@ export default function GridHerstoria() {
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/ROZWAZNI-ROMANTYCZNI_logo-pion_cmyk.svg"
                 }
-                color={"green.600"}
+                color={`${color}.400`}
                 id={1}
                 onMouseEnter={() =>
                   handleMouseEnter(
@@ -77,7 +78,7 @@ export default function GridHerstoria() {
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/WS'44_logo_CMYK_biel+czerw.svg"
                 }
                 id={2}
-                color={"orange.400"}
+                color={`${color}.500`}
                 onMouseEnter={() =>
                   handleMouseEnter(
                     "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/007-Marcin-Rurarz-Fotografia-WB23.jpg"
@@ -86,7 +87,8 @@ export default function GridHerstoria() {
                 onMouseLeave={handleMouseLeave}
               />
               <GridComponent
-                color={"orange.700"}
+                color={`${color}.600`}
+                
                 title={"osoba"}
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/BIMBA-W-HISTORIE_logo-pion_rgb.png"
@@ -105,7 +107,8 @@ export default function GridHerstoria() {
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/logopomniki.png"
                 }
                 id={7}
-                color={"blue.400"}
+                color={`${color}.700`}
+
                 onMouseEnter={() =>
                   handleMouseEnter(
                     "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/Katedra PODPIS.jpg"
@@ -158,7 +161,7 @@ export default function GridHerstoria() {
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/logopomniki.png"
                 }
                 id={4}
-                color={"green.400"}
+                color={`${color}.400`}
                 onMouseEnter={() =>
                   handleMouseEnter(
                     "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/pomniki-stary-marych-T75_9128.jpg"
@@ -173,7 +176,7 @@ export default function GridHerstoria() {
                 }
                 propsite={"/FKP/mowia-o-nas"}
                 buttonLabel={"Posłuchaj Podcastów"}
-                color={"teal.400"}
+                color={`${color}.500`}
                 id={5}
                 onMouseEnter={() =>
                   handleMouseEnter(
@@ -184,7 +187,7 @@ export default function GridHerstoria() {
               />
               <GridComponent
                 title={"Nie wiem"}
-                color={"purple.400"}
+                color={`${color}.600`}
                 id={6}
                 onMouseEnter={() =>
                   handleMouseEnter(
@@ -195,7 +198,7 @@ export default function GridHerstoria() {
               />
               <GridComponent
                 title={"Wymysl"}
-                color={"pink.400"}
+                color={`${color}.700`}
                 id={9}
                 onMouseEnter={() =>
                   handleMouseEnter(

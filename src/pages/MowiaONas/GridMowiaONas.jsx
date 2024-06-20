@@ -62,7 +62,7 @@ export default function GridMowiaONas() {
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/ROZWAZNI-ROMANTYCZNI_logo-pion_cmyk.svg"
                 }
-                color={"blue.400"}
+                color={"green.300"}
                 id={1}
                 onMouseEnter={() =>
                   handleMouseEnter(
@@ -76,7 +76,7 @@ export default function GridMowiaONas() {
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/WS'44_logo_CMYK_biel+czerw.svg"
                 }
-                color={"orange.700"}
+                color={"green.400"}
                 id={2}
                 onMouseEnter={() =>
                   handleMouseEnter(
@@ -90,7 +90,7 @@ export default function GridMowiaONas() {
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/BIMBA-W-HISTORIE_logo-pion_rgb.png"
                 }
-                color={"orange.400"}
+                color={"green.500"}
                 id={3}
                 onMouseEnter={() =>
                   handleMouseEnter(
@@ -157,7 +157,7 @@ export default function GridMowiaONas() {
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/logopomniki.png"
                 }
-                color={"teal.400"}
+                color={"green.300"}
                 id={4}
                 onMouseEnter={() =>
                   handleMouseEnter(
@@ -184,7 +184,7 @@ export default function GridMowiaONas() {
               />
               <GridComponent
                 title={"Ogrody"}
-                color={"pink.400"}
+                color={"green.500"}
                 id={6}
                 onMouseEnter={() =>
                   handleMouseEnter(
@@ -195,7 +195,7 @@ export default function GridMowiaONas() {
               />
               <GridComponent
                 title={"Grunwald"}
-                color={"purple.400"}
+                color={"green.600"}
                 id={9}
                 onMouseEnter={() =>
                   handleMouseEnter(

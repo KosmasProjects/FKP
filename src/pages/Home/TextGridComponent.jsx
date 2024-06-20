@@ -15,7 +15,7 @@ export default function TextGridComponent({ title }) {
             justifyContent={'center'}
             alignItems={'center'}
             display={'flex'}
-            backgroundColor={'gray.400'}
+            backgroundColor={'gray.500'}
             borderColor={'white'}
             borderWidth={'1px'}
             textColor={'white'}
@@ -23,7 +23,7 @@ export default function TextGridComponent({ title }) {
             transition={'0.3s'}
         >
             <Center>
-            <Text textAlign={'center'} fontSize={'16px'}>{title}</Text>
+            <Text textAlign={'center'} fontWeight={"semi-bold"} fontSize={'16px'}>{title}</Text>
             </Center>
         </Box>
     )

@@ -14,6 +14,7 @@ import GridComponent from "../Home/GridComponent";
 import TextGridComponent from "../Home/TextGridComponent";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import { Global, css } from "@emotion/react";
+import { color } from "framer-motion";
 
 const globalStyles = css`
   .fade-enter {
@@ -49,6 +50,8 @@ export default function GridLiteracki() {
     setImageSrc(link);
   };
 
+  const color = "pink";
+
   return (
     <>
       <Global styles={globalStyles} />
@@ -62,7 +65,7 @@ export default function GridLiteracki() {
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/ROZWAZNI-ROMANTYCZNI_logo-pion_cmyk.svg"
                 }
-                color={"orange.700"}
+                color={`${color}.400`}
                 id={1}
                 onMouseEnter={() =>
                   handleMouseEnter(
@@ -76,7 +79,7 @@ export default function GridLiteracki() {
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/WS'44_logo_CMYK_biel+czerw.svg"
                 }
-                color={"blue.400"}
+                color={`${color}.500`}
                 id={2}
                 onMouseEnter={() =>
                   handleMouseEnter(
@@ -90,7 +93,7 @@ export default function GridLiteracki() {
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/BIMBA-W-HISTORIE_logo-pion_rgb.png"
                 }
-                color={"green.600"}
+                color={`${color}.600`}
                 id={3}
                 onMouseEnter={() =>
                   handleMouseEnter(
@@ -104,7 +107,7 @@ export default function GridLiteracki() {
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/logopomniki.png"
                 }
-                color={"orange.400"}
+                color={`${color}.700`}
                 id={7}
                 onMouseEnter={() =>
                   handleMouseEnter(
@@ -163,7 +166,7 @@ export default function GridLiteracki() {
                     "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/pomniki-stary-marych-T75_9128.jpg"
                   )
                 }
-                color={"green.400"}
+                color={`${color}.400`}
                 onMouseLeave={handleMouseLeave}
               />
               <GridComponent
@@ -171,7 +174,7 @@ export default function GridLiteracki() {
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/ULICZNIK_POZNANSKI_logo-pion_CMYK.svg"
                 }
-                color={"teal.400"}
+                color={`${color}.500`}
                 propsite={"/FKP/mowia-o-nas"}
                 buttonLabel={"Posłuchaj Podcastów"}
                 id={5}
@@ -183,7 +186,7 @@ export default function GridLiteracki() {
                 onMouseLeave={handleMouseLeave}
               />
               <GridComponent
-                color={"purple.400"}
+                color={`${color}.600`}
                 title={"Nasze Tablice"}
                 id={6}
                 onMouseEnter={() =>
@@ -196,7 +199,7 @@ export default function GridLiteracki() {
               <GridComponent
                 title={"Nasze Pomniki"}
                 id={9}
-                color={"pink.400"}
+                color={`${color}.700`}
                 onMouseEnter={() =>
                   handleMouseEnter(
                     "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/003. Włodarczyk 2018-01-04.jpg"

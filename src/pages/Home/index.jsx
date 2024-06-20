@@ -10,7 +10,7 @@ import Team from "./SocialMedia";
 export default function HomePage() {
   return (
     <>
-      <Center>
+      <Center h={'80px'}>
         <Text fontSize="4xl" fontWeight={"bold"} color={"blue.400"} mb={5}> 
           Fundacja Kochania Poznania
 

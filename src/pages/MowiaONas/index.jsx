@@ -1,17 +1,22 @@
 import React from "react";
 import { Route, Routes, Link } from "react-router-dom";
-import { Container, Flex, Text, Button, Center } from "@chakra-ui/react";
+import {
+  Container,
+  Flex,
+  Text,
+  Button,
+  Center,
+  HStack,
+  Box,
+} from "@chakra-ui/react";
 import PlayerPage from "./PlayerPage"; // import PlayerPage
 import GridMowiaONas from "./GridMowiaONas";
+import Title from "../../components/Title";
 
 export default function TalkingAboutUs() {
   return (
     <>
-      <Center>
-        <Text fontSize="4xl" fontWeight={"bold"} color={"blue.400"} mb={5}>
-          Ulicznik Poznański
-        </Text>
-      </Center>
+      <Title title={'Ulicznik Poznański'} color={"green.500"} />
       <GridMowiaONas />
       <Container maxW={"5xl"} pb={"50px"}>
         <Flex direction="column" alignItems="start" justifyContent="start">
