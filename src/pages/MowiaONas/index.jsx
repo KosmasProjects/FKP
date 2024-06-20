@@ -12,13 +12,22 @@ import {
 import PlayerPage from "./PlayerPage"; // import PlayerPage
 import GridMowiaONas from "./GridMowiaONas";
 import Title from "../../components/Title";
+import ProjectDescription from "../../components/ProjectDescription";
 
 export default function TalkingAboutUs() {
   return (
     <>
-      <Title title={'Ulicznik Poznański'} color={"green.500"} />
+      <Title title={"Ulicznik Poznański"} color={"green.500"} />
       <GridMowiaONas />
       <Container maxW={"5xl"} pb={"50px"}>
+        <ProjectDescription
+          title="Pomniki Poznania"
+          color={"teal.500"}
+          link={
+            "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/ULICZNIK_POZNANSKI_logo-pion_CMYK.svg"
+          }
+        />
+
         <Flex direction="column" alignItems="start" justifyContent="start">
           <Container
             p={4}

@@ -34,6 +34,7 @@ export default function GridComponent({
   onMouseLeave,
   logo,
   propsite,
+  isMainPage,
 }) {
   // const { isOpen, onOpen, onClose } = useDisclosure();
 
@@ -58,7 +59,7 @@ export default function GridComponent({
         borderWidth={"1px"}
         onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}
-        textColor={"white"}
+        textColor={"gray.100"}
         _hover={{
           backgroundColor: "white",
           textColor: "black",
@@ -67,15 +68,18 @@ export default function GridComponent({
         }}
         transition={"0.3s"}
       >
-          <HStack h={"100%"} spacing="5px" justifyContent={"space-between"} alignItems={"center"} px={"18px"}>
-            <Heading fontSize={"20px"}>{title}</Heading>
-            <Image
-              height={"50px"}
-              src={logo}
-              alt={title}
-              fontSize={"10px"}
-            />{" "}
-          </HStack>
+        <HStack
+          h={"100%"}
+          spacing="5px"
+          justifyContent={isMainPage ? "space-between" : "center"}
+          alignItems={"center"}
+          px={"18px"}
+        >
+          <Heading fontSize={"20px"}>{title}</Heading>
+          {isMainPage && (
+            <Image height={"50px"} src={logo} alt={title} fontSize={"10px"} />
+          )}
+        </HStack>
       </Card>
 
       {/* <Modal isOpen={isOpen} onClose={onClose} size={"5xl"}>

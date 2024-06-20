@@ -10,10 +10,9 @@ import Team from "./SocialMedia";
 export default function HomePage() {
   return (
     <>
-      <Center h={'80px'}>
-        <Text fontSize="4xl" fontWeight={"bold"} color={"blue.400"} mb={5}> 
+      <Center h={"80px"}>
+        <Text fontSize="4xl" fontWeight={"bold"} color={"blue.400"} mb={5}>
           Fundacja Kochania Poznania
-
         </Text>
       </Center>
       <MyGrid />
@@ -30,12 +29,13 @@ export default function HomePage() {
           fontSize="4xl"
           fontWeight="bold"
           marginTop={"50px"}
+          color={"blue.400"}
         >
-          Zespół
+          Fudnacja i Przyjaciele
         </Text>
       </Center>
       <Team />
-      <Center>
+      {/* <Center>
         <Text
           textAlign={"center"}
           fontSize="4xl"
@@ -45,27 +45,20 @@ export default function HomePage() {
           Fundacja w mediach
         </Text>
       </Center>
-      <MediaPosts />
+      <MediaPosts /> */}
+
       <Center>
         <Text
           textAlign={"center"}
           fontSize="4xl"
           fontWeight="bold"
           marginTop={"50px"}
-        >
-          Przyjaciele Fundacji
-        </Text>
-      </Center>
-      <Center>
-        <Text
-          textAlign={"center"}
-          fontSize="4xl"
-          fontWeight="bold"
-          marginTop={"50px"}
+          color={"blue.400"}
         >
           Partnerzy Fundacji
         </Text>
       </Center>
+      <Team />
 
       <Container h={40}></Container>
     </>

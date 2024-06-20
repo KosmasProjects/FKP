@@ -3,14 +3,20 @@ import { Route, Routes, Link } from "react-router-dom";
 import { Container, Flex, Text, Button, Center } from "@chakra-ui/react";
 import GridLegendy from "./GridLegendy";
 import Title from "../../components/Title";
+import ProjectDescription from "../../components/ProjectDescription";
 
 export default function PoznanskieLegendy() {
   return (
     <>
       <Title title="Poznańskie Legendy" color={"green.400"} />
-
       <GridLegendy />
-      <Container maxW={"5xl"} pb={"200px"}></Container>
+      <ProjectDescription
+        title="Poznańskie Legendy"
+        color={"green.400"}
+        link={
+          "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/POMNIKI-POZNANIA_logo-pion_cmyk.svg"
+        }
+      />
     </>
   );
 }

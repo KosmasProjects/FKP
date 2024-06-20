@@ -58,12 +58,11 @@ export default function GridWS() {
             <Grid>
               <TextGridComponent title={"Programy historyczne"} />
               <GridComponent
-                title={"Granatowicz"}
+                title={"Józef Granatowicz Lekarz z Powołania "}
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/ROZWAZNI-ROMANTYCZNI_logo-pion_cmyk.svg"
                 }
                 color={"orange.900"}
-
                 id={1}
                 onMouseEnter={() =>
                   handleMouseEnter(
@@ -73,7 +72,7 @@ export default function GridWS() {
                 onMouseLeave={handleMouseLeave}
               />
               <GridComponent
-                title={"Borys"}
+                title={"Józef Granatowicz Lekarz z Powołania "}
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/WS'44_logo_CMYK_biel+czerw.svg"
                 }
@@ -88,7 +87,7 @@ export default function GridWS() {
               />
               <GridComponent
                 color={"orange.600"}
-                title={"osoba"}
+                title={"Józef Granatowicz Lekarz z Powołania "}
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/BIMBA-W-HISTORIE_logo-pion_rgb.png"
                 }
@@ -101,13 +100,12 @@ export default function GridWS() {
                 onMouseLeave={handleMouseLeave}
               />
               <GridComponent
-                title={"Osoba 2"}
+                title={"Józef Granatowicz Lekarz z Powołania "}
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/logopomniki.png"
                 }
                 id={7}
                 color={"orange.500"}
-
                 onMouseEnter={() =>
                   handleMouseEnter(
                     "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/Katedra PODPIS.jpg"
@@ -152,7 +150,7 @@ export default function GridWS() {
             <Grid>
               <TextGridComponent title={"Piątkowo"} />
               <GridComponent
-                title={"Cos tam"}
+                title={"Józef Granatowicz Lekarz z Powołania "}
                 image={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/pomniki-stary-marych-T75_9128.jpg"
                 }
@@ -161,7 +159,6 @@ export default function GridWS() {
                 }
                 id={4}
                 color={"orange.900"}
-
                 onMouseEnter={() =>
                   handleMouseEnter(
                     "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/pomniki-stary-marych-T75_9128.jpg"
@@ -170,14 +167,13 @@ export default function GridWS() {
                 onMouseLeave={handleMouseLeave}
               />
               <GridComponent
-                title={"Lorem Ipsum"}
+                title={"Józef Granatowicz Lekarz z Powołania "}
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/ULICZNIK_POZNANSKI_logo-pion_CMYK.svg"
                 }
                 propsite={"/FKP/mowia-o-nas"}
                 buttonLabel={"Posłuchaj Podcastów"}
                 color={"orange.800"}
-
                 id={5}
                 onMouseEnter={() =>
                   handleMouseEnter(
@@ -187,9 +183,8 @@ export default function GridWS() {
                 onMouseLeave={handleMouseLeave}
               />
               <GridComponent
-                title={"Nie wiem"}
+                title={"Józef Granatowicz Lekarz z Powołania "}
                 color={"orange.700"}
-
                 id={6}
                 onMouseEnter={() =>
                   handleMouseEnter(
@@ -199,9 +194,8 @@ export default function GridWS() {
                 onMouseLeave={handleMouseLeave}
               />
               <GridComponent
-                title={"Wymysl"}
+                title={"Józef Granatowicz Lekarz z Powołania "}
                 color={"orange.600"}
-
                 id={9}
                 onMouseEnter={() =>
                   handleMouseEnter(

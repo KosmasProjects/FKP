@@ -58,6 +58,7 @@ export default function MyGrid() {
             <Grid>
               <TextGridComponent title={"Programy historyczne"} />
               <GridComponent
+                isMainPage={true}
                 title={"Rozważni i romantyczni"}
                 propsite={"/FKP/rozwazniiromantyczni"}
                 logo={
@@ -73,6 +74,7 @@ export default function MyGrid() {
                 onMouseLeave={handleMouseLeave}
               />
               <GridComponent
+                isMainPage={true}
                 title={"Wspólna sprawa’44"}
                 propsite={"/FKP/ws44"}
                 logo={
@@ -88,6 +90,7 @@ export default function MyGrid() {
                 onMouseLeave={handleMouseLeave}
               />
               <GridComponent
+                isMainPage={true}
                 propsite={"/FKP/bimbawhistorie"}
                 title={"Bimbą w historię"}
                 logo={
@@ -103,20 +106,21 @@ export default function MyGrid() {
                 onMouseLeave={handleMouseLeave}
               />
               <GridComponent
+                isMainPage={true}
                 propsite={"/FKP/poznanskielegendy"}
                 title={"Poznańskie legendy "}
                 logo={
-                    "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/logopomniki.png"
+                  "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/logopomniki.png"
                 }
                 color={"green.600"}
                 id={7}
                 onMouseEnter={() =>
-                    handleMouseEnter(
-                        "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/Katedra PODPIS.jpg"
-                        )
-                    }
-                    onMouseLeave={handleMouseLeave}
-                    />
+                  handleMouseEnter(
+                    "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/Katedra PODPIS.jpg"
+                  )
+                }
+                onMouseLeave={handleMouseLeave}
+              />
             </Grid>
             <Box
               position="relative"
@@ -128,7 +132,7 @@ export default function MyGrid() {
               padding={0}
               backgroundColor="white.900"
               border="1px solid white"
-              >
+            >
               <TransitionGroup>
                 <CSSTransition key={imageSrc} timeout={500} classNames="fade">
                   <Box
@@ -138,14 +142,14 @@ export default function MyGrid() {
                     height="100%"
                     margin={0}
                     padding={0}
-                    >
+                  >
                     <Image
                       h="100%"
                       w="100%"
                       src={imageSrc}
                       alt="Example"
                       objectFit={"contain"}
-                      />
+                    />
                   </Box>
                 </CSSTransition>
               </TransitionGroup>
@@ -154,10 +158,11 @@ export default function MyGrid() {
             <Grid>
               <TextGridComponent title={"Programy miejskie"} />
               <GridComponent
+                isMainPage={true}
                 title={"Pomniki Poznania "}
                 propsite={"/FKP/pomnikipoznania"}
                 image={
-                    "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/pomniki-stary-marych-T75_9128.jpg"
+                  "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/pomniki-stary-marych-T75_9128.jpg"
                 }
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/logopomniki.png"
@@ -172,6 +177,7 @@ export default function MyGrid() {
                 onMouseLeave={handleMouseLeave}
               />
               <GridComponent
+                isMainPage={true}
                 title={"Ulicznik poznański"}
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/ULICZNIK_POZNANSKI_logo-pion_CMYK.svg"
@@ -189,9 +195,9 @@ export default function MyGrid() {
                 onMouseLeave={handleMouseLeave}
               />
               <GridComponent
+                isMainPage={true}
                 title={"Literacki Poznań"}
                 propsite={"/FKP/literackipoznan"}
-
                 color={"pink.400"}
                 id={6}
                 onMouseEnter={() =>
@@ -202,10 +208,10 @@ export default function MyGrid() {
                 onMouseLeave={handleMouseLeave}
               />
               <GridComponent
+                isMainPage={true}
                 title={"Herstoria warta Poznania"}
                 color={"purple.400"}
                 propsite={"/FKP/herstoriawartapoznania"}
-
                 id={9}
                 onMouseEnter={() =>
                   handleMouseEnter(
