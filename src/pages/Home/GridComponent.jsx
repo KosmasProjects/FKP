@@ -77,7 +77,7 @@ export default function GridComponent({
         >
           <Heading fontSize={"20px"}>{title}</Heading>
           {isMainPage && (
-            <Image height={"50px"} src={logo} alt={title} fontSize={"10px"} />
+            <Image height={"60px"} src={logo} alt={title} fill={"wheat"} />
           )}
         </HStack>
       </Card>

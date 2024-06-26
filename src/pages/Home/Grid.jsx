@@ -184,7 +184,7 @@ export default function MyGrid() {
                 }
                 propsite={"/FKP/ulicznikpoznanski"}
                 buttonLabel={"Posłuchaj Podcastów"}
-                color={"green.400"}
+                color={"gray.400"}
                 p
                 id={5}
                 onMouseEnter={() =>
@@ -196,9 +196,9 @@ export default function MyGrid() {
               />
               <GridComponent
                 isMainPage={true}
-                title={"Literacki Poznań"}
+                title={"Poznańskie Opowieści"}
                 propsite={"/FKP/literackipoznan"}
-                color={"pink.400"}
+                color={"purple.400"}
                 id={6}
                 onMouseEnter={() =>
                   handleMouseEnter(
@@ -209,8 +209,11 @@ export default function MyGrid() {
               />
               <GridComponent
                 isMainPage={true}
+                logo={
+                  "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/HERSTORIE_logo-pion_CMYK.svg"
+                }
                 title={"Herstoria warta Poznania"}
-                color={"purple.400"}
+                color={"pink.400"}
                 propsite={"/FKP/herstoriawartapoznania"}
                 id={9}
                 onMouseEnter={() =>

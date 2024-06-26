@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Box, VStack, Image, Text, Center } from "@chakra-ui/react";
 import ReactCardFlip from "react-card-flip";
 
-export default function PersonCard({ item, handleBoxClick }) {
+export default function PersonCard({ item }) {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleFlip = () => {
@@ -13,7 +13,6 @@ export default function PersonCard({ item, handleBoxClick }) {
   return (
     <Box
       w={"200px"}
-      onClick={() => handleBoxClick(item)}
       onMouseEnter={handleFlip}
       onMouseLeave={handleFlip}
       _hover={{
