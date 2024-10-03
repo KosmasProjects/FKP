@@ -9,82 +9,92 @@ export default function Team() {
 
   const items = [
     {
-      name: "Paweł Cieliczko",
-      image:
+      name: "Paweł",
+      surname: "Cieliczko",
+      photo_url:
         "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/DSC_7070.jpg",
-      group: "Zarząd Fundacji Kochania Poznania",
+      organization: "Zarząd Fundacji Kochania Poznania",
       description:
         "Paweł Cieliczko - prezes zarządu Fundacji Kochania Poznania. Historyk, publicysta, autor książek, wykładowca, pasjonat historii Poznania i Wielkopolski.",
     },
     {
-      name: "Elwira Fronczak",
-      image:
-        "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/okladka_Czerwcowe ulice.jpg",
-      group: "Stowarzyszenie Husaria",
+      name: "Paweł",
+      surname: "Cieliczko",
+      photo_url:
+        "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/DSC_7070.jpg",
+      organization: "Zarząd Fundacji Kochania Poznania",
       description:
         "Paweł Cieliczko - prezes zarządu Fundacji Kochania Poznania. Historyk, publicysta, autor książek, wykładowca, pasjonat historii Poznania i Wielkopolski.",
     },
     {
-      name: "Katarzyna Słupianek-Cieliczko",
-      image:
-        "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/okladka_Czerwcowe ulice.jpg",
-      group: "Stowarzyszenie Husaria",
+      name: "Paweł",
+      surname: "Cieliczko",
+      photo_url:
+        "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/DSC_7070.jpg",
+      organization: "Zarząd Fundacji Kochania Poznania",
       description:
         "Paweł Cieliczko - prezes zarządu Fundacji Kochania Poznania. Historyk, publicysta, autor książek, wykładowca, pasjonat historii Poznania i Wielkopolski.",
     },
     {
-      name: "Paweł Cieliczko",
-      image:
-        "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/rekografiazeznakiem086.jpg",
-      group: "Stowarzyszenie Husaria",
+      name: "Paweł",
+      surname: "Cieliczko",
+      photo_url:
+        "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/DSC_7070.jpg",
+      organization: "Zarząd Fundacji Kochania Poznania",
       description:
         "Paweł Cieliczko - prezes zarządu Fundacji Kochania Poznania. Historyk, publicysta, autor książek, wykładowca, pasjonat historii Poznania i Wielkopolski.",
     },
     {
-      name: "Paweł Cieliczko",
-      image:
-        "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/Fronczak.png",
-      group: "Stowarzyszenie Husaria",
+      name: "Paweł",
+      surname: "Cieliczko",
+      photo_url:
+        "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/DSC_7070.jpg",
+      organization: "Zarząd Fundacji Kochania Poznania",
       description:
         "Paweł Cieliczko - prezes zarządu Fundacji Kochania Poznania. Historyk, publicysta, autor książek, wykładowca, pasjonat historii Poznania i Wielkopolski.",
     },
     {
-      name: "Paweł Cieliczko",
-      image:
-        "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/Fronczak.png",
-      group: "Stowarzyszenie Husaria",
+      name: "Paweł",
+      surname: "Cieliczko",
+      photo_url:
+        "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/DSC_7070.jpg",
+      organization: "Zarząd Fundacji Kochania Poznania",
       description:
         "Paweł Cieliczko - prezes zarządu Fundacji Kochania Poznania. Historyk, publicysta, autor książek, wykładowca, pasjonat historii Poznania i Wielkopolski.",
     },
     {
-      name: "Paweł Cieliczko",
-      image:
-        "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/Fronczak.png",
-      group: "Stowarzyszenie Husaria",
+      name: "Paweł",
+      surname: "Cieliczko",
+      photo_url:
+        "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/DSC_7070.jpg",
+      organization: "Zarząd Fundacji Kochania Poznania",
       description:
         "Paweł Cieliczko - prezes zarządu Fundacji Kochania Poznania. Historyk, publicysta, autor książek, wykładowca, pasjonat historii Poznania i Wielkopolski.",
     },
     {
-      name: "Paweł Cieliczko",
-      image:
-        "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/Fronczak.png",
-      group: "Stowarzyszenie Husaria",
+      name: "Paweł",
+      surname: "Cieliczko",
+      photo_url:
+        "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/DSC_7070.jpg",
+      organization: "Zarząd Fundacji Kochania Poznania",
       description:
         "Paweł Cieliczko - prezes zarządu Fundacji Kochania Poznania. Historyk, publicysta, autor książek, wykładowca, pasjonat historii Poznania i Wielkopolski.",
     },
     {
-      name: "Paweł Cieliczko",
-      image:
-        "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/Fronczak.png",
-      group: "Stowarzyszenie Husaria",
+      name: "Paweł",
+      surname: "Cieliczko",
+      photo_url:
+        "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/DSC_7070.jpg",
+      organization: "Zarząd Fundacji Kochania Poznania",
       description:
         "Paweł Cieliczko - prezes zarządu Fundacji Kochania Poznania. Historyk, publicysta, autor książek, wykładowca, pasjonat historii Poznania i Wielkopolski.",
     },
     {
-      name: "Paweł Cieliczko",
-      image:
-        "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/Fronczak.png",
-      group: "Stowarzyszenie Husaria",
+      name: "Paweł",
+      surname: "Cieliczko",
+      photo_url:
+        "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/DSC_7070.jpg",
+      organization: "Zarząd Fundacji Kochania Poznania",
       description:
         "Paweł Cieliczko - prezes zarządu Fundacji Kochania Poznania. Historyk, publicysta, autor książek, wykładowca, pasjonat historii Poznania i Wielkopolski.",
     },
@@ -109,8 +119,6 @@ export default function Team() {
           <PersonCard item={item} />
         ))}
       </Grid>
-
-      {/* ...rest of your code... */}
     </Center>
   );
 }

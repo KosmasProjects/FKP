@@ -46,8 +46,8 @@ export default function PersonCard({ item }) {
                   boxSize="180px"
                   w={"180px"}
                   objectFit="cover"
-                  src={item.image}
-                  alt={item.name}
+                  src={item.photo_url}
+                  alt={item.name + " " + item.surname}
                   borderRadius={"full"}
                 />
               </Box>
@@ -61,10 +61,10 @@ export default function PersonCard({ item }) {
             bgColor={"blue.400"}
             color={"white"}
           >
-            {item.name}
+            {item.name + " " + item.surname}
           </Text>
           <Text mx={1} textAlign={"center"} color={"white"}>
-            {item.group}
+            {item.organization}
           </Text>
         </VStack>
         <VStack
@@ -78,12 +78,10 @@ export default function PersonCard({ item }) {
           bgColor={"blue.400"}
         >
             <Text color={'white'} fontWeight={'bold'} textAlign={'center'}>
-                {item.name}
+                {item.name + " " + item.surname}
             </Text>
           <Text px={5} color={'white'}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-            lacinia malesuada libero tempus congue. Duis et lacus et massa
-            rutrum sagittis. Suspendisse dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            {item.description}
           </Text>
         </VStack>
       </ReactCardFlip>

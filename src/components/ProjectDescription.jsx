@@ -43,7 +43,7 @@ export default function ProjectDescription({
         </Text>
       </HStack>
       <Center>
-        <Text fontWeight={"bold"} fontSize={"20px"} color={color}>
+        <Text fontWeight={"bold"} pt={'20px'} fontSize={"20px"} color={color}>
           Social Media:
         </Text>
       </Center>
