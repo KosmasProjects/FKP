@@ -1,4 +1,14 @@
-import { Card, SimpleGrid, Image, Text, VStack, Button, Flex } from "@chakra-ui/react";
+import {
+  Card,
+  Image,
+  Text,
+  VStack,
+  Box,
+  Button,
+  Flex,
+  HStack,
+  Spacer,
+} from "@chakra-ui/react";
 import React from "react";
 // [
 //   {
@@ -16,29 +26,62 @@ import React from "react";
 //       "poznanskie_legendy": false
 //   }
 // ]
-export default function Post({post}) {
-  
+export default function Post({ post }) {
   return (
-    <Card p={5} w={"4xl"} my={4} bg={"white"} boxShadow={"lg"} rounded={"lg"}>
-      <SimpleGrid columns={2} spacing={10}>
+<Box 
+      as={Card} 
+      pl={3} 
+      pr={2} 
+      py={3} 
+      w={"4xl"} 
+      my={2} 
+      bg={"white"} 
+      rounded={"none"} 
+      transition="transform 0.2s" 
+      _hover={{ transform: "scale(1.05)" }}
+    >      <Flex direction={"row"} spacing={10}>
         <Image
+          pr={2}
+          h={"200px"}
           alt={"Login Image"}
-          src={post.image == null ?
-            "https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" : image
+          src={
+            post.image == null
+              ? "https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              : post.image
           }
         />
-        <VStack align="start">
-          <Text fontSize="4xl" fontWeight={"bold"} color={"blue.400"}>
-            {post.title}
-          </Text>
+        <VStack align="start" flex="1" mx={2}>
+          <HStack w={"100%"} align={"start"}>
+            <Text fontSize="2xl" fontWeight={"bold"} color={"blue.400"}>
+              {post.title}
+            </Text>
+            <Spacer />
+            <Text
+              fontSize="1xl"
+              color={"black"}
+              w={"170px"}
+              align={"end"}
+              mr={"15px"}
+            >
+              {post.created_at.slice(0, 10)}
+            </Text>
+          </HStack>
           <Text fontSize="1xl" color={"blue.400"}>
-            {post.description}
+            {post.description.slice(0, 100)}...
           </Text>
-          <Flex w={'100%'} justifyContent={'flex-end'}>
-    <Button rounded={"full"} bg={'blue.400'} textColor={'white'}>Czytaj więcej</Button>
-</Flex>
+          <Spacer />
+          <HStack alignItems={"end"} justifyContent={"end"} w={"100%"}>
+            <Text fontSize="1xl" color={"black"}>
+              {post.author}
+            </Text>
+            <Spacer />
+
+            <Button rounded={"full"} bg={"blue.400"} textColor={"white"}>
+              Czytaj więcej
+            </Button>
+          </HStack>
         </VStack>
-      </SimpleGrid>
-    </Card>
+      </Flex>
+    </Box>
   );
 }

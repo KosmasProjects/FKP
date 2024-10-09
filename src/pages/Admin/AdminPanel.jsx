@@ -1,204 +1,110 @@
-import React, { useState, useEffect } from "react";
-import {
-  Button,
-  Container,
-  Flex,
-  Text,
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalFooter,
-  Image,
-  ModalBody,
-  ModalCloseButton,
-  Box,
-  useDisclosure,
-  Card,
-  FormControl,
-  FormLabel,
-  Input,
-  Textarea,
-  UnorderedList,
-  Select,
-  HStack,
-  Spacer,
-  VStack,
-} from "@chakra-ui/react";
-import PersonCard from "../../components/PersonCard";
+import React, { useState } from "react";
+import { Box, Text, VStack, Button, Divider } from "@chakra-ui/react";w
+import AdminTableWidget from "./pages/adminTableWidget";
 
 export default function AdminPanel() {
-  const [people, setPeople] = useState([]);
-  const [name, setName] = useState("");
-  const [surname, setSurname] = useState("");
-  const [organization, setOrganization] = useState("");
-  const [description, setDescription] = useState("");
-  const [image, setImage] = useState(null);
-  const [organizations, setOrganizations] = useState([]);
+  const [selectedView, setSelectedView] = useState("view1");
 
-  useEffect(() => {
-    fetch("http://127.0.0.1:8000/pl/organization/")
-      .then((response) => response.json())
-      .then((data) => setOrganizations(data));
-  }, []);
+  const users = [
+    { id: 1, name: "User 1", aktualnosci: "Aktualnosci 1" },
+    { id: 2, name: "User 2", aktualnosci: "Aktualnosci 2" },
+    // Add more users as needed
+  ];
 
-  useEffect(() => {
-    fetch("http://127.0.0.1:8000/pl/people/")
-      .then((response) => response.json())
-      .then((data) => setPeople(data));
-  }, []);
-
-  console.log(people);
-
-  const { isOpen, onOpen, onClose } = useDisclosure();
-
-  const handleSubmit = async () => {
-    const formData = new FormData();
-    formData.append("name", name);
-    formData.append("surname", surname);
-    formData.append("organization", organization);
-    formData.append("description", description);
-    formData.append("photo", image);
-
-    const response = await fetch("http://127.0.0.1:8000/pl/people/new/", {
-      method: "POST",
-      body: formData,
-    });
-
-    if (response.ok) {
-      const data = await fetch("http://127.0.0.1:8000/pl/people/").then(
-        (response) => response.json()
-      );
-      setPeople(data);
-      onClose();
-    } else {
-      console.error("Failed to add person");
-      alert("Failed to add person");
-       
-    }
+  const handleMenuClick = (view) => {
+    setSelectedView(view);
   };
 
   return (
-    <>
-      <Container pb={20} w={"5xl"}>
-        <Flex direction="column" alignItems="center" justifyContent="center">
-          <Container p={4} w={"5xl"} bg={"transparent"} my={4} rounded={"lg"}>
-            <Text fontSize="4xl" fontWeight={"bold"} color={"blue.400"}>
-              Panel Administratora
-            </Text>
-            <Text fontSize="2xl" color={"blue.400"}>
-              Przyjaciele fundacji
-            </Text>
-
-            <Button colorScheme="blue" mt={4} onClick={onOpen}>
-              Dodaj przyjaciela
-            </Button>
-            <Container
-              pt={5}
-              pr={4}
-              pb={4}
-              pl={0}
-              w={"5xl"}
-              borderRadius={"10px"}
-              rounded={"lg"}
-              display={"flex"}
-              flexDirection={"column"}
-              alignItems={"start"}
-              justifyItems={"start"}
-              justifyContent={"start"}
-              alignContent={"start"}
-            >
-              <UnorderedList paddingInlineStart={0} margin={0}>
-                {people.map((person, index) => (
-                  <Box mb={1}>
-                    <Card p={2}>
-                      <HStack>
-                        <VStack align={"start"}>
-                          <Text fontSize={"18px"} fontWeight={"bold"}>
-                            {person.name} {person.surname}
-                          </Text>
-                          <Text fontSize={"16px"} fontWeight={"bold"}>
-                            Organizacja: {organization[person.organization - 1]}
-                          </Text>
-                          <Text fontSize={"14px"}>{person.description}</Text>
-                        </VStack>
-                        <Spacer />
-                        <Image w={20} src={person.photo_url}></Image>
-                      </HStack>
-                    </Card>
-                  </Box>
-                ))}
-              </UnorderedList>
-            </Container>
-          </Container>
-        </Flex>
-      </Container>
-      <Modal isOpen={isOpen} onClose={onClose}>
-        <ModalOverlay />
-        <ModalContent>
-          <ModalHeader>Dodaj przyjaciela</ModalHeader>
-          <ModalCloseButton />
-          <ModalBody pb={6}>
-            <FormControl>
-              <FormLabel>Imię</FormLabel>
-              <Input
-                placeholder="Imię"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
-            </FormControl>
-
-            <FormControl mt={4}>
-              <FormLabel>Nazwisko</FormLabel>
-              <Input
-                placeholder="Nazwisko"
-                value={surname}
-                onChange={(e) => setSurname(e.target.value)}
-              />
-            </FormControl>
-
-            <FormControl mt={4}>
-              <FormLabel>Organizacja</FormLabel>
-              <Select
-                placeholder="Wybierz organizację"
-                value={organization}
-                onChange={(e) => setOrganization(e.target.value)}
-              >
-                {organizations.map((org) => (
-                  <option key={org.id} value={org.id}>
-                    {org.name}
-                  </option>
-                ))}
-              </Select>
-            </FormControl>
-
-            <FormControl mt={4}>
-              <FormLabel>Opis</FormLabel>
-              <Textarea
-                placeholder="Opis"
-                value={description}
-                onChange={(e) => setDescription(e.target.value)}
-              />
-            </FormControl>
-
-            <FormControl mt={4}>
-              <FormLabel>Zdjęcie</FormLabel>
-              <Input
-                type="file" 
-                accept="image/*"
-                onChange={(e) => setImage(e.target.files[0])}
-              />
-            </FormControl>
-          </ModalBody>
-
-          <ModalFooter>
-            <Button colorScheme="blue" mr={3} onClick={handleSubmit}>
-              Zapisz
-            </Button>
-            <Button onClick={onClose}>Anuluj</Button>
-          </ModalFooter>
-        </ModalContent>
-      </Modal>
-    </>
+    <Box display="flex" h="100vh" w="5xl">
+      <Box w="200px" borderRight="1px" borderColor="gray.200">
+        <VStack align="start" spacing={0}>
+          <Text fontSize="2xl" fontWeight={"bold"} color={"blue.400"}>
+            Panel Administratora
+          </Text>
+          <Box
+            as="button"
+            textAlign="left"
+            w="100%"
+            p={2}
+            onClick={() => handleMenuClick("view1")}
+            bg={selectedView === "view1" ? "white" : ""}
+            _hover={{ transform: "scale(1.05)", bg: "white" }}
+            transition="all 0.1s"
+          >
+            Aktualnosci
+          </Box>
+          <Divider />
+          <Box
+            as="button"
+            textAlign="left"
+            w="100%"
+            p={2}
+            onClick={() => handleMenuClick("view2")}
+            bg={selectedView === "view2" ? "white" : ""}
+            _hover={{ transform: "scale(1.05)", bg: "white" }}
+            transition="all 0.1s"
+          >
+            Przyjaciele
+          </Box>
+          <Box
+            as="button"
+            textAlign="left"
+            w="100%"
+            p={2}
+            onClick={() => handleMenuClick("view3")}
+            bg={selectedView === "view3" ? "white" : ""}
+            _hover={{ transform: "scale(1.05)", bg: "white" }}
+            transition="all 0.1s"
+          >
+            Partnerzy
+          </Box>
+          <Box
+            as="button"
+            textAlign="left"
+            w="100%"
+            p={2}
+            onClick={() => handleMenuClick("view4")}
+            bg={selectedView === "view4" ? "white" : ""}
+            _hover={{ transform: "scale(1.05)", bg: "white" }}
+            transition="all 0.1s"
+          >
+            Pomniki
+          </Box>
+          <Box
+            as="button"
+            textAlign="left"
+            w="100%"
+            p={2}
+            onClick={() => handleMenuClick("view5")}
+            bg={selectedView === "view5" ? "white" : ""}
+            _hover={{ transform: "scale(1.05)", bg: "white" }}
+            transition="all 0.1s"
+          >
+            Słuchowiska
+          </Box>
+          <Divider />
+          {/* Add more buttons as needed */}
+        </VStack>
+      </Box>
+      <Box flex="1" p={4}>
+        {selectedView === "view1" && (
+          <AdminTableWidget title={"Aktualności"} data={users} />
+        )}{" "}
+        {/* Display the component */}
+        {selectedView === "view2" && (
+          <AdminTableWidget title={"Przyjaciele"} data={users} />
+        )}
+        {selectedView === "view3" && (
+          <AdminTableWidget title={"Partnerzy"} data={users} />
+        )}
+        {selectedView === "view4" && (
+          <AdminTableWidget title={"Pomniki"} data={users} />
+        )}
+        {selectedView === "view5" && (
+          <AdminTableWidget title={"Słuchowiska"} data={users} />
+        )}
+      </Box>
+    </Box>
   );
 }
