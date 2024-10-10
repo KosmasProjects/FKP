@@ -1,15 +1,12 @@
 import React, { useState } from "react";
-import { Box, Text, VStack, Button, Divider } from "@chakra-ui/react";w
+import { Box, Text, VStack, Button, Divider } from "@chakra-ui/react";
 import AdminTableWidget from "./pages/adminTableWidget";
+import { useGetData } from './actions/useGetData'; // Import the hook
 
 export default function AdminPanel() {
-  const [selectedView, setSelectedView] = useState("view1");
+  const [selectedView, setSelectedView] = useState("aktualnosci/fkp");
+  const { data, isLoading, isError } = useGetData(selectedView); // Use the hook
 
-  const users = [
-    { id: 1, name: "User 1", aktualnosci: "Aktualnosci 1" },
-    { id: 2, name: "User 2", aktualnosci: "Aktualnosci 2" },
-    // Add more users as needed
-  ];
 
   const handleMenuClick = (view) => {
     setSelectedView(view);
@@ -27,8 +24,8 @@ export default function AdminPanel() {
             textAlign="left"
             w="100%"
             p={2}
-            onClick={() => handleMenuClick("view1")}
-            bg={selectedView === "view1" ? "white" : ""}
+            onClick={() => handleMenuClick("aktualnosci/fkp")}
+            bg={selectedView === "aktualnosci/fkp" ? "white" : ""}
             _hover={{ transform: "scale(1.05)", bg: "white" }}
             transition="all 0.1s"
           >
@@ -40,8 +37,8 @@ export default function AdminPanel() {
             textAlign="left"
             w="100%"
             p={2}
-            onClick={() => handleMenuClick("view2")}
-            bg={selectedView === "view2" ? "white" : ""}
+            onClick={() => handleMenuClick("people")}
+            bg={selectedView === "people" ? "white" : ""}
             _hover={{ transform: "scale(1.05)", bg: "white" }}
             transition="all 0.1s"
           >
@@ -52,8 +49,8 @@ export default function AdminPanel() {
             textAlign="left"
             w="100%"
             p={2}
-            onClick={() => handleMenuClick("view3")}
-            bg={selectedView === "view3" ? "white" : ""}
+            onClick={() => handleMenuClick("partners")}
+            bg={selectedView === "partners" ? "white" : ""}
             _hover={{ transform: "scale(1.05)", bg: "white" }}
             transition="all 0.1s"
           >
@@ -88,21 +85,28 @@ export default function AdminPanel() {
         </VStack>
       </Box>
       <Box flex="1" p={4}>
-        {selectedView === "view1" && (
-          <AdminTableWidget title={"Aktualności"} data={users} />
-        )}{" "}
-        {/* Display the component */}
-        {selectedView === "view2" && (
-          <AdminTableWidget title={"Przyjaciele"} data={users} />
-        )}
-        {selectedView === "view3" && (
-          <AdminTableWidget title={"Partnerzy"} data={users} />
-        )}
-        {selectedView === "view4" && (
-          <AdminTableWidget title={"Pomniki"} data={users} />
-        )}
-        {selectedView === "view5" && (
-          <AdminTableWidget title={"Słuchowiska"} data={users} />
+        {isLoading ? (
+          <div>Loading...</div>
+        ) : isError ? (
+          <div>Error</div>
+        ) : (
+          <>
+            {selectedView === "aktualnosci/fkp" && (
+              <AdminTableWidget title={"Aktualności"} data={data} />
+            )}
+            {selectedView === "people" && (
+              <AdminTableWidget title={"Przyjaciele"} data={data} />
+            )}
+            {selectedView === "partners" && (
+              <AdminTableWidget title={"Partnerzy"} data={data} />
+            )}
+            {selectedView === "view4" && (
+              <AdminTableWidget title={"Pomniki"} data={data} />
+            )}
+            {selectedView === "view5" && (
+              <AdminTableWidget title={"Słuchowiska"} data={data} />
+            )}
+          </>
         )}
       </Box>
     </Box>
