@@ -15,7 +15,7 @@ export default function AdminPanel() {
   return (
     <Box display="flex" h="100vh" w="5xl">
       <Box w="200px" borderRight="1px" borderColor="gray.200">
-        <VStack align="start" spacing={0}>
+        <VStack align="start" spacing={0} mr={'10px'}>
           <Text fontSize="2xl" fontWeight={"bold"} color={"blue.400"}>
             Panel Administratora
           </Text>
