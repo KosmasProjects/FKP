@@ -10,8 +10,8 @@ import {
   Text,
   Flex,
 } from "@chakra-ui/react";
-import GridComponent from "../Home/GridComponent";
-import TextGridComponent from "../Home/TextGridComponent";
+import GridComponent from "../../components/GridComponent";
+import TextGridComponent from "../../components/TextGridComponent";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import { Global, css } from "@emotion/react";
 
