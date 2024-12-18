@@ -1,20 +1,50 @@
-import React from "react";
-import { useParams } from "react-router-dom";
-import Player from "./Player";
+import { useQuery } from "react-query";
+import { client } from '../../../config/client';
+import { useToast } from "@chakra-ui/react";
 
-export default function PlayerPage({ players }) {
-    console.log(players);
-    let { playerId } = useParams();
+export const useGetPlayers = () => {
+    const toast = useToast();
 
-    let playerData = fetchPlayerData(players, playerId);
+    const fetchPlayers = async () => {
+        const { data } = await client.get('http://127.0.0.1:8000/pl/podcasts/');
+        return data;
+        console.log(data);
+    };
 
-    return <Player {...playerData} />;
-}
+    const { data, isLoading, isError } = useQuery('players', fetchPlayers, {
+        refetchOnWindowFocus: false,
+        onError: () => {
+            toast({
+                title: "Error",
+                description: "Failed to fetch players data",
+                status: "error",
+                duration: 5000,
+                isClosable: true,
+            });
+        }
+    });
 
-function fetchPlayerData(players, playerId) {
-    // Find and return the data for the requested player
-    return players.find(player => player.id === parseInt(playerId));
-}
+    return { data, isLoading, isError };
+};
+
+
+// import React from "react";
+// import { useParams } from "react-router-dom";
+// import Player from "./Player";
+
+// export default function PlayerPage({ players }) {
+//     console.log(players);
+//     let { playerId } = useParams();
+
+//     let playerData = fetchPlayerData(players, playerId);
+
+//     return <Player {...playerData} />;
+// }
+
+// function fetchPlayerData(players, playerId) {
+//     // Find and return the data for the requested player
+//     return players.find(player => player.id === parseInt(playerId));
+// }
 // const players = {
 //     '1': { title: 'Ulice Poznania 1', description: 'Odcinek 4 Podcastu o ulicach Poznania z własną historią.', date: '21-04-2024', radioName: 'Radio Poznan', link: 'https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/Ulice_Poznania_21.04.mp3' },
 //     '2': { title: 'Ulice Poznania 2', description: 'Odcinek 5 Podcastu o ulicach Poznania z własną historią.', date: '28-04-2024', radioName: 'Radio Poznan', link: 'https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/Ulice_Poznania_28.04.mp3' },

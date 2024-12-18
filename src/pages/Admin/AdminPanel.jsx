@@ -61,7 +61,7 @@ export default function AdminPanel() {
             textAlign="left"
             w="100%"
             p={2}
-            onClick={() => handleMenuClick("view4")}
+            onClick={() => handleMenuClick("monuments")}
             bg={selectedView === "view4" ? "white" : ""}
             _hover={{ transform: "scale(1.05)", bg: "white" }}
             transition="all 0.1s"
@@ -73,13 +73,38 @@ export default function AdminPanel() {
             textAlign="left"
             w="100%"
             p={2}
-            onClick={() => handleMenuClick("view5")}
-            bg={selectedView === "view5" ? "white" : ""}
+            onClick={() => handleMenuClick("podcasts")}
+            bg={selectedView === "podcasts" ? "white" : ""}
             _hover={{ transform: "scale(1.05)", bg: "white" }}
             transition="all 0.1s"
           >
             Słuchowiska
           </Box>
+          <Box
+            as="button"
+            textAlign="left"
+            w="100%"
+            p={2}
+            onClick={() => handleMenuClick("heroes")}
+            bg={selectedView === "heroes" ? "white" : ""}
+            _hover={{ transform: "scale(1.05)", bg: "white" }}
+            transition="all 0.1s"
+          >
+            Bohaterowie
+          </Box>
+          <Box
+            as="button"
+            textAlign="left"
+            w="100%"
+            p={2}
+            onClick={() => handleMenuClick("streets")}
+            bg={selectedView === "streets" ? "white" : ""}
+            _hover={{ transform: "scale(1.05)", bg: "white" }}
+            transition="all 0.1s"
+          >
+            Ulice
+          </Box>
+          
           <Divider />
           {/* Add more buttons as needed */}
         </VStack>
@@ -100,12 +125,19 @@ export default function AdminPanel() {
             {selectedView === "partners" && (
               <AdminTableWidget title={"Partnerzy"} data={data} />
             )}
-            {selectedView === "view4" && (
+            {selectedView === "monuments" && (
               <AdminTableWidget title={"Pomniki"} data={data} />
             )}
-            {selectedView === "view5" && (
+            {selectedView === "podcasts" && (
               <AdminTableWidget title={"Słuchowiska"} data={data} />
             )}
+            {selectedView === "heroes" && (
+              <AdminTableWidget title={"Bohaterowie"} data={data} />
+            )}
+            {selectedView === "streets" && (
+              <AdminTableWidget title={"Ulice"} data={data} />
+            )}
+
           </>
         )}
       </Box>

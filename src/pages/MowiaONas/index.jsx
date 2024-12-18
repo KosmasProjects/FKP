@@ -13,8 +13,19 @@ import PlayerPage from "./PlayerPage"; // import PlayerPage
 import GridMowiaONas from "./GridMowiaONas";
 import Title from "../../components/Title";
 import ProjectDescription from "../../components/ProjectDescription";
+import { useGetPlayers } from "./actions/useGetPlayers";
 
 export default function TalkingAboutUs() {
+  const { data: players, isLoading, isError } = useGetPlayers();
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
+  if (isError) {
+    return <div>Error loading players data</div>;
+  }
+
   return (
     <>
       <Title title={"Ulicznik Poznański"} color={"green.500"} />
@@ -42,7 +53,18 @@ export default function TalkingAboutUs() {
             <Text fontSize="2xl" color={"blue.400"}>
               Mowia o nas{" "}
             </Text>
-            <Button as={Link} to="player/1" colorScheme="blue" m={2}>
+            {players.map((x) => (
+              <Button
+                as={Link}
+                to={`player/${x.id}`}
+                colorScheme="blue"
+                m={2}
+                key={x.id}
+              >
+                {x.title}
+              </Button>
+            ))}
+            {/* <Button as={Link} to="player/1" colorScheme="blue" m={2}>
               Odcinek 1 - Ulice Poznania
             </Button>
             <Button as={Link} to="player/2" colorScheme="blue" m={2}>
@@ -62,11 +84,16 @@ export default function TalkingAboutUs() {
             </Button>
             <Button as={Link} to="player/5" colorScheme="blue" m={2}>
               Odcinek 7 - Ulice Poznania
-            </Button>
+            </Button> */}
           </Container>
         </Flex>
         <Routes>
-          <Route path="player/:playerId" element={<PlayerPage />} />
+          {/* <Route path="player/:playerId" element={<PlayerPage />} /> */}
+
+          <Route
+            path="player/:playerId"
+            element={<PlayerPage players={players} />}
+          />
         </Routes>
       </Container>
     </>

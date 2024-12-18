@@ -61,6 +61,12 @@ const router = createBrowserRouter([
       {
         path: "/FKP/mowia-o-nas",
         element: <TalkingAboutUs />,
+        children: [
+          {
+            path: "player/:playerId",
+            element: <PlayerPage />,
+          },
+        ],
       },
       {
         path: "/FKP/rozwazniiromantyczni",
@@ -85,12 +91,7 @@ const router = createBrowserRouter([
       {
         path: "/FKP/ulicznikpoznanski",
         element: <TalkingAboutUs />,
-        children: [
-          {
-            path: "player/:playerId",
-            element: <PlayerPage />,
-          },
-        ],
+        
       },
       {
         path: "/FKP/literackipoznan",
