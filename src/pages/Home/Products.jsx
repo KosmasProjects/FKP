@@ -8,105 +8,45 @@ import {
   Modal,
   ModalOverlay,
   ModalContent,
-  ModalHeader,
   ModalCloseButton,
   ModalBody,
   useDisclosure,
   HStack,
+  Spinner,
+  Alert,
+  AlertIcon,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
+import { useGetProducts } from "./actions/useGetProducts"; // Import the hook
 
 export default function Products() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [selectedItem, setSelectedItem] = useState(null);
-
-  const items = [
-    {
-      name: "Historie Doktora Granatowicza",
-      autor: "Paweł Cieliczko",
-      price: "19.99zł",
-      image:
-        "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/SKipinan ko22020912400.png",
-      details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-    {
-      name: "Historie Doktora Granatowicza",
-      autor: "Paweł Cieliczko",
-      price: "19.99zł",
-      image:
-        "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/SKipinan ko22020912400.png",
-      details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-    {
-      name: "Czerwcowe Ulice",
-      price: "29.99zł",
-      autor: "Paweł Cieliczko",
-      image:
-        "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/okladka_Czerwcowe ulice.jpg",
-      details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-    {
-      name: "Historia grupy MTP",
-      price: "29.99zł",
-      autor: "Paweł Cieliczko",
-      image:
-        "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/MTP_okladka-eksponaty.pdf",
-      details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-    {
-      name: "Czerwcowe Ulice",
-      price: "29.99zł",
-      autor: "Paweł Cieliczko",
-      image:
-        "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/okladka_Czerwcowe ulice.jpg",
-      details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-    {
-      name: "Czerwcowe Ulice",
-      price: "29.99zł",
-      autor: "Paweł Cieliczko",
-      image:
-        "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/okladka_Czerwcowe ulice.jpg",
-      details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-    {
-      name: "Czerwcowe Ulice",
-      price: "29.99zł",
-      autor: "Paweł Cieliczko",
-      image:
-        "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/okladka_Czerwcowe ulice.jpg",
-      details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-    {
-      name: "Czerwcowe Ulice",
-      price: "29.99zł",
-      autor: "Paweł Cieliczko",
-      image:
-        "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/okladka_Czerwcowe ulice.jpg",
-      details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-    {
-      name: "Czerwcowe Ulice",
-      price: "29.99zł",
-      autor: "Paweł Cieliczko",
-      image:
-        "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/okladka_Czerwcowe ulice.jpg",
-      details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-    {
-      name: "Historie Doktora Granatowicza",
-      autor: "Paweł Cieliczko",
-      price: "19.99zł",
-      image:
-        "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/SKipinan ko22020912400.png",
-      details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-  ];
+  const { products, isLoading, isError } = useGetProducts(); // Call the hook
 
   const handleBoxClick = (item) => {
     setSelectedItem(item);
     onOpen();
   };
+
+  if (isLoading) {
+    return (
+      <Center>
+        <Spinner size="xl" />
+      </Center>
+    );
+  }
+
+  if (isError) {
+    return (
+      <Center>
+        <Alert status="error">
+          <AlertIcon />
+          There was an error fetching the products.
+        </Alert>
+      </Center>
+    );
+  }
 
   return (
     <Center>
@@ -120,7 +60,7 @@ export default function Products() {
         bgColor={"gray.300"}
       >
         <Flex direction="row" spacing={10}>
-          {items.map((item, index) => (
+          {products.map((item, index) => (
             <Box
               p={5}
               key={index}
@@ -144,12 +84,12 @@ export default function Products() {
                   h={"120px"}
                   objectFit="contain"
                   src={item.image}
-                  alt={item.name}
+                  alt={item.title}
                 />
                 <Text textAlign={"center"} fontSize={"18px"}>
-                  {item.name}
+                  {item.title}
                 </Text>
-                <Text fontWeight={"bold"}>{item.price}</Text>
+                <Text fontWeight={"bold"}>{item.regularPrice}</Text>
               </VStack>
             </Box>
           ))}
@@ -166,17 +106,17 @@ export default function Products() {
                 h={"200px"}
                 objectFit="cover"
                 src={selectedItem?.image}
-                alt={selectedItem?.name}
+                alt={selectedItem?.title}
               />
             </Center>
             <VStack mt={"10px"}>
               <Text fontSize={"2xl"} fontWeight={"bold"} textAlign="center">
-                {selectedItem?.name}
+                {selectedItem?.title}
               </Text>
               <Text fontWeight={"semi-bold"}>autor: {selectedItem?.autor}</Text>
-              <Text>{selectedItem?.details}</Text>
+              <Text>{selectedItem?.description}</Text>
               <Text fontWeight={"bold"} fontSize={"20px"}>
-                {selectedItem?.price}
+                {selectedItem?.regularPrice}
               </Text>
             </VStack>
           </ModalBody>

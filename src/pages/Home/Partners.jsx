@@ -1,12 +1,12 @@
 import { Center, useDisclosure, Grid, Spinner, Alert, AlertIcon } from "@chakra-ui/react";
 import React, { useState } from "react";
 import PersonCard from "../../components/PersonCard";
-import { useGetPeople } from "./actions/useGetPeople"; // Import the hook
+import { useGetPartners } from "./actions/useGetPartners"; // Import the hook
 
-export default function Team() {
+export default function Partners() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [selectedItem, setSelectedItem] = useState(null);
-  const { people, isLoading, isError } = useGetPeople(); // Call the hook
+  const { Partners, isLoading, isError } = useGetPartners(); // Call the hook
 
   if (isLoading) {
     return (
@@ -21,7 +21,7 @@ export default function Team() {
       <Center>
         <Alert status="error">
           <AlertIcon />
-          There was an error fetching the people.
+          There was an error fetching the Partners.
         </Alert>
       </Center>
     );
@@ -41,7 +41,7 @@ export default function Team() {
         gap={10}
         maxW="100%"
       >
-        {people.map((item, index) => (
+        {Partners.map((item, index) => (
           <PersonCard key={index} item={item} />
         ))}
       </Grid>

@@ -6,6 +6,7 @@ import { Center, Container, Text } from "@chakra-ui/react";
 import Products from "./Products";
 import MediaPosts from "./MediaPosts";
 import Team from "./SocialMedia";
+import Partners from "./Partners";
 
 export default function HomePage() {
   return (
@@ -58,7 +59,7 @@ export default function HomePage() {
           Partnerzy Fundacji
         </Text>
       </Center>
-      <Team />
+      <Partners />
 
       <Container h={40}></Container>
     </>

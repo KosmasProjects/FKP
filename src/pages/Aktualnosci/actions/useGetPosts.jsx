@@ -7,7 +7,7 @@ export const useGetPosts = () => {
     const toast = useToast()
 
     const fetchPosts = async () => {
-        const { data } = await client.get('http://127.0.0.1:8000/pl/aktualnosci/fkp/')
+        const { data } = await client.get('https://fkpbackend.onrender.com/pl/aktualnosci/fkp/')
         return data
     }
 

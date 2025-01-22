@@ -46,7 +46,7 @@ export default function PersonCard({ item }) {
                   boxSize="180px"
                   w={"180px"}
                   objectFit="cover"
-                  src={item.photo_url}
+                  src={item.images}
                   alt={item.name + " " + item.surname}
                   borderRadius={"full"}
                 />
@@ -64,7 +64,7 @@ export default function PersonCard({ item }) {
             {item.name + " " + item.surname}
           </Text>
           <Text mx={1} textAlign={"center"} color={"white"}>
-            {item.organization}
+            {item.organization_name}
           </Text>
         </VStack>
         <VStack
