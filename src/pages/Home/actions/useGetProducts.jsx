@@ -6,7 +6,7 @@ export function useGetProducts() {
     const [isError, setIsError] = useState(false);
 
     useEffect(() => {
-        fetch("http://127.0.0.1:8000/pl/products/")
+        fetch("https://fkpbackend.onrender.com/pl/products/")
             .then(response => {
                 if (!response.ok) {
                     throw new Error("Network response was not ok");
