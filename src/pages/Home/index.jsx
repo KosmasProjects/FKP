@@ -27,7 +27,7 @@ export default function HomePage() {
           marginTop={"50px"}
           color={"blue.400"}
         >
-          Fudnacja i Przyjaciele
+          Fundacja i Przyjaciele
         </Text>
       </Center>
       <Team />

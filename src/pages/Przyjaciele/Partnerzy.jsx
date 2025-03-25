@@ -12,19 +12,142 @@ export default function Partnerzy() {
       </Container>
       <Container p={4} maxW={"10xl"} bg={"transparent"} my={4} rounded={"lg"}>
         <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
-        
-        <PartnerImage src={"https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/1.png"} />
-        <PartnerImage src={"https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/2.png"} />
-        <PartnerImage src={"https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/3.png"} />
-        <PartnerImage src={"https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/4.png"} />
-        <PartnerImage src={"https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/5.png"} />
-        <PartnerImage src={"https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/6.png"} />
-        <PartnerImage src={"https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/7.png"} />
-        <PartnerImage src={"https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/8.png"} />
-        <PartnerImage src={"https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/9.png"} />
-        <PartnerImage src={"https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/10.png"} />
-        <PartnerImage src={"https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/11.png"} />
-        <PartnerImage src={"https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/12.png"} />
+          <PartnerImage
+            src={
+              "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/kancelariapremiera.png"
+            }
+          />
+          <PartnerImage
+            src={
+              "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/kultura.png"
+            }
+          />
+          <PartnerImage
+            src={
+              "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/mon.png"
+            }
+          />
+          <PartnerImage
+            src={
+              "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/men.png"
+            }
+          />
+          <PartnerImage
+            src={
+              "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/MNiSW.png"
+            }
+          />
+          <PartnerImage
+            src={
+              "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/MRiT.png"
+            }
+          />
+          <PartnerImage
+            src={
+              "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/LOGO_POZNAN_PL_RGB_bz.jpg"
+            }
+          />
+          <PartnerImage
+            src={
+              "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/SWW.png"
+            }
+          />
+          <PartnerImage
+            src={
+              "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/WUWwP.jpg"
+            }
+          />
+          <PartnerImage
+            src={
+              "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/4.png"
+            }
+          />
+          <PartnerImage
+            src={
+              "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/5.png"
+            }
+          />
+          <PartnerImage
+            src={
+              "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/6.png"
+            }
+          />
+          <PartnerImage
+            src={
+              "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/NoweFIO.png"
+            }
+          />
+          <PartnerImage
+            src={
+              "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/logo_pl_skrocony.png"
+            }
+          />
+          <PartnerImage
+            src={
+              "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/IAM.svg"
+            }
+          />
+          <PartnerImage
+            src={
+              "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/PTPN2.jpg"
+            }
+          />
+          <PartnerImage
+            src={
+              "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/tonz.jpeg"
+            }
+          />
+          <PartnerImage
+            src={
+              "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/tmmp-logo.jpg"
+            }
+          />
+          <PartnerImage
+            src={
+              "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/MTP.svg"
+            }
+          />
+          <PartnerImage
+            src={
+              "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/aquanet.jpeg"
+            }
+          />
+          <PartnerImage
+            src={
+              "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/natura.png"
+            }
+          />
+          <PartnerImage
+            src={
+              "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/GW.svg"
+            }
+          />
+          <PartnerImage
+            src={
+              "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/SPP.jpg"
+            }
+          />
+          <PartnerImage
+            src={
+              "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/KW.png"
+            }
+          />
+
+          <PartnerImage
+            src={
+              "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/7.png"
+            }
+          />
+          <PartnerImage
+            src={
+              "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/8.png"
+            }
+          />
+          <PartnerImage
+            src={
+              "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/9.png"
+            }
+          />
         </SimpleGrid>
       </Container>
     </Flex>

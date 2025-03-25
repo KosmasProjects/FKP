@@ -54,7 +54,7 @@ export default function GridRozwazni() {
 
   const gridItems = [
     {
-      title: "Lorem Ipsum",
+      title: "Matki chrzestne powstania wielkopolskiego",
       logo: "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/ROZWAZNI-ROMANTYCZNI_logo-pion_cmyk.svg",
       color: `${color}.400`,
       id: 1,
@@ -62,7 +62,7 @@ export default function GridRozwazni() {
       "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/12 października 1918 B&W (1).jpg",
     },
     {
-      title: "Lorem Ipsum",
+      title: "Zakochani w powstaniu",
       logo: "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/WS'44_logo_CMYK_biel+czerw.svg",
       color: `${color}.500`,
       id: 2,
@@ -70,7 +70,7 @@ export default function GridRozwazni() {
         "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/007-Marcin-Rurarz-Fotografia-WB23.jpg",
     },
     {
-      title: "Lorem Ipsum",
+      title: "Foch na Łazarzu",
       logo: "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/BIMBA-W-HISTORIE_logo-pion_rgb.png",
       color: `${color}.600`,
       id: 3,
@@ -78,7 +78,7 @@ export default function GridRozwazni() {
         "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/Bimba-w-historie.png",
     },
     {
-      title: "Lorem Ipsum",
+      title: "Powstańcza Pieta",
       logo: "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/logopomniki.png",
       color: `${color}.700`,
       id: 7,
@@ -86,7 +86,7 @@ export default function GridRozwazni() {
         "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/Katedra PODPIS.jpg",
     },
     {
-      title: "Lorem Ipsum",
+      title: "Ludzie powstania",
       logo: "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/logopomniki.png",
       color: `${color}.400`,
       id: 4,
@@ -94,7 +94,7 @@ export default function GridRozwazni() {
         "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/pomniki-stary-marych-T75_9128.jpg",
     },
     {
-      title: "Lorem Ipsum",
+      title: "Miejsca powstania",
       logo: "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/ULICZNIK_POZNANSKI_logo-pion_CMYK.svg",
       color: `${color}.500`,
       id: 5,
@@ -102,14 +102,14 @@ export default function GridRozwazni() {
         "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/ULICZNIK_POZNANSKI_logo-poziom_CMYK.jpg",
     },
     {
-      title: "Lorem Ipsum",
+      title: "Powstańcze kalendarium",
       color: `${color}.600`,
       id: 6,
       hoverImage:
         "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/literackiPoznanPawel.jpg",
     },
     {
-      title: "Lorem Ipsum",
+      title: "Ciekawostki z powstania",
       color: `${color}.700`,
       id: 9,
       hoverImage:

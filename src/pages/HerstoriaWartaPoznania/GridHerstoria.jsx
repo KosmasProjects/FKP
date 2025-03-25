@@ -53,7 +53,7 @@ export default function GridHerstoria() {
 
   const gridItems = [
     {
-      title: "Lorem Ipsum",
+      title: "Herstoria warta Poznania",
       logo: "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/ROZWAZNI-ROMANTYCZNI_logo-pion_cmyk.svg",
       color: `${color}.400`,
       id: 1,
@@ -61,7 +61,7 @@ export default function GridHerstoria() {
         "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/003. Włodarczyk 2018-01-04.jpg",
     },
     {
-      title: "Lorem Ipsum",
+      title: "Poznańskie Literatki ",
       logo: "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/WS'44_logo_CMYK_biel+czerw.svg",
       color: `${color}.500`,
       id: 2,
@@ -69,7 +69,7 @@ export default function GridHerstoria() {
         "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/009. Aniela Tułodziecka 2018-01-04.jpg",
     },
     {
-      title: "Lorem Ipsum",
+      title: "Poznanianki na cokołach ",
       logo: "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/BIMBA-W-HISTORIE_logo-pion_rgb.png",
       color: `${color}.600`,
       id: 3,
@@ -77,7 +77,7 @@ export default function GridHerstoria() {
         "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/017. Bibianna Moraczewska 2018-01-10.jpg",
     },
     {
-      title: "Lorem Ipsum",
+      title: "Patronki poznańskich ulic",
       logo: "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/logopomniki.png",
       color: `${color}.700`,
       id: 7,
@@ -85,7 +85,7 @@ export default function GridHerstoria() {
         "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/018. Bogusława Kowalska 2018-01-12.jpg",
     },
     {
-      title: "Lorem Ipsum",
+      title: "Poznanianki warte Poznania – album ",
       logo: "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/logopomniki.png",
       color: `${color}.400`,
       id: 4,
@@ -93,7 +93,7 @@ export default function GridHerstoria() {
         "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/020. Dagmara Nickel 2018-01-15.jpg",
     },
     {
-      title: "Lorem Ipsum",
+      title: "Stulecie praw kobiet ",
       logo: "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/ULICZNIK_POZNANSKI_logo-pion_CMYK.svg",
       color: `${color}.500`,
       id: 5,
@@ -101,14 +101,14 @@ export default function GridHerstoria() {
         "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/036. Grażyna Kulczyk 2018-03-26.jpg",
     },
     {
-      title: "Lorem Ipsum",
+      title: "Matki Chrzestne Powstania Wielkopolskiego ",
       color: `${color}.600`,
       id: 6,
       hoverImage:
         "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/038. Hanna Banaszak 2018-01-29.jpg",
     },
     {
-      title: "Lorem Ipsum",
+      title: "Trzy tramwajarki ",
       color: `${color}.700`,
       id: 9,
       hoverImage:

@@ -60,7 +60,7 @@ export default function GridMowiaONas() {
             <Grid>
               <TextGridComponent title={"Programy historyczne"} />
               <GridComponent
-                title={"Łazarz"}
+                title={"Galeria patronów poznańskich ulic"}
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/ROZWAZNI-ROMANTYCZNI_logo-pion_cmyk.svg"
                 }
@@ -74,7 +74,7 @@ export default function GridMowiaONas() {
                 onMouseLeave={handleMouseLeave}
               />
               <GridComponent
-                title={"Jeżyce"}
+                title={"Gawędy o patronach poznańskich ulic"}
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/WS'44_logo_CMYK_biel+czerw.svg"
                 }
@@ -88,7 +88,7 @@ export default function GridMowiaONas() {
                 onMouseLeave={handleMouseLeave}
               />
               <GridComponent
-                title={"Wilda"}
+                title={"Wnioski nazewnicze – zrealizowane"}
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/BIMBA-W-HISTORIE_logo-pion_rgb.png"
                 }
@@ -102,7 +102,7 @@ export default function GridMowiaONas() {
                 onMouseLeave={handleMouseLeave}
               />
               <GridComponent
-                title={"Stare Miasto"}
+                title={"Wnioski nazewnicze – w trakcie realizacji"}
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/logopomniki.png"
                 }
@@ -150,9 +150,9 @@ export default function GridMowiaONas() {
             </Box>
 
             <Grid>
-              <TextGridComponent title={"Piątkowo"} />
+              <TextGridComponent title={"tytuł"} />
               <GridComponent
-                title={"Piątkowo"}
+                title={"Ulicznik poznański – seria książek "}
                 image={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/pomniki-stary-marych-T75_9128.jpg"
                 }
@@ -169,7 +169,7 @@ export default function GridMowiaONas() {
                 onMouseLeave={handleMouseLeave}
               />
               <GridComponent
-                title={"Garbary"}
+                title={"Czerwcowe ulice – książki "}
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/ULICZNIK_POZNANSKI_logo-pion_CMYK.svg"
                 }
@@ -185,7 +185,7 @@ export default function GridMowiaONas() {
                 onMouseLeave={handleMouseLeave}
               />
               <GridComponent
-                title={"Ogrody"}
+                title={"Podcasty o poznańskich ulicach "}
                 color={"gray.500"}
                 id={6}
                 onMouseEnter={() =>
@@ -196,7 +196,7 @@ export default function GridMowiaONas() {
                 onMouseLeave={handleMouseLeave}
               />
               <GridComponent
-                title={"Grunwald"}
+                title={"Poznaj swojego patrona"}
                 color={"gray.600"}
                 id={9}
                 onMouseEnter={() =>
