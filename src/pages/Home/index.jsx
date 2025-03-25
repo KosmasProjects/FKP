@@ -17,12 +17,7 @@ export default function HomePage() {
         </Text>
       </Center>
       <MyGrid />
-      <Center>
-        <Text textAlign={"center"} fontSize="4xl" fontWeight="bold">
-          Nasze publikacje
-        </Text>
-      </Center>
-      <Products />
+      
       <Header />
       <Center>
         <Text
@@ -60,6 +55,12 @@ export default function HomePage() {
         </Text>
       </Center>
       <Partners />
+      <Center pt={'30px'}>
+        <Text textAlign={"center"} fontSize="4xl" fontWeight="bold" color={"blue.500"}>
+          Nasze publikacje
+        </Text>
+      </Center>
+      <Products />
 
       <Container h={40}></Container>
     </>

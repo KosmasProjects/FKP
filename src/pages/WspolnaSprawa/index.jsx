@@ -12,11 +12,12 @@ export default function WspolnaSprawa() {
       <GridWS />
       <ProjectDescription
         title="Pomniki Poznania"
-        color={"teal.500"}
+        color={"orange.500"}
         link={
           "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/WS'44_logo_CMYK_biel+czerw.svg"
         }
       />
+      
     </>
   );
 }

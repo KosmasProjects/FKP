@@ -14,7 +14,7 @@ export default function PoznanskieLegendy() {
         title="Poznańskie Legendy"
         color={"green.400"}
         link={
-          "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/POMNIKI-POZNANIA_logo-pion_cmyk.svg"
+          "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/logopomniki.png"
         }
       />
     </>

@@ -33,7 +33,7 @@ const globalStyles = css`
     }
 `;
 
-const ReusableGrid = ({ initialImageSrc, gridItems }) => {
+const ReusableGrid = ({ initialImageSrc, gridItems, isMainPage }) => {
     const [imageSrc, setImageSrc] = useState(initialImageSrc);
 
     const handleMouseEnter = (newImageSrc) => {
@@ -60,7 +60,7 @@ const ReusableGrid = ({ initialImageSrc, gridItems }) => {
                             {leftItems.map((item, index) => (
                                 <GridComponent
                                     key={index}
-                                    isMainPage={true}
+                                    isMainPage={isMainPage}
                                     title={item.title}
                                     propsite={item.propsite}
                                     logo={item.logo}
@@ -108,7 +108,7 @@ const ReusableGrid = ({ initialImageSrc, gridItems }) => {
                             {rightItems.map((item, index) => (
                                 <GridComponent
                                     key={index}
-                                    isMainPage={true}
+                                    isMainPage={isMainPage}
                                     title={item.title}
                                     propsite={item.propsite}
                                     logo={item.logo}

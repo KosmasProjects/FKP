@@ -10,13 +10,17 @@ export default function BimbaWHistorie() {
     <>
       <Title title="Bimbą w historię" color={"orange.500"} />
       <GridBimba />
-      <ProjectDescription
+
+      <ProjectDescription 
         title="Pomniki Poznania"
-        color={"teal.500"}
+        color={"orange.500"}
         link={
           "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/BIMBA-W-HISTORIE_logo-pion_rgb.png"
         }
       />
+
+      
+
     </>
   );
 }

@@ -7,8 +7,8 @@ export default function Friends() {
     return (
         <Container pb={20} w={'full'} centerContent>
             <VStack w={'5xl'}>
-                <Przyjaciele />
                 <Partnerzy />
+                <Przyjaciele />
             </VStack>
         </Container>
     )

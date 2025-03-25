@@ -8,6 +8,7 @@ export default function PersonCard({ item }) {
 
   const handleFlip = () => {
     setIsFlipped(!isFlipped);
+    console.log(item);
   };
 
   return (
@@ -43,12 +44,13 @@ export default function PersonCard({ item }) {
             <Center>
               <Box boxSize={"180px"} bgColor={"transparent"}>
                 <Image
+                bg={"blue.500"}
                   boxSize="180px"
                   w={"180px"}
-                  objectFit="cover"
+                  objectFit="contain"
                   src={item.images}
-                  alt={item.name + " " + item.surname}
-                  borderRadius={"full"}
+                  alt={item.name}
+                  borderRadius={"10"}
                 />
               </Box>
             </Center>
@@ -61,7 +63,7 @@ export default function PersonCard({ item }) {
             bgColor={"blue.400"}
             color={"white"}
           >
-            {item.name + " " + item.surname}
+            {item.name + " " + (item.surname ? item.surname : "")}{" "}
           </Text>
           <Text mx={1} textAlign={"center"} color={"white"}>
             {item.organization_name}
@@ -77,10 +79,10 @@ export default function PersonCard({ item }) {
           borderColor={"blue.400"}
           bgColor={"blue.400"}
         >
-            <Text color={'white'} fontWeight={'bold'} textAlign={'center'}>
-                {item.name + " " + item.surname}
-            </Text>
-          <Text px={5} color={'white'}>
+          <Text color={"white"} fontWeight={"bold"} textAlign={"center"}>
+            {item.name + " " + item.surname}
+          </Text>
+          <Text px={5} color={"white"}>
             {item.description}
           </Text>
         </VStack>

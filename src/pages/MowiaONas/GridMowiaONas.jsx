@@ -39,7 +39,7 @@ const globalStyles = css`
 
 export default function GridMowiaONas() {
   const link =
-    "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/007-Marcin-Rurarz-Fotografia-WB23.jpg";
+    "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/poznanrzut.jpg";
   const [imageSrc, setImageSrc] = useState(link);
 
   const handleMouseEnter = (newImageSrc) => {
@@ -64,11 +64,11 @@ export default function GridMowiaONas() {
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/ROZWAZNI-ROMANTYCZNI_logo-pion_cmyk.svg"
                 }
-                color={"green.300"}
+                color={"gray.300"}
                 id={1}
                 onMouseEnter={() =>
                   handleMouseEnter(
-                    "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/ROZWAZNI-ROMANTYCZNI_logo-poziom_cmyk.ai"
+                    "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/lazarz.jpg"
                   )
                 }
                 onMouseLeave={handleMouseLeave}
@@ -78,11 +78,11 @@ export default function GridMowiaONas() {
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/WS'44_logo_CMYK_biel+czerw.svg"
                 }
-                color={"green.400"}
+                color={"gray.400"}
                 id={2}
                 onMouseEnter={() =>
                   handleMouseEnter(
-                    "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/007-Marcin-Rurarz-Fotografia-WB23.jpg"
+                    "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/jezyce.jpg"
                   )
                 }
                 onMouseLeave={handleMouseLeave}
@@ -92,11 +92,11 @@ export default function GridMowiaONas() {
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/BIMBA-W-HISTORIE_logo-pion_rgb.png"
                 }
-                color={"green.500"}
+                color={"gray.500"}
                 id={3}
                 onMouseEnter={() =>
                   handleMouseEnter(
-                    "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/Bimba-w-historie.png"
+                    "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/wilda.jpg"
                   )
                 }
                 onMouseLeave={handleMouseLeave}
@@ -106,11 +106,11 @@ export default function GridMowiaONas() {
                 logo={
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/logopomniki.png"
                 }
-                color={"green.600"}
+                color={"gray.600"}
                 id={7}
                 onMouseEnter={() =>
                   handleMouseEnter(
-                    "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/Katedra PODPIS.jpg"
+                    "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/staremiasto.jpg"
                   )
                 }
                 onMouseLeave={handleMouseLeave}
@@ -157,13 +157,13 @@ export default function GridMowiaONas() {
                   "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/pomniki-stary-marych-T75_9128.jpg"
                 }
                 logo={
-                  "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/logopomniki.png"
+                  "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/piatkowo.jpg"
                 }
-                color={"green.300"}
+                color={"gray.300"}
                 id={4}
                 onMouseEnter={() =>
                   handleMouseEnter(
-                    "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/pomniki-stary-marych-T75_9128.jpg"
+                    "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/piatkowo.jpg"
                   )
                 }
                 onMouseLeave={handleMouseLeave}
@@ -175,34 +175,33 @@ export default function GridMowiaONas() {
                 }
                 propsite={"/FKP/mowia-o-nas"}
                 buttonLabel={"Posłuchaj Podcastów"}
-                color={"green.400"}
+                color={"gray.400"}
                 id={5}
                 onMouseEnter={() =>
                   handleMouseEnter(
-                    "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/ULICZNIK_POZNANSKI_logo-poziom_CMYK.jpg"
+                    "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/garbary.jpg"
                   )
                 }
                 onMouseLeave={handleMouseLeave}
               />
               <GridComponent
                 title={"Ogrody"}
-                color={"green.500"}
+                color={"gray.500"}
                 id={6}
                 onMouseEnter={() =>
                   handleMouseEnter(
-                    "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/literackiPoznanPawel.jpg"
+                    "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/ogrody.jpeg"
                   )
                 }
                 onMouseLeave={handleMouseLeave}
               />
               <GridComponent
                 title={"Grunwald"}
-                color={"green.600"}
+                color={"gray.600"}
                 id={9}
                 onMouseEnter={() =>
                   handleMouseEnter(
-                    "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/003. Włodarczyk 2018-01-04.jpg"
-                  )
+                    "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/grunwald.jpeg")
                 }
                 onMouseLeave={handleMouseLeave}
               />

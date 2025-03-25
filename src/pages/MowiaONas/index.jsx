@@ -16,24 +16,24 @@ import ProjectDescription from "../../components/ProjectDescription";
 import { useGetPlayers } from "./actions/useGetPlayers";
 
 export default function TalkingAboutUs() {
-  const { data: players, isLoading, isError } = useGetPlayers();
+  // const { data: players, isLoading, isError } = useGetPlayers();
 
-  if (isLoading) {
-    return <div>Loading...</div>;
-  }
+  // if (isLoading) {
+  //   return <div>Loading...</div>;
+  // }
 
-  if (isError) {
-    return <div>Error loading players data</div>;
-  }
+  // if (isError) {
+  //   return <div>Error loading players data</div>;
+  // }
 
   return (
     <>
-      <Title title={"Ulicznik Poznański"} color={"green.500"} />
+      <Title title={"Ulicznik Poznański"} color={"gray.500"} />
       <GridMowiaONas />
       <Container maxW={"5xl"} pb={"50px"}>
         <ProjectDescription
           title="Pomniki Poznania"
-          color={"teal.500"}
+          color={"blue.500"}
           link={
             "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/ULICZNIK_POZNANSKI_logo-pion_CMYK.svg"
           }
@@ -47,24 +47,24 @@ export default function TalkingAboutUs() {
             my={4}
             rounded={"lg"}
           >
-            <Text fontSize="4xl" fontWeight={"bold"} color={"blue.400"}>
+            <Text fontSize="4xl" fontWeight={"bold"} color={"gray.400"}>
               Uliczne Podcasty
             </Text>
-            <Text fontSize="2xl" color={"blue.400"}>
+            {/* <Text fontSize="2xl" color={"gray.400"}>
               Mowia o nas{" "}
-            </Text>
-            {players.map((x) => (
+            </Text> */}
+            {/* {players.map((x) => (
               <Button
                 as={Link}
                 to={`player/${x.id}`}
-                colorScheme="blue"
+                colorScheme="gray"
                 m={2}
                 key={x.id}
               >
                 {x.title}
               </Button>
-            ))}
-            {/* <Button as={Link} to="player/1" colorScheme="blue" m={2}>
+            ))} */}
+            <Button as={Link} to="player/1" colorScheme="blue" m={2}>
               Odcinek 1 - Ulice Poznania
             </Button>
             <Button as={Link} to="player/2" colorScheme="blue" m={2}>
@@ -84,17 +84,21 @@ export default function TalkingAboutUs() {
             </Button>
             <Button as={Link} to="player/5" colorScheme="blue" m={2}>
               Odcinek 7 - Ulice Poznania
-            </Button> */}
+            </Button>
           </Container>
         </Flex>
         <Routes>
-          {/* <Route path="player/:playerId" element={<PlayerPage />} /> */}
+        <Route path="/FKP/ulicznikpoznanski/player/:playerId" element={<PlayerPage />} />
+
+          {/* <Route path="player/:playerId" element={<PlayerPage players={players} />} /> */}
+        </Routes>
+        {/* <Routes>
 
           <Route
             path="player/:playerId"
             element={<PlayerPage players={players} />}
           />
-        </Routes>
+        </Routes> */}
       </Container>
     </>
   );

@@ -17,8 +17,8 @@ export default function Blog() {
         <Container pb={20} w={'5xl'}>
             <Flex direction="column" alignItems="center" justifyContent="center">
                 <Container p={4} w={'5xl'} bg={'transparent'} my={4} rounded={'lg'}>
-                    <Text fontSize="4xl" fontWeight={'bold'} color={"blue.400"} >Blog</Text>
-                    <Text fontSize="2xl" color={"blue.400"}>Witaj na naszym blogu</Text> 
+                    <Text fontSize="4xl" fontWeight={'bold'} color={"blue.400"} >Aktualności</Text>
+                    <Text fontSize="2xl" color={"blue.400"}>Co nowego mozesz się dowiedzić...</Text> 
                 </Container>
                 {isLoading ? (
                     <div>Loading...</div>

@@ -12,11 +12,12 @@ export default function RozwazniIRomantyczni() {
       <GridRozwazni />
       <ProjectDescription
         title="Pomniki Poznania"
-        color={"teal.500"}
+        color={"blue.500"}
         link={
           "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/ROZWAZNI-ROMANTYCZNI_logo-pion_cmyk.svg"
         }
       />
+      
     </>
   );
 }

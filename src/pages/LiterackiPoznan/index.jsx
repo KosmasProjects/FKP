@@ -8,7 +8,7 @@ import ProjectDescription from "../../components/ProjectDescription";
 export default function LiterackiPoznan() {
   return (
     <>
-      <Title title="Literacki Poznań" color={"pink.400"} />
+      <Title title="Literacki Poznań" color={"teal.400"} />
       <GridLiteracki />
       <ProjectDescription
         title="Pomniki Poznania"

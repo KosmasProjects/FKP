@@ -40,7 +40,7 @@ const globalStyles = css`
 
 export default function GridWS() {
   const link =
-    "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/007-Marcin-Rurarz-Fotografia-WB23.jpg";
+  "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/WS'44_logo_CMYK_biel+czerw.svg";
   const [imageSrc, setImageSrc] = useState(link);
 
   const handleMouseEnter = (newImageSrc) => {
@@ -59,31 +59,31 @@ export default function GridWS() {
       logo: "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/ROZWAZNI-ROMANTYCZNI_logo-pion_cmyk.svg",
       color: `${color}.400`,
       id: 1,
-      hoverImage: "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/ROZWAZNI-ROMANTYCZNI_logo-poziom_cmyk.ai",
+      hoverImage: "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/granatowicz.jpg",
     },
     {
       title: "Borys",
       logo: "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/WS'44_logo_CMYK_biel+czerw.svg",
       color: `${color}.500`,
       id: 2,
-      hoverImage: "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/007-Marcin-Rurarz-Fotografia-WB23.jpg",
+      hoverImage: "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/szkolenie żołnierzy batalionu parasol.jpg",
     },
     {
-      title: "osoba",
+      title: "Lorem Ipsum",
       logo: "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/BIMBA-W-HISTORIE_logo-pion_rgb.png",
       color: `${color}.600`,
       id: 3,
       hoverImage: "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/Bimba-w-historie.png",
     },
     {
-      title: "Osoba 2",
+      title: "Lorem Ipsum",
       logo: "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/logopomniki.png",
       color: `${color}.700`,
       id: 7,
       hoverImage: "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/Katedra PODPIS.jpg",
     },
     {
-      title: "Cos tam",
+      title: "Lorem Ipsum",
       logo: "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/logopomniki.png",
       color: `${color}.400`,
       id: 4,
@@ -97,16 +97,16 @@ export default function GridWS() {
       hoverImage: "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/ULICZNIK_POZNANSKI_logo-poziom_CMYK.jpg",
     },
     {
-      title: "Nie wiem",
+      title: "Lorem Ipsum",
       color: `${color}.600`,
       id: 6,
       hoverImage: "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/literackiPoznanPawel.jpg",
     },
     {
-      title: "Wymysl",
+      title: "Lorem Ipsum",
       color: `${color}.700`,
       id: 9,
-      hoverImage: "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/003. Włodarczyk",
+      hoverImage: "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/003. Włodarczyk 2018-01-04.jpg",
     },
   ];
 
@@ -117,7 +117,7 @@ export default function GridWS() {
       <Center>
         <Container maxW={"1500px"} pb={"20px"}>
           <HStack justifyContent={"center"} alignItems={"start"} spacing={0}>
-            <ReusableGrid gridItems={gridItems} />
+            <ReusableGrid gridItems={gridItems} initialImageSrc={link} />
           </HStack>
         </Container>
       </Center>

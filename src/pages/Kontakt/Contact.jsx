@@ -1,8 +1,6 @@
-import { ReactElement } from 'react'
-import { Box, SimpleGrid, Icon, Text, Stack, Flex, Card } from '@chakra-ui/react'
+import { ReactElement } from 'react';
+import { Box, SimpleGrid, Icon, Text, Stack, Flex, Card } from '@chakra-ui/react';
 import { AiOutlineMail, AiOutlineHome, AiOutlinePhone } from "react-icons/ai";
-
-
 
 const Feature = ({ title, text, icon }) => {
     return (
@@ -15,15 +13,14 @@ const Feature = ({ title, text, icon }) => {
                 color={'white'}
                 rounded={'full'}
                 bg={'white'}
-
                 mb={1}>
                 {icon}
             </Flex>
             <Text fontWeight={600}>{title}</Text>
-            <Text color={'gray.600'}>{text}</Text>
+            <Text color={'gray.600'} dangerouslySetInnerHTML={{ __html: text }} />
         </Stack>
-    )
-}
+    );
+};
 
 export default function ContactUs() {
     return (
@@ -32,30 +29,25 @@ export default function ContactUs() {
                 <Card p={10}>
                     <Feature
                         icon={<Icon as={AiOutlineMail} w={10} h={10} color={'black'} />}
-                        title={'Contact via Email and Social Media'}
-                        text={
-                            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
-                        }
-                    /></Card>
+                        title={'Email'}
+                        text={'kontakt@fundacjakochaniapoznania.pl<br /><br />pawel@cieliczko.pl'}
+                    />
+                </Card>
                 <Card p={10}>
-
                     <Feature
                         icon={<Icon as={AiOutlineHome} w={10} h={10} color={'black'} />}
-                        title={'Our Address'}
-                        text={
-                            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
-                        }
-                    /></Card>
+                        title={'Adres Fundacji'}
+                        text={'ul. Matejki 55/2<br />60-770 Poznań'}
+                    />
+                </Card>
                 <Card p={10}>
-
                     <Feature
                         icon={<Icon as={AiOutlinePhone} w={10} h={10} color={'black'} />}
-                        title={'Phone Number'}
-                        text={
-                            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
-                        }
-                    /></Card>
+                        title={'Kontakt Telefoniczny (sztuczny)'}
+                        text={'+48 123 456 789<br />+48 987 654 321'}
+                    />
+                </Card>
             </SimpleGrid>
         </Box>
-    )
+    );
 }

@@ -12,9 +12,9 @@ export default function Herstoria() {
       <GridHerstoria />
       <ProjectDescription
         title="Pomniki Poznania"
-        color={"teal.500"}
+        color={"purple.500"}
         link={
-          "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/POMNIKI-POZNANIA_logo-pion_cmyk.svg"
+          "https://wspolnasprawa.blob.core.windows.net/wspolnasprawaphotos/HERSTORIE_logo-pion_CMYK.svg"
         }
       />
     </>

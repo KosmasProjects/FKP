@@ -21,7 +21,7 @@ export default function ProjectDescription({
   ytlink,
 }) {
   return (
-    <Container maxW={"5xl"} pb={"20px"} pt={"60px"}>
+    <Container maxW={"5xl"} pb={"100px"} pt={"60px"}>
       {/* <Center>
         <Text fontSize="4xl" fontWeight={"bold"} color={color} mb={5}>
           {title}
@@ -30,20 +30,19 @@ export default function ProjectDescription({
       <HStack alignContent={"start"} alignItems={"start"} spacing={"30px"}>
         <Image w={"50%"} alt={"Login Image"} objectFit={"cover"} src={link} />
         <Text fontSize="xl" textAlign="justify">
-          Projekt „Fotograficzny Katalog Pomników Poznania” to inicjatywa,
-          której celem jest stworzenie kompleksowego katalogu fotograficznego
-          pomników, tablic i innych elementów architektonicznych znajdujących
-          się na terenie Poznania. W ramach projektu powstaje strona
-          internetowa, na której prezentowane są zdjęcia oraz informacje o
-          poszczególnych obiektach. Wszystkie zdjęcia są dostępne na licencji
-          Creative Commons, co oznacza, że można je wykorzystywać w dowolny
-          sposób, pod warunkiem podania autora. Projekt jest realizowany przez
-          grupę pasjonatów historii i fotografii, którzy chcą przyczynić się do
-          upowszechnienia wiedzy o zabytkach Poznania.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
         </Text>
       </HStack>
+      <Container h={'40px'}></Container>
+
       <Center>
-        <Text fontWeight={"bold"} pt={'20px'} fontSize={"20px"} color={color}>
+        <Text fontWeight={"bold"} pt={"20px"} fontSize={"20px"} color={color}>
           Social Media:
         </Text>
       </Center>
