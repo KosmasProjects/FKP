@@ -1,92 +1,24 @@
-// PersonCard.jsx
-import React, { useState } from "react";
-import { Box, VStack, Image, Text, Center } from "@chakra-ui/react";
-import ReactCardFlip from "react-card-flip";
+const initials = (name) =>
+  name
+    .split(/\s+/)
+    .map((part) => part[0])
+    .join("")
+    .slice(0, 2)
+    .toUpperCase();
 
-export default function PersonCard({ item }) {
-  const [isFlipped, setIsFlipped] = useState(false);
-
-  const handleFlip = () => {
-    setIsFlipped(!isFlipped);
-    console.log(item);
-  };
-
+export default function PersonCard({ name, role, organization, description, image }) {
   return (
-    <Box
-      w={"200px"}
-      onMouseEnter={handleFlip}
-      onMouseLeave={handleFlip}
-      _hover={{
-        cursor: "pointer",
-        transform: "scale(1.05)",
-        transition: "all 0.2s",
-      }}
-    >
-      <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
-        <VStack
-          borderRadius={"5px"}
-          bg="white"
-          minH={"370px"}
-          boxShadow="md"
-          minW={"230px"}
-          border={"8px solid"}
-          borderColor={"blue.400"}
-          bgColor={"blue.400"}
-        >
-          <Box
-            w={"100%"}
-            h={"100%"}
-            bgColor={"blue.100"}
-            p={5}
-            borderTopLeftRadius={"5px"}
-            borderTopRightRadius={"5px"}
-          >
-            <Center>
-              <Box boxSize={"180px"} bgColor={"transparent"}>
-                <Image
-                bg={"blue.500"}
-                  boxSize="180px"
-                  w={"180px"}
-                  objectFit="contain"
-                  src={item.images}
-                  alt={item.name}
-                  borderRadius={"10"}
-                />
-              </Box>
-            </Center>
-          </Box>
-          <Text
-            mx={1}
-            textAlign={"center"}
-            fontWeight={"bold"}
-            fontSize={"20px"}
-            bgColor={"blue.400"}
-            color={"white"}
-          >
-            {item.name + " " + (item.surname ? item.surname : "")}{" "}
-          </Text>
-          <Text mx={1} textAlign={"center"} color={"white"}>
-            {item.organization_name}
-          </Text>
-        </VStack>
-        <VStack
-          borderRadius={"5px"}
-          bg="white"
-          minH={"370px"}
-          boxShadow="md"
-          minW={"230px"}
-          border={"8px solid"}
-          borderColor={"blue.400"}
-          bgColor={"blue.400"}
-        >
-          <Text color={"white"} fontWeight={"bold"} textAlign={"center"}>
-            {item.name + " " + item.surname}
-          </Text>
-          <Text px={5} color={"white"}>
-            {item.description}
-          </Text>
-        </VStack>
-      </ReactCardFlip>
-    </Box>
+    <article className="person-card">
+      {image ? (
+        <img className="person-card__photo" src={image} alt="" loading="lazy" decoding="async" />
+      ) : (
+        <span className="person-card__photo person-card__photo--initials" aria-hidden="true">
+          {initials(name)}
+        </span>
+      )}
+      <h3>{name}</h3>
+      {(role || organization) && <p className="person-card__role">{role ?? organization}</p>}
+      {description && <p className="person-card__description">{description}</p>}
+    </article>
   );
 }

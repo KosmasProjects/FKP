@@ -1,0 +1,99 @@
+// Treść z dokumentów fundacji. Zdjęcia kafelków (image) można dowolnie podmieniać.
+import { media } from "../media";
+
+export default {
+  "description": {
+    "lead": "Poznań współtworzyły niezwykłe kobiety. Chcemy, żeby ich imiona, dokonania i doświadczenia były obecne w opowieści o naszym mieście.",
+    "paragraphs": [
+      "Kiedy poznajemy dzieje Poznania, odnajdujemy kobiety, bez których trudno wyobrazić sobie jego rozwój. Pisarki i nauczycielki, artystki i badaczki, lekarki i pielęgniarki, działaczki społeczne i niepodległościowe. Zakładały organizacje, prowadziły szkoły, tworzyły kulturę, pomagały potrzebującym i podejmowały odważne decyzje. Wiele z nich pozostaje jednak mało znanych, a ich praca i wpływ na życie miasta wciąż czekają na opowiedzenie.",
+      "Herstoria Warta Poznania powstała z potrzeby przywracania tych biografii. Jej nazwa zaprasza do spojrzenia na przeszłość przez doświadczenia kobiet i przypomina, jak wiele możemy dzięki nim odkryć. Szukamy ich śladów w archiwach, korespondencji, dawnych gazetach i wspomnieniach. Interesują nas dokonania, ale także codzienność: ambicje, relacje, wybory i przeszkody. Tam, gdzie zachowały się słowa naszych bohaterek, chcemy oddawać im głos.",
+      "Kobieca perspektywa przenika wszystkie działania Fundacji. Odnajdujemy ją w poznańskich legendach, pracy organicznej i działalności niepodległościowej. Opowiadamy o Wielkopolankach w Powstaniu Warszawskim i bohaterkach Poznańskiego Czerwca. Ich doświadczenia pozwalają pełniej zrozumieć wydarzenia, które znamy z podręczników, i zobaczyć wysiłek potrzebny, by wspólnota mogła przetrwać, rozwijać się i odzyskać wolność.",
+      "Szczególne miejsce zajmują Matki Chrzestne Powstania Wielkopolskiego. Tak nazwaliśmy kobiety, które uczyły polskiego języka, przekazywały wiedzę o ojczystej historii i organizowały tajne nauczanie. Ich wytrwała praca wychowawcza przygotowywała grunt pod późniejsze zwycięstwo. Przybliżamy ją w publikacjach, artykułach i spotkaniach. Z naszej inicjatywy Matki Chrzestne zostały również patronkami skweru w Pile — ich opowieść znajduje odbiorców także poza Poznaniem.",
+      "Pamięć zakorzeniamy w przestrzeni miasta. Nasze inicjatywy przyczyniły się do nadania poznańskim ulicom i skwerom imion około piętnastu kobiet. Szczególnie bliska jest nam historia Trzech Tramwajarek: Heleny Przybyłek, Stanisławy Sobańskiej i Marii Kapturskiej. Przypomnieliśmy ich odwagę, cierpienie i dalsze losy, a nasze działania doprowadziły do powstania skweru oraz pomnika. Rozpoznawalna fotografia z biało-czerwoną flagą odzyskała osobiste historie swoich bohaterek.",
+      "Chcemy rozwijać także projekt „Kobiety warte Poznania”. Mamy już około stu ilustracji przedstawiających niezwykłe kobiety związane z miastem. Pragniemy połączyć te artystyczne portrety z biografiami i wydać książkę, która przybliży ich pomysły, talent i determinację. To kolejny sposób, by kobiece doświadczenia stały się trwałą częścią pamięci Poznania i inspiracją dla następnych pokoleń.",
+      "Zapraszamy Cię do odkrywania tych historii. Może w Twojej rodzinie zachowała się opowieść o kobiecie, której życie także warto przypomnieć?"
+    ]
+  },
+  "tiles": [
+    {
+      "id": "herstoria-warta-poznania",
+      "title": "Herstoria Warta Poznania",
+      "image": media("003. Włodarczyk 2018-01-04.jpg"),
+      "lead": "Poznajemy kobiety, dzięki którym możemy pełniej opowiedzieć historię naszego miasta.",
+      "paragraphs": [
+        "Poznanianki przez stulecia współtworzyły miasto, choć wiele ich historii pozostało nieopowiedzianych. Szukamy ich w archiwach, dawnych publikacjach i wspomnieniach. Interesuje nas działalność publiczna, ale również codzienna praca, troska o innych i decyzje podejmowane w trudnych okolicznościach. Chcemy przywracać bohaterkom imiona i głos, poznawać ich doświadczenia oraz rozumieć przeszkody, które musiały pokonywać. Herstoria to właśnie spojrzenie na przeszłość z uwagą skierowaną ku kobietom.",
+        "Odkryciami dzielimy się w artykułach, publikacjach i spotkaniach. Zabiegamy także o trwałe upamiętnienia. Kobiety towarzyszą nam w opowieściach o powstaniach, literaturze i legendach, a ich losy pomagają zrozumieć historię szpitali i miejskiej codzienności. Zależy nam, żeby ich obecność przenikała wszystkie działania Fundacji. Być może także w Twojej rodzinie zachowała się opowieść o Poznaniance, której historię warto przekazać dalej."
+      ]
+    },
+    {
+      "id": "matki-chrzestne-powstania-wielkopolskiego",
+      "title": "Matki Chrzestne Powstania Wielkopolskiego",
+      "image": media("038. Hanna Banaszak 2018-01-29.jpg"),
+      "lead": "Przypominamy kobiety, które wychowywały pokolenie przyszłych powstańców.",
+      "paragraphs": [
+        "W 1894 roku działaczki towarzystwa „Warta” podjęły tajną edukację polskich dzieci pod zaborem pruskim. Uczyły języka i historii, podtrzymywały więź z polską kulturą. Ich wieloletnia praca pomogła wychować pokolenie, które w grudniu 1918 roku upomniało się o niepodległość. Dr Paweł Cieliczko nazwał je Matkami Chrzestnymi Powstania Wielkopolskiego, podkreślając znaczenie tego przygotowania do wolności.",
+        "Opowiadaliśmy o nich w artykułach, broszurach i wykładach, przy wsparciu Aquanetu. Wspólnie z Pocztą Polską wydaliśmy serię znaczków poświęconych naszym bohaterkom. Z inicjatywy Fundacji mają także swój skwer w Pile. Cieszy nas, że ta opowieść zainteresowała ludzi o bardzo różnych przekonaniach. Pokazuje bowiem pracę kobiet, dzięki którym polskość przetrwała w codziennym życiu i mogła stać się podstawą powstańczego zwycięstwa. Chcemy, żeby ich wkład był pamiętany razem z czynem zbrojnym."
+      ]
+    },
+    {
+      "id": "trzy-tramwajarki",
+      "title": "Trzy Tramwajarki",
+      "image": media("047. Izabela Łukomska-Pyżalska 2018-01-14.jpg"),
+      "lead": "Za rozpoznawalną fotografią odkrywamy trzy kobiece historie.",
+      "paragraphs": [
+        "Helena Przybyłek, Stanisława Sobańska i Maria Kapturska wyszły 28 czerwca 1956 roku na ulice Poznania z biało-czerwonym transparentem. Fotografia tramwajarek stała się jednym z symboli Czerwca, lecz ich osobiste losy przez lata pozostawały w cieniu. Przypominamy odwagę tych kobiet, rany i represje, które wpłynęły na ich dalsze życie. Zależy nam, żeby zobaczyć również cierpienie trwające długo po zakończeniu demonstracji i walk.",
+        "Do przywracania pamięci o bohaterkach zaprosiliśmy MPK Poznań. Z inicjatywy Fundacji powstały ich skwer i pomnik; wydaliśmy także pamiątkowy medal oraz książeczkę „Trzy tramwajarki” Pawła Cieliczki. Cieszy nas, że można dziś spotkać się z nimi zarówno podczas lektury, jak i spaceru. Chcemy, żeby pamięć o tym powstaniu obejmowała kobiece doświadczenie odwagi oraz cenę, którą nasze bohaterki zapłaciły za chwilę wolności."
+      ]
+    },
+    {
+      "id": "poznanskie-literatki",
+      "title": "Poznańskie Literatki",
+      "image": media("009. Aniela Tułodziecka 2018-01-04.jpg"),
+      "lead": "Wracamy do kobiet, które pisały i współtworzyły życie literackie Poznania.",
+      "paragraphs": [
+        "Historia literatury związanej z naszym miastem prowadzi do wielu kobiecych biografii. Interesują nas pisarki i poetki, ale także badaczki języka oraz kobiety pomagające innym czytać i rozumieć literaturę. Poznajemy ich twórczość, środowisko i drogę do samodzielności. Pytamy, jakie miały możliwości publikowania, z czym się mierzyły i jak znajdowały miejsce dla własnego głosu. Chcemy przybliżać ich dzieła wraz z doświadczeniami, z których wyrastały.",
+        "Tę pamięć wprowadzamy również do przestrzeni miasta. Dzięki naszym wnioskom patronkami poznańskich ulic zostały między innymi Anna Memorata, Ida Fink i Jadwiga Żylińska. Nowe nazwy dają okazję, żeby sięgnąć po książkę lub zainteresować się zapomnianą autorką. W naszych opowieściach wracamy więc do literatek i zachęcamy do czytania. Można zacząć od nazwiska mijanego na ulicznej tabliczce i odnaleźć tekst, który przemówi do nas także dzisiaj."
+      ]
+    },
+    {
+      "id": "stulecie-praw-kobiet",
+      "title": "Stulecie praw kobiet",
+      "image": media("036. Grażyna Kulczyk 2018-03-26.jpg"),
+      "lead": "Rocznicę postanowiliśmy uczcić działaniem, które pozostawi ślad w mieście.",
+      "paragraphs": [
+        "W 2018 roku obchodziliśmy stulecie uzyskania praw wyborczych przez polskie kobiety. Dla Fundacji była to okazja do przypomnienia Poznanianek, które pracowały na rzecz wspólnoty i poszerzały możliwości kolejnych pokoleń. Wraz z Wielkopolskim Kongresem Kobiet podjęliśmy akcję „Sto patronek na stulecie praw kobiet”. Chcieliśmy, żeby jubileusz przyniósł więcej kobiecych nazwisk na ulicach i skwerach, zachęcając mieszkańców do poznawania ich historii.",
+        "Postawiliśmy sobie wspólny cel: sto kobiet upamiętnionych w poznańskim nazewnictwie. Udało się go osiągnąć dzięki zaangażowaniu wielu osób i organizacji, a wnioski Fundacji były częścią tego rezultatu. Za liczbą kryły się konkretne biografie i okazje do rozmów o znaczeniu kobiet w dziejach miasta. Chcemy, żeby przypominanie bohaterek trwało również po zakończeniu rocznicowego roku, a ich obecność w miejskiej pamięci stawała się coraz bardziej naturalna."
+      ]
+    },
+    {
+      "id": "patronki-poznanskich-ulic",
+      "title": "Patronki poznańskich ulic",
+      "image": media("018. Bogusława Kowalska 2018-01-12.jpg"),
+      "lead": "Chcemy spotykać Poznanianki także w nazwach naszych codziennych miejsc.",
+      "paragraphs": [
+        "Nadanie imienia ulicy lub skwerowi jest trwałym wyrazem uznania. Dlatego przygotowujemy wnioski, które pozwalają upamiętniać kobiety zasłużone dla miasta i jego kultury. Z naszych inicjatyw takie miejsce w Poznaniu zyskało około piętnastu kobiet. Wśród nich są Trzy Tramwajarki, Maria Rataj i Maria Paradowska, a także autorki i badaczki związane z życiem literackim. Ich nazwiska towarzyszą dziś mieszkańcom w drodze do pracy, na spacerze i w sąsiedzkich spotkaniach.",
+        "Każdą propozycję poprzedza poznawanie biografii i przedstawienie powodów, dla których warto zachować pamięć o bohaterce. Ważne są także rozmowy z mieszkańcami i współpraca z miejskimi instytucjami. Po nadaniu nazwy opowiadamy dalej, żeby patronka była dla sąsiadów kimś bliskim, a jej historia pozostawała dostępna. Kolejne upamiętnienia pozwalają poznawać Poznań poprzez kobiety, których wkład wcześniej łatwo było przeoczyć."
+      ]
+    },
+    {
+      "id": "poznanianki-na-cokolach",
+      "title": "Poznanianki na cokołach",
+      "image": media("017. Bibianna Moraczewska 2018-01-10.jpg"),
+      "lead": "Zabiegamy o pomniki, przy których można zatrzymać się przy kobiecej historii.",
+      "paragraphs": [
+        "Pomnik pozwala poświęcić bohaterce miejsce i uwagę w przestrzeni miasta. Bliski jest nam monument Trzech Tramwajarek, który powstał z inicjatywy Fundacji przy wsparciu MPK Poznań. Przypomina kobiety znane ze wspólnej fotografii, zachęcając do poznania każdej z nich. Takie upamiętnienie pomaga zachować zarówno pamięć o historycznym wydarzeniu, jak i o indywidualnym doświadczeniu. Chcemy, żeby kolejne Poznanianki mogły być przedstawiane z podobną uważnością.",
+        "Wśród naszych pomysłów jest „Huśtawka Krystyny Feldman”, rzeźba przywołująca aktorkę w pobliżu Teatru Nowego. Jej forma miałaby odpowiadać niebanalnej osobowości bohaterki i zapraszać mieszkańców do spotkania z nią. To zamierzenie czeka na realizację. Zależy nam na upamiętnieniach, których kształt wynika z biografii i pasuje do miejsca. Dlatego poszukujemy rozwiązań wspólnie z artystami, społecznikami i instytucjami. Przypominając kobiety w miejskiej przestrzeni, chcemy również budzić ciekawość ich pracy i życia."
+      ]
+    },
+    {
+      "id": "poznanianki-warte-poznania",
+      "title": "Poznanianki warte Poznania",
+      "image": media("020. Dagmara Nickel 2018-01-15.jpg"),
+      "lead": "Chcemy zebrać kobiece portrety i historie w albumie, do którego można wracać.",
+      "paragraphs": [
+        "W naszych poszukiwaniach spotykamy kobiety o bardzo różnych drogach życiowych. Każda pozwala zobaczyć inny fragment Poznania i lepiej zrozumieć jego mieszkańców. Z myślą o albumie „Poznanianki warte Poznania” zgromadziliśmy teksty biograficzne oraz około stu artystycznych ilustracji. Chcemy połączyć portrety z krótkimi opowieściami o dokonaniach bohaterek, ich codzienności i przeszkodach, które musiały pokonywać. Zależy nam, żeby czytelnik miał możliwość poznać każdą z nich bliżej.",
+        "Projekt rozwijaliśmy we współpracy z Wielkopolskim Kongresem Kobiet. Wydanie albumu pozostaje naszym zamierzeniem, na którego realizację szukamy środków. Marzymy także o pokazaniu portretów na wystawie i wykorzystaniu ich w kolejnych działaniach edukacyjnych. Chcemy, żeby te historie docierały do różnych pokoleń i zachęcały do własnych odkryć. Album ma zachować efekty naszych poszukiwań, a zarazem otwierać drogę do następnych opowieści. Chcemy, żeby znalazły w nim miejsce zarówno znane, jak i zapomniane Poznanianki."
+      ]
+    }
+  ]
+};
