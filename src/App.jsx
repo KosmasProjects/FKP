@@ -8,6 +8,7 @@ import { site } from "./data/site";
 // Podstrony ładowane na żądanie – strona główna nie pobiera ich kodu.
 const Project = lazy(() => import("./pages/Project"));
 const Fundacja = lazy(() => import("./pages/Fundacja"));
+const Blog = lazy(() => import("./pages/Blog"));
 const Przyjaciele = lazy(() => import("./pages/Przyjaciele"));
 const Wesprzyj = lazy(() => import("./pages/Wesprzyj"));
 const Kontakt = lazy(() => import("./pages/Kontakt"));
@@ -16,6 +17,7 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 const PAGES = {
   "/": { title: null, Component: Home },
   "/fundacja": { title: "Fundacja", Component: Fundacja },
+  "/blog": { title: "Blog", Component: Blog },
   "/przyjaciele": { title: "Przyjaciele i partnerzy", Component: Przyjaciele },
   "/wesprzyj": { title: "Wesprzyj nas", Component: Wesprzyj },
   "/kontakt": { title: "Kontakt", Component: Kontakt },
@@ -23,7 +25,7 @@ const PAGES = {
 
 // Stare adresy, które mogły zostać gdzieś udostępnione.
 const REDIRECTS = {
-  "/aktualnosci": "/",
+  "/aktualnosci": "/blog",
   "/mowia-o-nas": "/ulicznikpoznanski#podcasty",
 };
 

@@ -24,14 +24,21 @@ Treść jest w plikach w `src/data/` – nie trzeba ruszać komponentów.
 | `src/data/partners.js` | logotypy partnerów |
 | `src/data/podcasts.js` | odcinki podcastu „Ulice Poznania” |
 | `src/data/media.js` | adres, pod którym leżą zdjęcia i nagrania (Azure Blob) |
+| `src/data/content/` | teksty fundacji, opisy programów i teksty kafelków (+ zdjęcia kafelków) |
 
-Sekcje z pustymi danymi (np. `friends`, `publications`, `donation.accountNumber`,
-`description` projektu) po prostu się nie wyświetlają.
+Sekcje z pustymi danymi (np. `friends`, `publications`, `donation.accountNumber`)
+po prostu się nie wyświetlają.
 
 ### Nowy projekt
 
-Dopisz obiekt do listy w `src/data/projects.js` – podstrona `/<slug>` i kafelek na
-stronie głównej pojawią się automatycznie.
+Dopisz obiekt do listy w `src/data/projects.js`, dodaj plik z treścią
+`src/data/content/<slug>.js` (wzór: dowolny istniejący) i dopisz go w
+`src/data/content/index.js` – podstrona `/<slug>` i kafelek na stronie głównej
+pojawią się automatycznie.
+
+## Blog (posty z Facebooka)
+
+Konfiguracja pobierania postów jest opisana w [FACEBOOK.md](FACEBOOK.md).
 
 ## Struktura
 
@@ -39,11 +46,14 @@ stronie głównej pojawią się automatycznie.
 src/
   main.jsx            punkt wejścia
   App.jsx             trasy, przekierowania starych adresów, tytuły stron
-  router.jsx          prosty router (History API) – Link, NavLink, usePath
+  navigation.js       prosty router (History API) – usePath, navigate
+  router.jsx          komponenty Link i NavLink
   components/         Layout, PreviewGrid (kafelki ze zdjęciem), PersonCard, …
   pages/              podstrony (ładowane na żądanie)
   data/               cała treść strony
   styles/global.css   style
+scripts/
+  fetch-facebook.mjs  pobieranie postów z Facebooka (npm run fb)
 ```
 
 ## Publikacja

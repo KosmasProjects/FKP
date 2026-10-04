@@ -15,6 +15,7 @@ const palettes = {
  * Każdy projekt to jedna podstrona pod adresem /<slug>.
  *
  *  group       – kolumna na stronie głównej: "historyczne" albo "miejskie"
+ *                (kolejność w tablicy = kolejność kafelków w kolumnie)
  *  tileColor   – kolor kafelka na stronie głównej
  *  palette     – kolory podstrony projektu
  *  logo        – logo projektu (kafelek na stronie głównej + opis)
@@ -25,6 +26,16 @@ const palettes = {
  * Opis programu i teksty kafelków (wraz ze zdjęciami) są w src/data/content/<slug>.js.
  */
 const rawProjects = [
+  {
+    slug: "poznanskielegendy",
+    title: "Poznańskie legendy",
+    group: "historyczne",
+    tileColor: palettes.green[2],
+    palette: palettes.green,
+    logo: media("logopomniki.png"),
+    preview: media("Katedra PODPIS.jpg"),
+    cover: media("Katedra PODPIS.jpg"),
+  },
   {
     slug: "rozwazniiromantyczni",
     title: "Rozważni i romantyczni",
@@ -56,16 +67,6 @@ const rawProjects = [
     cover: media("007-Marcin-Rurarz-Fotografia-WB23.jpg"),
   },
   {
-    slug: "poznanskielegendy",
-    title: "Poznańskie legendy",
-    group: "historyczne",
-    tileColor: palettes.green[2],
-    palette: palettes.green,
-    logo: media("logopomniki.png"),
-    preview: media("Katedra PODPIS.jpg"),
-    cover: media("Katedra PODPIS.jpg"),
-  },
-  {
     slug: "pomnikipoznania",
     title: "Pomniki Poznania",
     group: "miejskie",
@@ -87,16 +88,6 @@ const rawProjects = [
     hasPodcasts: true,
   },
   {
-    slug: "literackipoznan",
-    title: "Poznańskie opowieści",
-    group: "miejskie",
-    tileColor: palettes.purple[0],
-    palette: palettes.teal,
-    logo: media("logopomniki.png"),
-    preview: media("literackiPoznanPawel.jpg"),
-    cover: media("literackiPoznanPawel.jpg"),
-  },
-  {
     slug: "herstoriawartapoznania",
     title: "Herstoria warta Poznania",
     group: "miejskie",
@@ -105,6 +96,16 @@ const rawProjects = [
     logo: media("HERSTORIE_logo-pion_CMYK.svg"),
     preview: media("003. Włodarczyk 2018-01-04.jpg"),
     cover: media("003. Włodarczyk 2018-01-04.jpg"),
+  },
+  {
+    slug: "literackipoznan",
+    title: "Poznańskie opowieści",
+    group: "miejskie",
+    tileColor: palettes.purple[0],
+    palette: palettes.teal,
+    logo: media("logopomniki.png"),
+    preview: media("literackiPoznanPawel.jpg"),
+    cover: media("literackiPoznanPawel.jpg"),
   },
 ];
 

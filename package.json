@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "fb": "node scripts/fetch-facebook.mjs"
   },
   "dependencies": {
     "@fontsource/poppins": "^5.2.0",

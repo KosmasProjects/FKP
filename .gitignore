@@ -8,3 +8,6 @@ dist
 .vscode/*
 !.vscode/extensions.json
 .idea
+
+# Posty z Facebooka – generowane przy publikacji (npm run fb)
+public/facebook-posts.json

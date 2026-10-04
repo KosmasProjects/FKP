@@ -8,6 +8,7 @@ import logoPng from "../assets/logo.png";
 
 const NAV_ITEMS = [
   { label: "Fundacja", to: "/fundacja" },
+  { label: "Blog", to: "/blog" },
   { label: "Przyjaciele i partnerzy", to: "/przyjaciele" },
   { label: "Wesprzyj nas", to: "/wesprzyj" },
   { label: "Kontakt", to: "/kontakt" },
