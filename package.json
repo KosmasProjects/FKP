@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:new": "vite build --mode staging",
     "preview": "vite preview",
     "lint": "eslint .",
     "fb": "node scripts/fetch-facebook.mjs"

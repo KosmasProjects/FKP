@@ -1,0 +1,5 @@
+# Pliki w tym katalogu mają w nazwie skrót zawartości (np. index-a1b2c3.js),
+# więc przeglądarka może je trzymać w pamięci podręcznej przez rok.
+<IfModule mod_headers.c>
+  Header set Cache-Control "public, max-age=31536000, immutable"
+</IfModule>

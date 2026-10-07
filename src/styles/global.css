@@ -1340,3 +1340,146 @@ button {
     line-clamp: 12;
   }
 }
+
+/* ==========================================================================
+   Partnerzy (podstrona „Przyjaciele i partnerzy”)
+   ========================================================================== */
+.partner-nav {
+  padding-top: 24px;
+}
+
+.partner-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.partner-nav a {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--color-surface);
+  box-shadow: var(--shadow);
+  color: var(--color-text);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.partner-nav a:hover {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+.partner-group {
+  padding-top: 56px;
+}
+
+.partner-group__header {
+  max-width: 760px;
+  margin: 0 auto 24px;
+  text-align: center;
+}
+
+.partner-group__header h2 {
+  color: var(--color-accent);
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+}
+
+.partner-group__header p {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+.partner-subgroup + .partner-subgroup {
+  margin-top: 32px;
+}
+
+.partner-subgroup h3 {
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #cbd5e0;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.partner-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.partner {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.partner__logo {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.partner__logo img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.partner:hover .partner__logo:not(.partner__logo--missing) {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgb(26 32 44 / 0.12);
+}
+
+/* Brak logo – nazwa w jego miejscu */
+.partner__logo--missing {
+  background: transparent;
+  border: 2px dashed #cbd5e0;
+  box-shadow: none;
+  text-align: center;
+}
+
+.partner__logo--missing span {
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--color-muted);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  line-clamp: 5;
+  overflow: hidden;
+}
+
+.partner__name {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.3;
+  color: var(--color-muted);
+  text-align: center;
+}
+
+@media (max-width: 560px) {
+  .partner-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .partner__logo {
+    height: 96px;
+  }
+}

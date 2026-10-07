@@ -3,18 +3,31 @@ name: Deploy
 on:
   push:
     branches: [main]
+  # Co 6 godzin przebudowuje stronę, żeby odświeżyć posty z Facebooka.
+  schedule:
+    - cron: "17 */6 * * *"
   workflow_dispatch:
 
+# Potrzebne do publikacji podglądu na GitHub Pages (gałąź gh-pages).
 permissions:
   contents: write
 
 concurrency:
-  group: pages
+  group: deploy
   cancel-in-progress: true
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      # Strona działa w głównym katalogu (new.fundacjakochaniapoznania.pl/).
+      BASE_PATH: /
+      # Wersja testowa nie jest indeksowana przez Google.
+      # USUŃ tę linię (albo ustaw "0") po przeniesieniu na fundacjakochaniapoznania.pl!
+      NOINDEX: "1"
+      # Wysyłka na serwer działa tylko, gdy ustawiono sekret FTP_SERVER.
+      # Bez niego workflow tylko sprawdza, czy strona się buduje.
+      FTP_SERVER: ${{ secrets.FTP_SERVER }}
     steps:
       - uses: actions/checkout@v4
 
@@ -25,10 +38,40 @@ jobs:
 
       - run: npm ci
       - run: npm run lint
+
+      # Pobiera posty do public/facebook-posts.json. Bez sekretów (lub przy błędzie API)
+      # krok jest pomijany, a blog pokazuje zapasową wtyczkę Facebooka.
+      - name: Pobierz posty z Facebooka
+        run: npm run fb
+        env:
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+
       - run: npm run build
 
-      # Publikuje dist/ na gałąź gh-pages (tak jak dotychczas).
-      - uses: peaceiris/actions-gh-pages@v4
+      # Wysyła zbudowaną stronę na serwer cyber_Folks (tylko zmienione pliki).
+      # Dane konta FTP: sekrety FTP_SERVER, FTP_USERNAME, FTP_PASSWORD (patrz DEPLOY.md).
+      - name: Wyślij na serwer (FTP)
+        if: env.FTP_SERVER != ''
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          local-dir: ./dist/
+          server-dir: ./
+
+      # --- Podgląd na GitHub Pages: https://kosmasprojects.github.io/FKP/ ---------
+      # Osobny build pod ścieżkę /FKP/. Do usunięcia po przejściu na docelową domenę
+      # (usuń oba kroki poniżej).
+      - name: Build dla GitHub Pages (/FKP/)
+        run: npm run build
+        env:
+          BASE_PATH: /FKP/
+
+      - name: Publikacja na GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist

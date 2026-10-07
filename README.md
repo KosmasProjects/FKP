@@ -58,11 +58,14 @@ scripts/
 
 ## Publikacja
 
-Push na `main` uruchamia `.github/workflows/deploy.yml`: lint, build i publikacja `dist/`
-na gałąź `gh-pages`. **Zacommituj `package-lock.json`** (powstaje po `npm install`) –
-workflow używa `npm ci`.
+Push na `main` uruchamia `.github/workflows/deploy.yml`: lint, pobranie postów z Facebooka,
+build i wysyłka `dist/` przez FTP na serwer cyber_Folks (https://new.fundacjakochaniapoznania.pl).
+Konfiguracja serwera i sekretów: [DEPLOY.md](DEPLOY.md).
 
-Podczas buildu `index.html` jest kopiowany do `404.html`, dzięki czemu odświeżenie
-dowolnej podstrony na GitHub Pages działa.
+**Zacommituj `package-lock.json`** (powstaje po `npm install`) – workflow używa `npm ci`.
 
-Po przeniesieniu strony na własną domenę zmień `base` w `vite.config.js` na `"/"`.
+Pliki `public/.htaccess` i `public/assets/.htaccess` ustawiają na serwerze Apache/LiteSpeed
+obsługę podstron, HTTPS i cache.
+
+Domyślnie strona jest budowana dla głównego katalogu domeny (`/`). Dla innej ścieżki
+(np. GitHub Pages pod `/FKP/`) ustaw przy budowaniu zmienną `BASE_PATH=/FKP/`.

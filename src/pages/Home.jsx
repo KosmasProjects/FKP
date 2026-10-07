@@ -4,7 +4,7 @@ import PersonCard from "../components/PersonCard";
 import { Link } from "../router";
 import { projects, homeCover } from "../data/projects";
 import { site, friends, publications } from "../data/site";
-import { partners } from "../data/partners";
+import { featuredPartners } from "../data/partners";
 import foundation from "../data/content/fundacja";
 
 const toTile = (project) => ({
@@ -76,8 +76,8 @@ export default function Home() {
       <section className="container section">
         <h2 className="section__title">Partnerzy fundacji</h2>
         <ul className="logo-strip">
-          {partners.slice(0, 9).map((partner) => (
-            <li key={partner.file}>
+          {featuredPartners.map((partner) => (
+            <li key={partner.name} style={partner.background ? { background: partner.background } : undefined}>
               <img src={partner.logo} alt={partner.name} loading="lazy" decoding="async" />
             </li>
           ))}

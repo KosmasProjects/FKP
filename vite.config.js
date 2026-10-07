@@ -3,8 +3,7 @@ import { resolve } from "node:path";
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-// GitHub Pages nie zna tras SPA: przy odświeżeniu /FKP/kontakt zwróciłby 404.
-// Kopia index.html jako 404.html sprawia, że aplikacja ładuje się dla każdego adresu.
+// Zapasowa strona 404 dla hostingów bez .htaccess (np. GitHub Pages).
 const spaFallback = () => ({
   name: "spa-fallback-404",
   apply: "build",
@@ -14,9 +13,23 @@ const spaFallback = () => ({
   },
 });
 
-export default defineConfig({
-  // Strona jest serwowana z https://kosmasprojects.github.io/FKP/
-  // Po przeniesieniu na własną domenę wystarczy zmienić na "/".
-  base: "/FKP/",
-  plugins: [react(), spaFallback()],
+const robotsMeta = (noindex) => ({
+  name: "robots-noindex",
+  transformIndexHtml: () =>
+    noindex
+      ? [{ tag: "meta", attrs: { name: "robots", content: "noindex, nofollow" }, injectTo: "head" }]
+      : [],
 });
+
+export default defineConfig(({ mode }) => ({
+  // Ścieżka, pod którą działa strona. Na subdomenie / własnej domenie: "/".
+  // (Dla GitHub Pages pod /FKP/ ustaw zmienną BASE_PATH=/FKP/ przy budowaniu.)
+  base: process.env.BASE_PATH || "/",
+  plugins: [
+    react(),
+    spaFallback(),
+    // Wersja testowa (npm run build:new → new.fundacjakochaniapoznania.pl)
+    // dostaje znacznik noindex, żeby nie trafiła do Google.
+    robotsMeta(mode === "staging" || process.env.NOINDEX === "1"),
+  ],
+}));
