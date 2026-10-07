@@ -1,0 +1,36 @@
+# Konfiguracja Apache (cyber_Folks / DirectAdmin) dla strony React.
+
+Options -MultiViews -Indexes
+DirectoryIndex index.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Zawsze HTTPS
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # Podstrony (/fundacja, /ws44, …) obsługuje aplikacja – serwujemy index.html,
+  # chyba że istnieje prawdziwy plik lub katalog.
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^ index.html [L]
+</IfModule>
+
+# Kompresja
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain application/javascript application/json image/svg+xml
+</IfModule>
+
+<IfModule mod_headers.c>
+  # Cache dla plików z assets/ ustawia osobny plik assets/.htaccess.
+
+  # index.html i posty z Facebooka – zawsze świeże.
+  <FilesMatch "^(index\.html|facebook-posts\.json)$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
