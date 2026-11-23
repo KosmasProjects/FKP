@@ -1,5 +1,5 @@
 // Treść z dokumentów fundacji. Zdjęcia kafelków (image) można dowolnie podmieniać.
-import { media, photo } from "../media";
+import { photo } from "../media";
 
 export default {
   "description": {
@@ -18,7 +18,7 @@ export default {
     {
       "id": "galeria-patronow-poznanskich-ulic",
       "title": "Galeria patronów poznańskich ulic",
-      "image": media("lazarz.jpg"),
+      "image": photo("ulicznik-lazarz.webp"),
       "lead": "Za nazwiskiem na tabliczce szukamy człowieka, którego warto poznać.",
       "paragraphs": [
         "Nazwiska patronów ulic towarzyszą nam każdego dnia, choć czasem niewiele wiemy o ich życiu. W naszej galerii przybliżamy te postaci i ich związki z Poznaniem. Przyglądamy się temu, co stworzyły, komu pomagały i dlaczego miasto postanowiło zachować o nich pamięć. Chcemy, żeby uliczna tabliczka budziła ciekawość i prowadziła do spotkania z konkretną osobą.",
@@ -28,7 +28,7 @@ export default {
     {
       "id": "gawedy-o-patronach-poznanskich-ulic",
       "title": "Gawędy o patronach poznańskich ulic",
-      "image": media("jezyce.jpg"),
+      "image": photo("ulicznik-jezyce.webp"),
       "lead": "Opowiadamy o życiu, które poprzedziło nazwisko na ulicznej tabliczce.",
       "paragraphs": [
         "Biografia rzadko prowadzi prostą drogą od dzieciństwa do uznania. Bywają w niej niespodziewane spotkania, błędy i powroty do porzuconych zamierzeń. W gawędach Ulicznika Poznańskiego staramy się uchwycić właśnie taki przebieg życia. Zaglądamy do wspomnień i dawnych publikacji, szukamy okoliczności ważnych decyzji. Chcemy zrozumieć, z czym nasi bohaterowie musieli się mierzyć i co pozwalało im działać mimo trudności.",
@@ -38,7 +38,7 @@ export default {
     {
       "id": "podcasty-o-poznanskich-ulicach",
       "title": "Podcasty o poznańskich ulicach",
-      "image": media("ogrody.jpeg"),
+      "image": photo("radio-poznan-studio.webp"),
       "lead": "Historii patrona można posłuchać podczas spaceru jego ulicą.",
       "paragraphs": [
         "Opowieściami o Poznaniu dzielimy się również ze słuchaczami. W nagraniach przybliżamy patronów ulic, ich losy i miejsca, z którymi byli związani. Taka forma pozwala poznawać miasto podczas spaceru, podróży tramwajem czy codziennych zajęć. Lubimy myśl, że nazwisko usłyszane w zapowiedzi przystanku może zachęcić do wysłuchania całej historii. Dobrze znana trasa staje się wtedy okazją do odkrycia czegoś nowego.",
@@ -54,7 +54,7 @@ export default {
     {
       "id": "ulicznik-poznanski-w-ksiazkach",
       "title": "Ulicznik Poznański w książkach",
-      "image": media("piatkowo.jpg"),
+      "image": photo("pawel-cieliczko-biblioteka.webp"),
       "lead": "Chcemy łączyć biografie patronów w opowieści, z którymi można zostać na dłużej.",
       "paragraphs": [
         "Nazwy ulic pozwalają przyjrzeć się historii Poznania z wielu stron. Jedne prowadzą do literatury i nauki, inne przypominają pracę społeczną, walkę o niepodległość albo doświadczenia wojny. Dlatego planujemy serię książek „Ulicznik Poznański”, w której biografie patronów połączymy w tematyczne opowieści. Każdy tom pozwalałby poznać wybrany fragment dziejów miasta poprzez ludzi, którzy go współtworzyli. Zależy nam na pokazaniu również ich wzajemnych związków i wspólnych doświadczeń.",
@@ -80,7 +80,7 @@ export default {
     {
       "id": "poznaj-swojego-patrona",
       "title": "Poznaj swojego patrona",
-      "image": media("grunwald.jpeg"),
+      "image": photo("tablica-ulicy.webp"),
       "lead": "Zacznijmy poznawanie miasta od nazwiska, które spotykamy każdego dnia.",
       "paragraphs": [
         "Patron ulicy, szkoły czy pobliskiego skweru może być dobrym przewodnikiem po historii Poznania. Zachęcamy, żeby od niego rozpocząć własne poszukiwania. Gdzie mieszkał? Czym zajmował się na co dzień? Co łączyło go z naszym miastem? Odpowiedzi można szukać w książkach, archiwach i rodzinnych wspomnieniach. Czasem pojedyncza fotografia albo krótka wzmianka pozwala dostrzec człowieka, którego dotąd znaliśmy tylko z nazwiska.",
@@ -90,7 +90,7 @@ export default {
     {
       "id": "zrealizowane-inicjatywy-nazewnicze",
       "title": "Zrealizowane inicjatywy nazewnicze",
-      "image": media("wilda.jpg"),
+      "image": photo("ulicznik-wilda.webp"),
       "lead": "Cieszymy się, kiedy przypomniana biografia znajduje trwałe miejsce w Poznaniu.",
       "paragraphs": [
         "Opowiadanie o ludziach często prowadzi nas do pytania, jak miasto może ich uhonorować. Przygotowujemy wnioski nazewnicze, przedstawiamy zasługi kandydatów i szukamy poparcia dla upamiętnień. Dzięki naszym inicjatywom swoje skwery mają Trzy Tramwajarki, doktor Józef Granatowicz oraz marszałek Ferdynand Foch. Każde z tych miejsc pozwala wracać do historii bohaterów również poza książką czy rocznicową uroczystością. Skwer Focha na Łazarzu stał się miejscem regularnych spotkań poświęconych zwycięstwu powstania wielkopolskiego.",
@@ -100,7 +100,7 @@ export default {
     {
       "id": "kolejni-patroni-na-mapie-poznania",
       "title": "Kolejni patroni na mapie Poznania",
-      "image": media("staremiasto.jpg"),
+      "image": photo("ulicznik-stare-miasto.webp"),
       "lead": "Przypominamy ludzi, dla których wciąż szukamy miejsca w miejskiej pamięci.",
       "paragraphs": [
         "Nasze poszukiwania prowadzą do kolejnych biografii wartych upamiętnienia. Chcemy, żeby w przestrzeni Poznania znaleźli swoje miejsce między innymi Stanisław Nogaj i Julian Lange, związani z tradycją powstania wielkopolskiego. Bliska jest nam także historia Konrada Doberschuetza, poety represjonowanego za twórczość poświęconą Poznańskiemu Czerwcowi, oraz profesora Lecha Trzeciakowskiego, który przypominał powstańczy charakter tych wydarzeń. Staramy się przybliżać ich losy i uzasadniać potrzebę nadania ich imion ulicom, placom lub skwerom.",

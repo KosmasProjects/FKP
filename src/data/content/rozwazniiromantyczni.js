@@ -1,5 +1,5 @@
 // Treść z dokumentów fundacji. Zdjęcia kafelków (image) można dowolnie podmieniać.
-import { media } from "../media";
+import { photo } from "../media";
 
 export default {
   "description": {
@@ -18,7 +18,7 @@ export default {
     {
       "id": "cztery-powstania-wielkopolskie",
       "title": "Cztery Powstania Wielkopolskie",
-      "image": media("11 październia 1918 B&W.jpg"),
+      "image": photo("pomnik-powstancow-wielkopolskich-plac.webp"),
       "lead": "Zwycięstwo 1918 roku wyrastało z doświadczeń i pracy wielu pokoleń.",
       "paragraphs": [
         "Naszą opowieść zaczynamy od czterech wielkopolskich powstań: z 1794, 1806, 1848 oraz 1918–1919 roku. Każde miało własnych bohaterów, okoliczności i następstwa. Razem pokazują, jak przez ponad stulecie Wielkopolanie podejmowali walkę o wolność i uczyli się na doświadczeniach poprzedników. Grudniowy zryw 1918 roku wyrastał z długiej tradycji, w której było już miejsce na zwycięstwo — odniesione w czasach napoleońskich.",
@@ -28,7 +28,7 @@ export default {
     {
       "id": "matki-chrzestne-powstania-wielkopolskiego",
       "title": "Matki Chrzestne Powstania Wielkopolskiego",
-      "image": media("12 października 1918 B&W (1).jpg"),
+      "image": photo("12-pazdziernika-1918.webp"),
       "lead": "Zanim młodzi ludzie chwycili za broń, ktoś nauczył ich kochać swój język, historię i wspólnotę.",
       "paragraphs": [
         "W 1894 roku, w stulecie insurekcji kościuszkowskiej, poznańskie działaczki założyły Towarzystwo „Warta”. Organizowały tajne nauczanie, przekazywały dzieciom polski język, historię i kulturę. Pomagały wychować pokolenie, które w grudniu 1918 roku podjęło walkę o niepodległość. Dr Paweł Cieliczko nazwał je Matkami Chrzestnymi Powstania Wielkopolskiego. Tym określeniem przypominamy, jak wiele późniejsze zwycięstwo zawdzięczało cierpliwej, wieloletniej pracy kobiet.",
@@ -38,7 +38,7 @@ export default {
     {
       "id": "zakochani-w-powstaniu",
       "title": "Zakochani w Powstaniu",
-      "image": media("007-Marcin-Rurarz-Fotografia-WB23.jpg"),
+      "image": photo("11-pazdziernika-1918.webp"),
       "lead": "Przyglądamy się wielkiej historii przez listy dwojga zakochanych nastolatków.",
       "paragraphs": [
         "Stefania i Marcel poznali się krótko przed wybuchem powstania. Kiedy wydarzenia ich rozdzieliły, obiecali sobie, że każdego dnia będą pisać listy. Stworzyliśmy tych fikcyjnych bohaterów, żeby opowiedzieć o prawdziwym Poznaniu przełomu 1918 i 1919 roku. Ona pracuje w Naczelnej Radzie Ludowej, on działa w kręgu powstańczych konspiratorów. Z ich dwóch perspektyw oglądamy przygotowania do walki, powstanie i pierwsze miesiące odzyskanej wolności.",
@@ -48,7 +48,7 @@ export default {
     {
       "id": "powstanie-dzien-po-dniu",
       "title": "Powstanie dzień po dniu",
-      "image": media("literackiPoznanPawel.jpg"),
+      "image": photo("plan-posen.webp"),
       "lead": "Chcemy pokazać, jak Poznań odzyskiwał wolność w kolejnych dniach i codziennych wyborach.",
       "paragraphs": [
         "Pracujemy nad powstańczym kalendarium, które pozwoli śledzić wydarzenia prowadzące do wybuchu powstania, jego przebieg i następstwa. Chcemy łączyć daty z krótkimi, przystępnymi opowieściami o ludziach i miejscach. Obok politycznych decyzji oraz walk przybliżymy życie miasta: pracę, rozmowy, obawy i nadzieje mieszkańców. Dzięki temu będzie można zrozumieć, jak kolejne zdarzenia wynikały z wcześniejszych i co oznaczały dla Poznaniaków.",
@@ -58,7 +58,7 @@ export default {
     {
       "id": "pociag-1918",
       "title": "Pociąg 1918",
-      "image": media("ULICZNIK_POZNANSKI_logo-poziom_CMYK.jpg"),
+      "image": photo("dworzec-lokomotywa.webp"),
       "lead": "Chcemy wyruszyć tramwajem przez Poznań i zobaczyć miasto czasu powstania.",
       "paragraphs": [
         "Powstańcza historia ma swoje adresy. Z tego przekonania wyrósł „Pociąg 1918” — nasz pomysł specjalnego tramwaju, którego przejazd byłby podróżą po miejscach związanych z wydarzeniami 1918 i 1919 roku. Projekt przedstawiliśmy w Urzędzie Marszałkowskim. Dzisiejszy Poznań oglądany z okien chcemy zestawić z archiwalnymi obrazami pokazywanymi na ekranach wewnątrz pojazdu. Kolejne przystanki pozwalałyby zobaczyć, gdzie rozgrywały się ważne dla miasta wydarzenia.",
@@ -68,7 +68,7 @@ export default {
     {
       "id": "foch-na-lazarzu",
       "title": "Foch na Łazarzu",
-      "image": media("Bimba-w-historie.png"),
+      "image": photo("ulicznik-lazarz.webp"),
       "lead": "Francuski sprzymierzeniec Wielkopolski odzyskał swoje miejsce na mapie Poznania.",
       "paragraphs": [
         "Marszałek Ferdynand Foch odegrał ważną rolę w objęciu frontu wielkopolskiego rozejmem w Trewirze w lutym 1919 roku. Pomógł zabezpieczyć powstańcze zdobycze, dlatego zależało nam na przypomnieniu jego zasług. Dzięki inicjatywie Fundacji został patronem skweru u zbiegu ulic Matejki i Wyspiańskiego. Łazarz dobrze opowiada tę historię: blisko biegnie Głogowska, dawna aleja Focha, znajdują się również budynek dawnego konsulatu francuskiego i park Wilsona.",
@@ -78,7 +78,7 @@ export default {
     {
       "id": "powstanczy-bohaterowie-na-mapie-poznania",
       "title": "Powstańczy bohaterowie na mapie Poznania",
-      "image": media("pomniki-stary-marych-T75_9128.jpg"),
+      "image": photo("ulica-z-widokiem-na-katedre.webp"),
       "lead": "Chcemy, żeby ludzie, którzy przygotowali i wywalczyli zwycięstwo, towarzyszyli nam w codziennym życiu miasta.",
       "paragraphs": [
         "Za powstańczym sukcesem stoją ludzie o różnych doświadczeniach i umiejętnościach. Jedni organizowali konspirację, inni jako pierwsi chwytali za broń, kolejni tworzyli oddziały i obejmowali dowodzenie. Przyglądamy się ich biografiom, żeby zrozumieć, jak poszczególne działania złożyły się na wspólne zwycięstwo. Bliskie są nam między innymi losy Stanisława Nogaja i Juliana Langego. Chcemy przywracać należną pamięć zarówno dowódcom, jak i inicjatorom pierwszych powstańczych działań.",
@@ -88,7 +88,7 @@ export default {
     {
       "id": "powstancza-pieta",
       "title": "Powstańcza Pieta",
-      "image": media("Katedra PODPIS.jpg"),
+      "image": photo("cmentarz-mlodziez.webp"),
       "lead": "Chcemy przywrócić Poznaniowi pomnik, wokół którego mieszkańcy gromadzili swoją wdzięczność i pamięć.",
       "paragraphs": [
         "Na cmentarzu Górczyńskim w 1924 roku odsłonięto pomnik autorstwa Stanisława Jagmina, znany jako Powstańcza Pieta. Upamiętniał Franciszka Ratajczaka i jego powstańczych towarzyszy. Zniszczony podczas niemieckiej okupacji monument pozostaje ważną częścią historii tego miejsca. Chcemy go odtworzyć i przypomnieć, jak międzywojenny Poznań oddawał hołd ludziom, którzy wywalczyli wolność, a także jaką rolę pomnik odgrywał w pamięci mieszkańców.",

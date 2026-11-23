@@ -1,4 +1,4 @@
-import { media } from "./media";
+import { photo } from "./media";
 
 // Podstawowe informacje o fundacji – używane w nagłówku, stopce i na podstronach.
 export const site = {
@@ -6,7 +6,7 @@ export const site = {
 
   // Tekst główny fundacji (strona główna) jest w src/data/content/fundacja.js.
 
-  heroImage: media("244-Marcin-Rurarz-Fotografia-WB23.jpg"),
+  heroImage: photo("pawel-cieliczko.webp"),
 
   email: "kontakt@fundacjakochaniapoznania.pl",
   extraEmails: ["pawel@cieliczko.pl"],
@@ -33,7 +33,7 @@ export const site = {
 // Strona „Fundacja” (akapity „Czym się zajmujemy” pochodzą z tekstu głównego).
 export const about = {
   activities: ["Projekty edukacyjne", "Spotkania integracyjne", "Wystawy i koncerty"],
-  image: media("DSC_7070.jpg"),
+  image: photo("pawel-cieliczko-biblioteka.webp"),
 };
 
 // Zespół – zdjęcie jest opcjonalne (bez niego wyświetlą się inicjały).
@@ -44,9 +44,9 @@ export const team = [
 ];
 
 // Przyjaciele fundacji (dawniej pobierani z backendu). Pusta lista = sekcja ukryta.
-// Przykład: { name: "Jan Kowalski", organization: "TMMP", description: "…", image: media("plik.jpg") }
+// Przykład: { name: "Jan Kowalski", organization: "TMMP", description: "…", image: photo("plik.webp") }
 export const friends = [];
 
 // Publikacje fundacji (dawniej pobierane z backendu). Pusta lista = sekcja ukryta.
-// Przykład: { title: "Ulicznik poznański", author: "…", price: "39,90 zł", description: "…", image: media("okladka.jpg") }
+// Przykład: { title: "Ulicznik poznański", author: "…", price: "39,90 zł", description: "…", image: photo("okladka.webp") }
 export const publications = [];

@@ -33,8 +33,8 @@ const rawProjects = [
     tileColor: palettes.green[2],
     palette: palettes.green,
     logo: media("logopomniki.png"),
-    preview: media("Katedra PODPIS.jpg"),
-    cover: media("Katedra PODPIS.jpg"),
+    preview: photo("katedra-wieze.webp"),
+    cover: photo("katedra-wieze.webp"),
   },
   {
     slug: "rozwazniiromantyczni",
@@ -43,8 +43,8 @@ const rawProjects = [
     tileColor: palettes.blue[0],
     palette: palettes.blue,
     logo: media("ROZWAZNI-ROMANTYCZNI_logo-pion_cmyk.svg"),
-    preview: media("11 październia 1918 B&W.jpg"),
-    cover: media("12 października 1918 B&W (1).jpg"),
+    preview: photo("pomnik-powstancow-wielkopolskich-plac.webp"),
+    cover: photo("12-pazdziernika-1918.webp"),
   },
   {
     slug: "ws44",
@@ -53,7 +53,7 @@ const rawProjects = [
     tileColor: palettes.orange[3],
     palette: palettes.orange,
     logo: media("WS'44_logo_CMYK_biel+czerw.svg"),
-    preview: media("007-Marcin-Rurarz-Fotografia-WB23.jpg"),
+    preview: photo("wielkopolska-barykada-2023.webp"),
     cover: media("WS'44_logo_CMYK_biel+czerw.svg"),
   },
   {
@@ -63,8 +63,8 @@ const rawProjects = [
     tileColor: palettes.orange[0],
     palette: palettes.orange,
     logo: media("BIMBA-W-HISTORIE_logo-pion_rgb.png"),
-    preview: media("Bimba-w-historie.png"),
-    cover: media("007-Marcin-Rurarz-Fotografia-WB23.jpg"),
+    preview: photo("bimba-w-historie.webp"),
+    cover: photo("poznanski-czerwiec-1956-pochod.webp"),
   },
   {
     slug: "pomnikipoznania",
@@ -83,8 +83,8 @@ const rawProjects = [
     tileColor: palettes.gray[0],
     palette: palettes.gray,
     logo: media("ULICZNIK_POZNANSKI_logo-pion_CMYK.svg"),
-    preview: media("Po_546_1_0434.jpg"),
-    cover: media("poznanrzut.jpg"),
+    preview: photo("okraglak.webp"),
+    cover: photo("plan-posen.webp"),
     hasPodcasts: true,
   },
   {
@@ -94,8 +94,8 @@ const rawProjects = [
     tileColor: palettes.pink[0],
     palette: palettes.purple,
     logo: media("HERSTORIE_logo-pion_CMYK.svg"),
-    preview: media("003. Włodarczyk 2018-01-04.jpg"),
-    cover: media("003. Włodarczyk 2018-01-04.jpg"),
+    preview: photo("herstoria-kazimiera-illakowiczowna.webp"),
+    cover: photo("herstoria-wlodarczyk.webp"),
   },
   {
     slug: "literackipoznan",
@@ -104,8 +104,8 @@ const rawProjects = [
     tileColor: palettes.purple[0],
     palette: palettes.teal,
     logo: media("logopomniki.png"),
-    preview: media("literackiPoznanPawel.jpg"),
-    cover: media("literackiPoznanPawel.jpg"),
+    preview: photo("ksiegarnia-sw-wojciecha.webp"),
+    cover: photo("pawel-cieliczko-ksiazki.webp"),
   },
 ];
 
@@ -117,4 +117,4 @@ export const projects = rawProjects.map((project) => ({
 
 export const projectBySlug = Object.fromEntries(projects.map((p) => [p.slug, p]));
 
-export const homeCover = media("12 października 1918 B&W (1).jpg");
+export const homeCover = photo("plac-kolegiacki.webp");

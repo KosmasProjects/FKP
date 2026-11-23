@@ -1,5 +1,5 @@
 // Treść z dokumentów fundacji. Zdjęcia kafelków (image) można dowolnie podmieniać.
-import { media, photo } from "../media";
+import { photo } from "../media";
 
 export default {
   "description": {
@@ -18,7 +18,7 @@ export default {
     {
       "id": "herstoria-warta-poznania",
       "title": "Herstoria Warta Poznania",
-      "image": media("003. Włodarczyk 2018-01-04.jpg"),
+      "image": photo("herstoria-wlodarczyk.webp"),
       "lead": "Poznajemy kobiety, dzięki którym możemy pełniej opowiedzieć historię naszego miasta.",
       "paragraphs": [
         "Poznanianki przez stulecia współtworzyły miasto, choć wiele ich historii pozostało nieopowiedzianych. Szukamy ich w archiwach, dawnych publikacjach i wspomnieniach. Interesuje nas działalność publiczna, ale również codzienna praca, troska o innych i decyzje podejmowane w trudnych okolicznościach. Chcemy przywracać bohaterkom imiona i głos, poznawać ich doświadczenia oraz rozumieć przeszkody, które musiały pokonywać. Herstoria to właśnie spojrzenie na przeszłość z uwagą skierowaną ku kobietom.",
@@ -88,7 +88,7 @@ export default {
     {
       "id": "poznanianki-warte-poznania",
       "title": "Poznanianki warte Poznania",
-      "image": media("020. Dagmara Nickel 2018-01-15.jpg"),
+      "image": photo("herstoria-nickel.webp"),
       "lead": "Chcemy zebrać kobiece portrety i historie w albumie, do którego można wracać.",
       "paragraphs": [
         "W naszych poszukiwaniach spotykamy kobiety o bardzo różnych drogach życiowych. Każda pozwala zobaczyć inny fragment Poznania i lepiej zrozumieć jego mieszkańców. Z myślą o albumie „Poznanianki warte Poznania” zgromadziliśmy teksty biograficzne oraz około stu artystycznych ilustracji. Chcemy połączyć portrety z krótkimi opowieściami o dokonaniach bohaterek, ich codzienności i przeszkodach, które musiały pokonywać. Zależy nam, żeby czytelnik miał możliwość poznać każdą z nich bliżej.",

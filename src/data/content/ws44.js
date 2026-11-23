@@ -1,5 +1,5 @@
 // Treść z dokumentów fundacji. Zdjęcia kafelków (image) można dowolnie podmieniać.
-import { media } from "../media";
+import { photo } from "../media";
 
 export default {
   "description": {
@@ -18,7 +18,7 @@ export default {
     {
       "id": "wspolna-sprawa-44",
       "title": "Wspólna Sprawa ’44",
-      "image": media("granatowicz.jpg"),
+      "image": photo("wielkopolska-barykada-2023.webp"),
       "lead": "Poznań i Warszawę łączy pamięć o ludziach, dla których wolność była wspólną sprawą.",
       "paragraphs": [
         "Wśród uczestników Powstania Warszawskiego byli Wielkopolanie, których okupacyjne losy zaprowadziły do stolicy. Walczyli, leczyli rannych, przenosili wiadomości i pomagali przetrwać codzienność oblężonego miasta. Odnajdujemy ich biografie, zbieramy świadectwa i przywracamy pamięć o tym, co zrobili. Wspólna Sprawa ’44 wyrasta z przekonania, że ich historie są bliskie zarówno Warszawie, jak i naszemu regionowi. Wpisany w nazwę znak Polski Walczącej przypomina o sprawie, która ich połączyła.",
@@ -28,7 +28,7 @@ export default {
     {
       "id": "wielkopolska-cyfroteka-44",
       "title": "Wielkopolska Cyfroteka ’44",
-      "image": media("Katedra PODPIS.jpg"),
+      "image": photo("pawel-cieliczko-biblioteka.webp"),
       "lead": "Odnaleźliśmy około półtora tysiąca nazwisk. Za każdym kryje się człowiek, którego chcemy poznać.",
       "paragraphs": [
         "Pamięć często zaczyna się od drobnego śladu: nazwiska w dokumencie, podpisu na fotografii, rodzinnego wspomnienia. Łączymy takie informacje w Wielkopolskiej Cyfrotece ’44, ogólnodostępnej bazie Wielkopolan uczestniczących w Powstaniu Warszawskim. Zgromadziliśmy już około półtora tysiąca nazwisk. Korzystamy z zasobów instytucji historycznych i wiadomości przekazywanych przez rodziny. W poszukiwaniach wspierają nas między innymi Muzeum Powstania Warszawskiego i Instytut Pamięci Narodowej.",
@@ -38,7 +38,7 @@ export default {
     {
       "id": "akademia-mlodego-genealoga",
       "title": "Akademia Młodego Genealoga",
-      "image": media("literackiPoznanPawel.jpg"),
+      "image": photo("opowiesc-przy-grobie.webp"),
       "lead": "Pomagamy młodym ludziom odnajdywać historie i uważnie słuchać tych, którzy je przechowują.",
       "paragraphs": [
         "Ciekawość powstańczej biografii rodzi wiele pytań. Od czego zacząć? Gdzie szukać dokumentów i jak sprawdzać odnalezione wiadomości? W Akademii Młodego Genealoga pomagamy przygotować się do samodzielnych poszukiwań. Warsztaty, materiały edukacyjne i webinary przybliżają korzystanie z archiwów, historycznych baz danych oraz źródeł internetowych. Chcemy, żeby młodzi badacze potrafili połączyć fragmenty informacji w rzetelną opowieść o człowieku.",
@@ -48,7 +48,7 @@ export default {
     {
       "id": "wielkopolski-bohater-44",
       "title": "Wielkopolski Bohater ’44",
-      "image": media("szkolenie żołnierzy batalionu parasol.jpg"),
+      "image": photo("szkolenie-batalionu-parasol.webp"),
       "lead": "Młodzi Wielkopolanie przywracają głos bohaterom ze swojego sąsiedztwa.",
       "paragraphs": [
         "Zapraszamy uczniów wielkopolskich szkół do odnajdywania osób związanych z naszym regionem, które uczestniczyły w Powstaniu Warszawskim. Młodzi ludzie szukają dokumentów i fotografii, poznają rodzinne wspomnienia, a następnie tworzą cyfrowe portrety swoich bohaterów. Formę wybierają sami: profil na Facebooku lub Instagramie, film na YouTube, stylizowany wywiad. Chcemy, żeby mogli opowiadać o odkrytej historii własnym językiem i dzielić się nią ze swoimi rówieśnikami.",
@@ -58,7 +58,7 @@ export default {
     {
       "id": "wielkopolska-barykada-44",
       "title": "Wielkopolska Barykada ’44",
-      "image": media("Bimba-w-historie.png"),
+      "image": photo("wielkopolska-barykada-znicz.webp"),
       "lead": "Pierwszego sierpnia jedziemy do Warszawy z opowieściami o naszych bohaterach.",
       "paragraphs": [
         "„Poznań, Warszawa — wspólna sprawa!” Pod tym hasłem organizujemy coroczną wyprawę do stolicy i stawiamy Wielkopolską Barykadę na dziedzińcu Ministerstwa Kultury i Dziedzictwa Narodowego. Wspólnie z młodzieżą, rekonstruktorami, edukatorami i wolontariuszami przypominamy Wielkopolan, którzy uczestniczyli w Powstaniu Warszawskim. Historie odnalezione w dokumentach i rodzinnych wspomnieniach stają się tutaj opowieściami, którymi możemy dzielić się podczas bezpośredniego spotkania.",
@@ -68,7 +68,7 @@ export default {
     {
       "id": "roybry-44",
       "title": "Roybry ’44",
-      "image": media("pomniki-stary-marych-T75_9128.jpg"),
+      "image": photo("akademia-muzyczna.webp"),
       "lead": "Chcemy, żeby powstańcze historie można było także usłyszeć w muzyce.",
       "paragraphs": [
         "Szukamy form, które pozwalają zbliżyć się do bohaterów także tym, którzy swoją przygodę z historią zaczynają od piosenki. Tak powstała płyta „Roybry ’44” — z inicjatywy Fundacji Kochania Poznania, we współpracy z Radiem Poznań. Dziesięć utworów przybliża Wielkopolan związanych z Powstaniem Warszawskim, między innymi Janusza Zeylanda, Henryka Czapczyka i Józefa Granatowicza. Teksty Pawła Cieliczki oraz współczesne aranżacje wprowadzają ich losy do muzycznej opowieści.",
@@ -88,7 +88,7 @@ export default {
     {
       "id": "powstancze-ulice",
       "title": "Powstańcze ulice",
-      "image": media("ULICZNIK_POZNANSKI_logo-poziom_CMYK.jpg"),
+      "image": photo("tablica-ulicy.webp"),
       "lead": "Chcemy, żeby wielkopolscy uczestnicy Powstania Warszawskiego mieli trwałe miejsce na mapie Poznania.",
       "paragraphs": [
         "Przywracane biografie zasługują na obecność również w codziennym życiu miasta. Dlatego chcemy zabiegać o upamiętnianie Wielkopolan uczestniczących w Powstaniu Warszawskim poprzez nazwy poznańskich ulic, skwerów i placów. Takie nazwiska pojawiają się w adresach, na mapach i tabliczkach mijanych podczas spaceru. Mogą przypominać o ludziach związanych z naszym regionem, których wojenne losy zaprowadziły na warszawskie barykady.",
@@ -98,7 +98,7 @@ export default {
     {
       "id": "plomien-pamieci-44",
       "title": "Płomień Pamięci ’44",
-      "image": media("003. Włodarczyk 2018-01-04.jpg"),
+      "image": photo("grob-ze-zniczami.webp"),
       "lead": "Odnajdujemy powstańcze groby i zapraszamy do osobistej troski o pamięć.",
       "paragraphs": [
         "W Wielkopolsce spoczywają uczestnicy i uczestniczki Powstania Warszawskiego. Wspólnie ze szkołami, harcerzami, wolontariuszami oraz Stowarzyszeniem Odra–Niemen odnajdujemy ich groby i otaczamy je opieką. Sprzątamy mogiły i dbamy, by w ważne rocznice — 1 sierpnia, 2 października oraz w dniu Wszystkich Świętych — płonęły na nich znicze. Chcemy, żeby każdy z tych gestów wiązał się także z przypomnieniem człowieka, który tutaj spoczywa.",

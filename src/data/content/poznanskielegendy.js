@@ -1,5 +1,5 @@
 // Treść z dokumentów fundacji. Zdjęcia kafelków (image) można dowolnie podmieniać.
-import { media } from "../media";
+import { photo } from "../media";
 
 export default {
   "description": {
@@ -18,7 +18,7 @@ export default {
     {
       "id": "blog-poznanskie-legendy",
       "title": "Blog Poznańskie Legendy",
-      "image": media("Katedra PODPIS.jpg"),
+      "image": photo("katedra-ilustracja.webp"),
       "lead": "Dawne opowieści przebijają się przez mury współczesnego miasto.",
       "paragraphs": [
         "Wierzymy, że legendy wciąż mieszkają w Poznaniu. Przywracamy je na naszym blogu i opowiadamy językiem bliskim współczesnym czytelnikom. Publikowane na stronie Fundacji oraz portalach ePoznań i Miasto Poznaj historie przyciągały dziesiątki tysięcy odsłon. Towarzyszą im ilustracje Agnieszki Zaprzalskiej, na których legendarna przeszłość prześwituje przez znajome budynki i ulice. Poznań widziany każdego dnia odsłania swoje dawne tajemnice.",
@@ -28,7 +28,7 @@ export default {
     {
       "id": "legendy-w-mediach",
       "title": "Legendy w mediach",
-      "image": media("003. Włodarczyk 2018-01-04.jpg"),
+      "image": photo("pawel-cieliczko.webp"),
       "lead": "Dzielimy się legendami wszędzie tam, gdzie można znaleźć chwilę na dobrą opowieść.",
       "paragraphs": [
         "Chcemy, żeby poznańskie legendy docierały do czytelników i słuchaczy także poza naszym blogiem. Dlatego opowiadamy je w prasie i radiu, dobierając formę do miejsca, w którym spotykają swoich odbiorców. Nasze teksty ukazywały się między innymi w „Pulsie Poznania” i magazynie „Kolej na Wielkopolskie”. Z Radiem Eska przygotowaliśmy również cykl rozmów o miejskich legendach.",
@@ -38,7 +38,7 @@ export default {
     {
       "id": "filmy-o-poznanskich-legendach",
       "title": "Filmy o poznańskich legendach",
-      "image": media("literackiPoznanPawel.jpg"),
+      "image": photo("kat-z-pregierza.webp"),
       "lead": "Zapraszamy do zobaczenia Poznania oczami jego legendarnych bohaterów.",
       "paragraphs": [
         "Niektóre historie aż proszą się o to, żeby je zobaczyć. Wspólnie z TV Pyrkon przygotowaliśmy cykl filmów o poznańskich legendach. Opowieści zyskały aktorów, obrazy i atmosferę, która pozwala zbliżyć się do ich bohaterów. Na ekran trafiły między innymi koziołki, rogale świętomarcińskie i tajemnicza śmierć księżnej Ludgardy. To różne oblicza legendarnego Poznania: od historii pogodnych po te, które budzą niepokój i skłaniają do pytań.",
@@ -48,7 +48,7 @@ export default {
     {
       "id": "szlak-legend-dla-dzieci",
       "title": "Szlak Legend dla Dzieci",
-      "image": media("007-Marcin-Rurarz-Fotografia-WB23.jpg"),
+      "image": photo("pregierz-ratusz.webp"),
       "lead": "Chodźmy na rodzinny spacer. Poznań ma nam wiele do opowiedzenia.",
       "paragraphs": [
         "Chcieliśmy, żeby dzieci mogły odkrywać poznańskie legendy tam, gdzie rozgrywają się ich historie. Pomysł Szlaku Legend Poznańskich przygotowali dr Paweł Cieliczko i Fundacja Kochania Poznania. Dzięki poparciu mieszkańców projekt zwyciężył w Poznańskim Budżecie Obywatelskim i uzyskał środki na realizację. Z tej inicjatywy wyrósł Poznański Szlak Legend dla Dzieci, którego operatorem jest Brama Poznania.",
@@ -58,7 +58,7 @@ export default {
     {
       "id": "wioska-legend-poznanskich",
       "title": "Wioska Legend Poznańskich",
-      "image": media("Katedra PODPIS.jpg"),
+      "image": photo("golem.webp"),
       "lead": "Na Pyrkonie zaprosiliśmy miłośników fantastyki do świata poznańskich legend.",
       "paragraphs": [
         "W poznańskich legendach znajdujemy magię, niezwykłych bohaterów i tajemnice, które potrafią poruszyć miłośników fantastyki. Z tym przekonaniem zaprosiliśmy Pyrkon do współpracy. Na festiwalu pojawiła się Wioska Legend Poznańskich — miejsce spotkania z opowieściami zaklętymi w mieście. Obok zainteresowania światami Tolkiena, Gwiezdnych wojen i innych fantastycznych uniwersów znalazła się ciekawość naszych lokalnych historii.",
@@ -68,7 +68,7 @@ export default {
     {
       "id": "ksiega-poznanskich-legend",
       "title": "Księga Poznańskich Legend",
-      "image": media("pomniki-stary-marych-T75_9128.jpg"),
+      "image": photo("miniatura-ratusza.webp"),
       "lead": "Chcemy zebrać nasze legendy w książce, do której będzie się wracać.",
       "paragraphs": [
         "Przez lata przywracaliśmy poznańskie legendy i opowiadaliśmy je na nowo. Teraz pragniemy zebrać te historie w jednym tomie, z ilustracjami w charakterystycznym dla naszego projektu stylu. W książce chcemy połączyć najbardziej rozpoznawalne opowieści z tymi, które warto ponownie wprowadzić do miejskiej pamięci. Pokazać ich związki z konkretnymi miejscami i wydobyć emocje, dzięki którym przetrwały stulecia.",
@@ -78,7 +78,7 @@ export default {
     {
       "id": "studzienki-z-legendami",
       "title": "Studzienki z legendami",
-      "image": media("ULICZNIK_POZNANSKI_logo-poziom_CMYK.jpg"),
+      "image": photo("bamberka.webp"),
       "lead": "Legendarny szlak może zacząć się tuż pod naszymi stopami.",
       "paragraphs": [
         "Chcemy, żeby poznańskie legendy były widoczne również w przestrzeni miasta. Z myślą o współpracy z Aquanetem rozwijamy pomysł wymiany wybranych pokryw studzienek kanalizacyjnych w rejonie Starego Miasta. W ich miejsce mogłyby trafić indywidualnie zaprojektowane odlewy, z których każdy odwoływałby się do innej legendy. Zwyczajny element ulicy stawałby się w ten sposób znakiem zachęcającym do zatrzymania i poznania opowieści.",
@@ -88,7 +88,7 @@ export default {
     {
       "id": "gra-planszowa-o-poznanskich-koziolkach",
       "title": "Gra planszowa o poznańskich koziołkach",
-      "image": media("Bimba-w-historie.png"),
+      "image": photo("kamienica-stary-rynek.webp"),
       "lead": "Chcemy zaprosić koziołki i Stary Rynek do wspólnej zabawy przy stole.",
       "paragraphs": [
         "Pracujemy nad grą planszową inspirowaną jedną z najbardziej rozpoznawalnych poznańskich legend — opowieścią o koziołkach. To bohaterowie, od których wiele osób zaczyna znajomość z naszym miastem. Chcemy, żeby stali się również przewodnikami po przygodzie rozgrywającej się na planszy. Ważnym miejscem tej opowieści będzie Stary Rynek, którego urodę i charakter pragniemy pokazać uczestnikom zabawy.",

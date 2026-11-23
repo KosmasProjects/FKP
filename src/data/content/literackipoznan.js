@@ -1,5 +1,5 @@
 // Treść z dokumentów fundacji. Zdjęcia kafelków (image) można dowolnie podmieniać.
-import { media } from "../media";
+import { photo } from "../media";
 
 export default {
   "description": {
@@ -18,7 +18,7 @@ export default {
     {
       "id": "poznan-literacki",
       "title": "Poznań literacki",
-      "image": media("literackiPoznanPawel.jpg"),
+      "image": photo("pawel-cieliczko-ksiazki.webp"),
       "lead": "Czytamy Poznań razem z ludźmi, którzy zapisali go w swoich utworach.",
       "paragraphs": [
         "Literatura pozwala zobaczyć znajome miasto oczami innych ludzi. Szukamy poznańskich śladów pisarek i pisarzy, poznajemy ich biografie i wracamy do tekstów. Ta ciekawość poprzedziła powstanie Fundacji: Paweł Cieliczko uczestniczył w przygotowaniu „Poznańskiego przewodnika literackiego”, przybliżającego około dwustu ludzi pióra związanych z miastem. Rozwijamy też opowieści „Poznańskiego alfabetu literackiego” i przypominamy wiersze o Poznaniu.",
@@ -28,7 +28,7 @@ export default {
     {
       "id": "poznan-muzyczny",
       "title": "Poznań muzyczny",
-      "image": media("007-Marcin-Rurarz-Fotografia-WB23.jpg"),
+      "image": photo("pomnik-paderewskiego.webp"),
       "lead": "Muzyczną opowieść o Feliksie Nowowiejskim wprowadziliśmy do poznańskich tramwajów.",
       "paragraphs": [
         "Muzyczny Poznań poznajemy poprzez ludzi, którzy tworzyli jego utwory, wykonywali je i przekazywali kolejnym pokoleniom. Szczególnie bliski jest nam Feliks Nowowiejski. Z okazji stulecia jego zamieszkania w mieście przygotowaliśmy projekt „Rozśpiewany Tramwaj Mistrza”. Opowieści o kompozytorze towarzyszyły koncert i wydarzenia dla młodzieży. Chcieliśmy, żeby spotkanie z jego historią pozwalało także usłyszeć muzykę i przeżyć ją wspólnie.",
@@ -38,7 +38,7 @@ export default {
     {
       "id": "poznan-cyryla-ratajskiego",
       "title": "Poznań Cyryla Ratajskiego",
-      "image": media("Po_546_1_0434.jpg"),
+      "image": photo("pomnik-cyryla-ratajskiego.webp"),
       "lead": "Śladami prezydenta poznajemy miasto, które współtworzył i któremu służył.",
       "paragraphs": [
         "Cyryl Ratajski pozwala opowiedzieć Poznań przez decyzje człowieka odpowiedzialnego za jego rozwój. Interesuje nas prezydent, ale również społecznik i mieszkaniec związany z miastem osobistymi doświadczeniami. Przyglądamy się jego pracy na rzecz gospodarki, kultury i miejskich inwestycji. Chcemy rozumieć, jak jego zamierzenia wpływały na życie Poznaniaków oraz jakie ślady pozostawiły w miejscach, z których korzystamy dzisiaj.",
@@ -48,7 +48,7 @@ export default {
     {
       "id": "poznan-targowy",
       "title": "Poznań targowy",
-      "image": media("Bimba-w-historie.png"),
+      "image": photo("stary-rynek-studzienka.webp"),
       "lead": "Opowiadamy o mieście, które od pokoleń żyje handlem i spotkaniami.",
       "paragraphs": [
         "Targi są ważną częścią charakteru Poznania. Łączą pracę i przedsiębiorczość z ciekawością świata, a ich dzieje prowadzą do wynalazców, wystawców i odwiedzających. Interesuje nas również to, jak targowe wydarzenia zmieniały codzienność mieszkańców oraz przestrzeń miasta. Chcemy poznawać ludzi stojących za wielkimi przedsięwzięciami i rozumieć, co przyciągało do Poznania gości. Historia handlu staje się wtedy opowieścią o pomysłach, ambicjach i współpracy.",
@@ -58,7 +58,7 @@ export default {
     {
       "id": "poznan-wodny",
       "title": "Poznań wodny",
-      "image": media("ULICZNIK_POZNANSKI_logo-poziom_CMYK.jpg"),
+      "image": photo("cybina-brama-poznania.webp"),
       "lead": "Przy rzece, fontannach i studzienkach szukamy historii codziennego życia miasta.",
       "paragraphs": [
         "Woda pozwala opowiedzieć Poznań od innej strony. Warta, miejskie studnie i fontanny prowadzą do pytań o życie mieszkańców, ich potrzeby i sposoby korzystania ze wspólnej przestrzeni. Chcemy przyjrzeć się temu, skąd czerpano wodę, jak troszczono się o jej dostępność i jak zmieniał się związek miasta z rzeką. To także okazja do poznania ludzi, którzy dbali o zdrowie i wygodę swoich sąsiadów.",
@@ -68,7 +68,7 @@ export default {
     {
       "id": "poznan-szpitalny",
       "title": "Poznań szpitalny",
-      "image": media("pomniki-stary-marych-T75_9128.jpg"),
+      "image": photo("szpital-raszei-1956.webp"),
       "lead": "Historia szpitala pozwala poznać miasto od strony ludzi potrzebujących pomocy.",
       "paragraphs": [
         "Dzieje poznańskich szpitali prowadzą do codzienności mieszkańców: chorób, warunków życia i sposobów troszczenia się o siebie nawzajem. Poznajemy lekarzy, pielęgniarki, fundatorów i pacjentów. Interesują nas rozwój medycyny oraz wysiłek ludzi, którzy tworzyli miejsca opieki. Śledząc losy lecznicy, widzimy również zmiany całego miasta. Szpitalna historia pozwala dostrzec doświadczenia, które rzadziej trafiają do opowieści o wielkich wydarzeniach.",
@@ -78,7 +78,7 @@ export default {
     {
       "id": "poznan-kryminalny",
       "title": "Poznań kryminalny",
-      "image": media("Katedra PODPIS.jpg"),
+      "image": photo("pregierz.webp"),
       "lead": "W dawnych sprawach kryminalnych szukamy także obrazu miasta i jego mieszkańców.",
       "paragraphs": [
         "Historie przestępstw przyciągają zagadką i dramatycznym przebiegiem wydarzeń. Nas interesuje również to, co mówią o życiu dawnego Poznania. Prowadzą do domów, warsztatów i ulic, pokazują obyczaje, relacje między ludźmi oraz sposoby wymierzania sprawiedliwości. Chcemy rozumieć okoliczności tych spraw i przyglądać się osobom, których dotyczyły. Za sensacyjną wiadomością kryją się czyjeś decyzje, strach i konsekwencje, które mogły zmienić życie całej rodziny.",
@@ -88,7 +88,7 @@ export default {
     {
       "id": "poznan-rogalowy",
       "title": "Poznań rogalowy",
-      "image": media("003. Włodarczyk 2018-01-04.jpg"),
+      "image": photo("plac-kolegiacki.webp"),
       "lead": "Za smakiem rogala odkrywamy tradycję, opowieść i okazję do spotkania.",
       "paragraphs": [
         "Rogal świętomarciński jest bliskim Poznaniakom znakiem miasta. Towarzyszy rodzinnym spotkaniom, przywołuje listopadowe świętowanie i zachęca gości do poznania miejscowych zwyczajów. Chcemy opowiadać również o tym, co kryje się za rozpoznawalnym wypiekiem: pracy cukierników, pamięci mieszkańców i historii przekazywanej kolejnym pokoleniom. Kulinarna tradycja pozwala zobaczyć, jak miasto zachowuje swoje zwyczaje i jak dzieli się nimi z innymi.",

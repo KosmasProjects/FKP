@@ -1,5 +1,5 @@
 // Treść z dokumentów fundacji. Zdjęcia kafelków (image) można dowolnie podmieniać.
-import { media } from "../media";
+import { photo } from "../media";
 
 export default {
   "description": {
@@ -18,7 +18,7 @@ export default {
     {
       "id": "prosze-panstwa-to-bylo-powstanie",
       "title": "Proszę Państwa, to było powstanie",
-      "image": media("ULICZNIK_POZNANSKI_logo-poziom_CMYK.jpg"),
+      "image": photo("poznanski-czerwiec-1956-pochod.webp"),
       "lead": "Wracamy do słów, które pomogły przywrócić poznańskiemu wystąpieniu należne miejsce w historii.",
       "paragraphs": [
         "W 1981 roku profesor Lech Trzeciakowski nazwał Poznański Czerwiec powstaniem. Przywołując europejskie wystąpienia robotnicze, w tym powstania tkaczy liońskich, pokazał, że wydarzenia 28 czerwca 1956 roku należą do tej samej historycznej tradycji. Wystąpienie zakończył słowami: „Proszę Państwa, to było powstanie”. W czasie, gdy wciąż używano określenia „wypadki”, pozwalały one zobaczyć rangę wspólnego wystąpienia mieszkańców przeciwko komunistycznej władzy.",
@@ -28,7 +28,7 @@ export default {
     {
       "id": "bimba-w-historie-56",
       "title": "Bimbą w historię ’56",
-      "image": media("BIMBA-W-HISTORIE_logo-pion_rgb.png"),
+      "image": photo("bimba-w-historie.webp"),
       "lead": "Wsiądź do tramwaju. Opowiemy Ci o dniu, w którym Poznań wystąpił razem.",
       "paragraphs": [
         "Bimba, jak w Poznaniu nazywamy tramwaj, jest symbolem naszej opowieści o Czerwcu ’56. Zatrzymanie tramwajów uznajemy za przełomowy moment, w którym robotniczy protest stawał się powstaniem całego miasta. Do manifestujących dołączali kolejni Poznaniacy. Dawna tabliczka tramwajowa z numerem 56, do której nawiązuje znak akcji, przypomina o oddolnej sile mieszkańców i ich solidarności.",
@@ -38,7 +38,7 @@ export default {
     {
       "id": "trzy-tramwajarki",
       "title": "Trzy Tramwajarki",
-      "image": media("Bimba-w-historie.png"),
+      "image": photo("mural-1956.webp"),
       "lead": "Przywracamy imiona i losy kobiet, które znamy ze słynnej fotografii.",
       "paragraphs": [
         "Helena Przybyłek, Stanisława Sobańska i Maria Kapturska szły z biało-czerwonym transparentem na czele czerwcowej manifestacji. Zdjęcie zachowało ich odwagę, ale niewiele mówiło o tym, co wydarzyło się później. Rany, represje i cierpienie naznaczyły dalsze życie bohaterek. Chcieliśmy przywrócić pamięć o każdej z nich i pokazać, jaką cenę zapłaciły za udział w tej chwili wolności.",
@@ -48,7 +48,7 @@ export default {
     {
       "id": "doktor-poznanskiego-czerwca",
       "title": "Doktor Poznańskiego Czerwca",
-      "image": media("Katedra PODPIS.jpg"),
+      "image": photo("dr-jozef-granatowicz.webp"),
       "lead": "Józef Granatowicz wiedział, jak zorganizować pomoc, gdy miasto potrzebowało jej najbardziej.",
       "paragraphs": [
         "28 czerwca 1956 roku dyrektor Szpitala Raszei zamienił swoją placówkę w powstańczy lazaret. Organizował przyjmowanie rannych i pracę zespołów medycznych, chronił też uczestników wydarzeń przed represjami. Jego doświadczenie i zdecydowanie pomagały personelowi ratować ludzi w dramatycznych warunkach. Przez lata ta postać pozostawała na marginesie opowieści o Czerwcu. Od początku działalności Fundacji zależało nam na przywróceniu pamięci o doktorze.",
@@ -58,7 +58,7 @@ export default {
     {
       "id": "powstanczy-lazaret-56",
       "title": "Powstańczy Lazaret ’56",
-      "image": media("003. Włodarczyk 2018-01-04.jpg"),
+      "image": photo("personel-szpitala.webp"),
       "lead": "Opowiadamy o ludziach, którzy pod ostrzałem ratowali innych.",
       "paragraphs": [
         "W Szpitalu Raszei Poznański Czerwiec ma twarze rannych, lekarzy, pielęgniarek i pozostałych pracowników. Pod kierunkiem Józefa Granatowicza organizowali pomoc, operowali i opatrywali poszkodowanych. Ich wspomnienia są podstawą projektu „Powstańczy Lazaret ’56”. Przyglądamy się wydarzeniom z perspektywy szpitala oraz ludzi, którzy nieśli pomoc także na ulicach i w bramach kamienic. Chcemy zachować pamięć o odwadze potrzebnej, by zatrzymać się przy rannym i podjąć działanie.",
@@ -68,7 +68,7 @@ export default {
     {
       "id": "poeta-poznanskiego-czerwca",
       "title": "Poeta Poznańskiego Czerwca",
-      "image": media("pomniki-stary-marych-T75_9128.jpg"),
+      "image": photo("tablica-czerwiec-1956.webp"),
       "lead": "Konrad Doberschuetz zachował w wierszach pamięć, za którą zapłacił więzieniem.",
       "paragraphs": [
         "Był żołnierzem Armii Krajowej, działaczem niepodległościowym, dziennikarzem i poetą. Pisał o sprawach, które władze chciały przemilczeć. Romkowi Strzałkowskiemu poświęcił przejmującą kołysankę „Śpij spokojnie mój mały chłopczyku”. Utwór znalazł się wśród wierszy objętych oskarżeniem o twórczość godzącą w ustrój PRL. W 1959 roku Konrad Doberschuetz usłyszał wyrok trzech lat więzienia, zmniejszony później do roku. Słowa zachowujące żal po śmierci dziecka stały się dowodem przeciwko ich autorowi.",
@@ -78,7 +78,7 @@ export default {
     {
       "id": "czerwcowe-ulice",
       "title": "Czerwcowe ulice",
-      "image": media("007-Marcin-Rurarz-Fotografia-WB23.jpg"),
+      "image": photo("tablice-strzalkowskiego-mansfelda.webp"),
       "lead": "Odkrywamy ludzi i historie zapisane na ulicznych tabliczkach.",
       "paragraphs": [
         "„Czerwcowe ulice” to wydany przez Fundację Kochania Poznania zbiór esejów o poznańskich ulicach, skwerach i ich patronach związanych z Czerwcem ’56. Przyglądamy się nazwom, które towarzyszą nam każdego dnia, i poznajemy ukryte za nimi biografie oraz wydarzenia. Książka jest częścią „Ulicznika Poznańskiego”, w którym chcemy spotykać żywych ludzi za nazwiskami utrwalonymi w miejskiej przestrzeni.",
@@ -88,7 +88,7 @@ export default {
     {
       "id": "sladami-poznanskiego-czerwca",
       "title": "Śladami Poznańskiego Czerwca",
-      "image": media("literackiPoznanPawel.jpg"),
+      "image": photo("pomnik-cegielszczakow.webp"),
       "lead": "Chodźmy przez miasto, które wciąż przechowuje ślady 28 czerwca 1956 roku.",
       "paragraphs": [
         "Opracowaliśmy spacerownik prowadzący przez miejsca związane z Poznańskim Czerwcem. Trasa biegnie od robotniczej Wildy, przez teren targów i zajezdnię tramwajową, po plac Mickiewicza, sąd, więzienie, dawny gmach Urzędu Bezpieczeństwa i Szpital Raszei. Kolejne przystanki pozwalają śledzić drogę demonstrantów i zobaczyć, jak wydarzenia rozgrywały się w przestrzeni Poznania. Historia zyskuje konkretne adresy, a znajome miejsca odsłaniają doświadczenia ludzi, którzy byli tutaj przed nami.",
