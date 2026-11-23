@@ -7,6 +7,7 @@ import logoWebp from "../assets/logo.webp";
 import logoPng from "../assets/logo.png";
 
 const NAV_ITEMS = [
+  { label: "Czerwiec ’56", to: "/czerwiec56", highlight: true },
   { label: "Fundacja", to: "/fundacja" },
   { label: "Blog", to: "/blog" },
   { label: "Przyjaciele i partnerzy", to: "/przyjaciele" },
@@ -48,7 +49,7 @@ export default function Layout({ children }) {
             <ul>
               {NAV_ITEMS.map((item) => (
                 <li key={item.to}>
-                  <NavLink to={item.to} className="site-nav__link" onClick={closeMenu}>
+                  <NavLink to={item.to} className={`site-nav__link${item.highlight ? " site-nav__link--june" : ""}`} onClick={closeMenu}>
                     {item.label}
                   </NavLink>
                 </li>

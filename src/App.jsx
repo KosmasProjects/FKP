@@ -7,6 +7,7 @@ import { site } from "./data/site";
 
 // Podstrony ładowane na żądanie – strona główna nie pobiera ich kodu.
 const Project = lazy(() => import("./pages/Project"));
+const Czerwiec56 = lazy(() => import("./pages/Czerwiec56"));
 const Fundacja = lazy(() => import("./pages/Fundacja"));
 const Blog = lazy(() => import("./pages/Blog"));
 const Przyjaciele = lazy(() => import("./pages/Przyjaciele"));
@@ -16,6 +17,7 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 
 const PAGES = {
   "/": { title: null, Component: Home },
+  "/czerwiec56": { title: "Czerwiec ’56 – Czerwcowe ulice", Component: Czerwiec56 },
   "/fundacja": { title: "Fundacja", Component: Fundacja },
   "/blog": { title: "Blog", Component: Blog },
   "/przyjaciele": { title: "Przyjaciele i partnerzy", Component: Przyjaciele },
@@ -26,6 +28,8 @@ const PAGES = {
 // Stare adresy, które mogły zostać gdzieś udostępnione.
 const REDIRECTS = {
   "/aktualnosci": "/blog",
+  "/czerwiec": "/czerwiec56",
+  "/czerwiec-56": "/czerwiec56",
   "/mowia-o-nas": "/ulicznikpoznanski#podcasty",
 };
 
