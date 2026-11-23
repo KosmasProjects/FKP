@@ -1,4 +1,4 @@
-import { media } from "./media";
+import { media, photo } from "./media";
 
 // Palety kolorów (odcienie 400–700 z poprzedniej wersji strony).
 const palettes = {
@@ -73,7 +73,7 @@ const rawProjects = [
     tileColor: palettes.teal[0],
     palette: palettes.teal,
     logo: media("POMNIKI-POZNANIA_logo-pion_cmyk.svg"),
-    preview: media("pomniki-stary-marych-T75_9128.jpg"),
+    preview: photo("pomnik-stary-marych-polwiejska.webp"),
     cover: media("POMNIKI-POZNANIA_logo-pion_cmyk.svg"),
   },
   {

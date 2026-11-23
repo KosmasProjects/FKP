@@ -1,5 +1,5 @@
 // Treść z dokumentów fundacji. Zdjęcia kafelków (image) można dowolnie podmieniać.
-import { media } from "../media";
+import { media, photo } from "../media";
 
 export default {
   "description": {
@@ -64,11 +64,17 @@ export default {
     {
       "id": "czerwcowe-ulice",
       "title": "Czerwcowe ulice",
-      "image": media("garbary.jpg"),
+      "image": photo("tablice-strzalkowskiego-mansfelda.webp"),
       "lead": "Książka o miejskiej pamięci stała się również początkiem nowych upamiętnień.",
       "paragraphs": [
         "Wydany przez Fundację „Ulicznik poznański. Czerwcowe ulice” to zbiór esejów o ulicach i patronach związanych z Poznańskim Czerwcem 1956 roku. Przybliżamy w nim uczestników wydarzeń oraz osoby, które pomagały ocalić pamięć o nich. Przyglądamy się temu, jak ich nazwiska trafiły do przestrzeni miasta. Opowiadamy również o bohaterach, dla których takiego miejsca jeszcze wówczas brakowało, i przedstawiamy nasze propozycje upamiętnień.",
         "Część tych zamierzeń udało się urzeczywistnić. Z naszej inicjatywy powstały skwer Trzech Tramwajarek u zbiegu ulic Dąbrowskiego i Kochanowskiego oraz skwer doktora Józefa Granatowicza naprzeciw szpitala Raszei. Szczególnie cieszy nas ten związek książki z działaniem: opisane biografie można dziś odnaleźć również na mapie Poznania. „Czerwcowe ulice” pokazują, jak wiele może wyniknąć z uważnego poznawania historii. Zapraszamy do lektury, a potem do spaceru śladami ludzi, których losy znalazły się na jej kartach."
+      ],
+      "links": [
+        {
+          "label": "Czytaj online i pobierz PDF",
+          "href": "/czerwiec56"
+        }
       ]
     },
     {

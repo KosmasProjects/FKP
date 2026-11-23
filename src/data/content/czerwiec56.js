@@ -130,7 +130,7 @@ export const placeGroups = [
     id: "postulaty",
     title: "Patroni, o których upominamy się w książce",
     description:
-      "Na liście ulicznej chwały Poznańskiego Czerwca wciąż są rażące pominięcia. Autor proponuje upamiętnienie osób, które ratowały rannych i walczyły o uczciwą pamięć o Powstaniu Poznańskim, gdy nie było to ani proste, ani bezpieczne.",
+      "Na liście ulicznej chwały Poznańskiego Czerwca wciąż są rażące pominięcia. Autor proponuje upamiętnienie osób, które ratowały rannych i walczyły o uczciwą pamięć o Powstaniu Poznańskim, gdy nie było to ani proste, ani bezpieczne. Część tych propozycji udało się już zrealizować – z inicjatywy Fundacji powstał m.in. skwer dr. Józefa Granatowicza naprzeciw szpitala Raszei.",
     places: [
       {
         letter: "J",

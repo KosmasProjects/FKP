@@ -1,5 +1,5 @@
 // Treść z dokumentów fundacji. Zdjęcia kafelków (image) można dowolnie podmieniać.
-import { media } from "../media";
+import { media, photo } from "../media";
 
 export default {
   "description": {
@@ -28,7 +28,7 @@ export default {
     {
       "id": "matki-chrzestne-powstania-wielkopolskiego",
       "title": "Matki Chrzestne Powstania Wielkopolskiego",
-      "image": media("038. Hanna Banaszak 2018-01-29.jpg"),
+      "image": photo("herstoria-bibianna-moraczewska.webp"),
       "lead": "Przypominamy kobiety, które wychowywały pokolenie przyszłych powstańców.",
       "paragraphs": [
         "W 1894 roku działaczki towarzystwa „Warta” podjęły tajną edukację polskich dzieci pod zaborem pruskim. Uczyły języka i historii, podtrzymywały więź z polską kulturą. Ich wieloletnia praca pomogła wychować pokolenie, które w grudniu 1918 roku upomniało się o niepodległość. Dr Paweł Cieliczko nazwał je Matkami Chrzestnymi Powstania Wielkopolskiego, podkreślając znaczenie tego przygotowania do wolności.",
@@ -38,7 +38,7 @@ export default {
     {
       "id": "trzy-tramwajarki",
       "title": "Trzy Tramwajarki",
-      "image": media("047. Izabela Łukomska-Pyżalska 2018-01-14.jpg"),
+      "image": photo("mural-1956.webp"),
       "lead": "Za rozpoznawalną fotografią odkrywamy trzy kobiece historie.",
       "paragraphs": [
         "Helena Przybyłek, Stanisława Sobańska i Maria Kapturska wyszły 28 czerwca 1956 roku na ulice Poznania z biało-czerwonym transparentem. Fotografia tramwajarek stała się jednym z symboli Czerwca, lecz ich osobiste losy przez lata pozostawały w cieniu. Przypominamy odwagę tych kobiet, rany i represje, które wpłynęły na ich dalsze życie. Zależy nam, żeby zobaczyć również cierpienie trwające długo po zakończeniu demonstracji i walk.",
@@ -48,7 +48,7 @@ export default {
     {
       "id": "poznanskie-literatki",
       "title": "Poznańskie Literatki",
-      "image": media("009. Aniela Tułodziecka 2018-01-04.jpg"),
+      "image": photo("herstoria-krystyna-milobedzka.webp"),
       "lead": "Wracamy do kobiet, które pisały i współtworzyły życie literackie Poznania.",
       "paragraphs": [
         "Historia literatury związanej z naszym miastem prowadzi do wielu kobiecych biografii. Interesują nas pisarki i poetki, ale także badaczki języka oraz kobiety pomagające innym czytać i rozumieć literaturę. Poznajemy ich twórczość, środowisko i drogę do samodzielności. Pytamy, jakie miały możliwości publikowania, z czym się mierzyły i jak znajdowały miejsce dla własnego głosu. Chcemy przybliżać ich dzieła wraz z doświadczeniami, z których wyrastały.",
@@ -58,7 +58,7 @@ export default {
     {
       "id": "stulecie-praw-kobiet",
       "title": "Stulecie praw kobiet",
-      "image": media("036. Grażyna Kulczyk 2018-03-26.jpg"),
+      "image": photo("herstoria-aniela-tulodziecka.webp"),
       "lead": "Rocznicę postanowiliśmy uczcić działaniem, które pozostawi ślad w mieście.",
       "paragraphs": [
         "W 2018 roku obchodziliśmy stulecie uzyskania praw wyborczych przez polskie kobiety. Dla Fundacji była to okazja do przypomnienia Poznanianek, które pracowały na rzecz wspólnoty i poszerzały możliwości kolejnych pokoleń. Wraz z Wielkopolskim Kongresem Kobiet podjęliśmy akcję „Sto patronek na stulecie praw kobiet”. Chcieliśmy, żeby jubileusz przyniósł więcej kobiecych nazwisk na ulicach i skwerach, zachęcając mieszkańców do poznawania ich historii.",
@@ -68,7 +68,7 @@ export default {
     {
       "id": "patronki-poznanskich-ulic",
       "title": "Patronki poznańskich ulic",
-      "image": media("018. Bogusława Kowalska 2018-01-12.jpg"),
+      "image": photo("herstoria-kazimiera-illakowiczowna.webp"),
       "lead": "Chcemy spotykać Poznanianki także w nazwach naszych codziennych miejsc.",
       "paragraphs": [
         "Nadanie imienia ulicy lub skwerowi jest trwałym wyrazem uznania. Dlatego przygotowujemy wnioski, które pozwalają upamiętniać kobiety zasłużone dla miasta i jego kultury. Z naszych inicjatyw takie miejsce w Poznaniu zyskało około piętnastu kobiet. Wśród nich są Trzy Tramwajarki, Maria Rataj i Maria Paradowska, a także autorki i badaczki związane z życiem literackim. Ich nazwiska towarzyszą dziś mieszkańcom w drodze do pracy, na spacerze i w sąsiedzkich spotkaniach.",
@@ -78,7 +78,7 @@ export default {
     {
       "id": "poznanianki-na-cokolach",
       "title": "Poznanianki na cokołach",
-      "image": media("017. Bibianna Moraczewska 2018-01-10.jpg"),
+      "image": photo("herstoria-johanna-bade.webp"),
       "lead": "Zabiegamy o pomniki, przy których można zatrzymać się przy kobiecej historii.",
       "paragraphs": [
         "Pomnik pozwala poświęcić bohaterce miejsce i uwagę w przestrzeni miasta. Bliski jest nam monument Trzech Tramwajarek, który powstał z inicjatywy Fundacji przy wsparciu MPK Poznań. Przypomina kobiety znane ze wspólnej fotografii, zachęcając do poznania każdej z nich. Takie upamiętnienie pomaga zachować zarówno pamięć o historycznym wydarzeniu, jak i o indywidualnym doświadczeniu. Chcemy, żeby kolejne Poznanianki mogły być przedstawiane z podobną uważnością.",

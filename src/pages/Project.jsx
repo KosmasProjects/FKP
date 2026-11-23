@@ -1,5 +1,6 @@
 import { use, useEffect, useRef, useState } from "react";
 import { FaArrowLeft, FaArrowRight, FaArrowUpRightFromSquare } from "react-icons/fa6";
+import { Link } from "../router";
 import PageTitle from "../components/PageTitle";
 import PreviewGrid from "../components/PreviewGrid";
 import SocialLinks from "../components/SocialLinks";
@@ -104,6 +105,11 @@ function TileArticle({ ref, tile, project, prev, next, onSelect }) {
           <ul className="tile-article__links">
             {tile.links.map((link) => (
               <li key={link.href}>
+                {link.href.startsWith("/") ? (
+                  <Link to={link.href} className="button button--project">
+                    {link.label}
+                  </Link>
+                ) : (
                 <a
                   href={link.href}
                   className="button button--project"
@@ -114,6 +120,7 @@ function TileArticle({ ref, tile, project, prev, next, onSelect }) {
                   {link.label}
                   {link.href.startsWith("http") && <FaArrowUpRightFromSquare aria-hidden="true" />}
                 </a>
+                )}
               </li>
             ))}
           </ul>

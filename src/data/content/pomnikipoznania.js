@@ -1,5 +1,5 @@
 // Treść z dokumentów fundacji. Zdjęcia kafelków (image) można dowolnie podmieniać.
-import { media } from "../media";
+import { photo } from "../media";
 
 export default {
   "description": {
@@ -18,7 +18,7 @@ export default {
     {
       "id": "pomniki-poznania",
       "title": "Pomniki Poznania",
-      "image": media("pomniki-stary-marych-T75_9128.jpg"),
+      "image": photo("pomnik-stary-marych-ulica.webp"),
       "lead": "Zatrzymujemy się przy pomnikach, żeby usłyszeć historie, które miasto chciało zachować.",
       "paragraphs": [
         "Pomnik opowiada o człowieku lub wydarzeniu, któremu go poświęcono. Mówi także o mieszkańcach, którzy postanowili go wznieść: ich wdzięczności, przekonaniach i emocjach. Dlatego poznajemy zarówno bohaterów poznańskich monumentów, jak i ludzi, którzy przez lata zabiegali o ich powstanie. Szukamy dawnych fotografii, odczytujemy inskrypcje, zaglądamy do archiwów. Chcemy rozumieć, co poprzednie pokolenia uznały za szczególnie ważne i dlaczego pragnęły przekazać tę pamięć swoim następcom.",
@@ -28,7 +28,7 @@ export default {
     {
       "id": "fontanny-poznania",
       "title": "Fontanny Poznania",
-      "image": media("007-Marcin-Rurarz-Fotografia-WB23.jpg"),
+      "image": photo("fontanna-lwy-park-zamkowy.webp"),
       "lead": "Przy miejskich fontannach szukamy historii, które płyną przez Poznań od pokoleń.",
       "paragraphs": [
         "Fontanny i ozdobne studzienki łączą historię sztuki z codziennym życiem mieszkańców. Jedne dostarczały wodę, inne miały upiększać place i skwery. Ich figury przypominały bohaterów, przywoływały antyczne bóstwa albo wyrażały wdzięczność fundatorom. Przyglądamy się tym miejscom, żeby poznać dawny Poznań i ludzi, którzy troszczyli się o jego urodę oraz potrzeby mieszkańców. Interesują nas również zmiany: od rzeźbiarskich kompozycji po współczesne wodotryski, w których główną rolę grają woda i światło.",
@@ -38,7 +38,7 @@ export default {
     {
       "id": "zabytki-warte-poznania",
       "title": "Zabytki warte Poznania",
-      "image": media("Bimba-w-historie.png"),
+      "image": photo("zabytkowy-portal.webp"),
       "lead": "W zabytkach szukamy śladów ludzi, którzy budowali i zamieszkiwali nasze miasto.",
       "paragraphs": [
         "Dawna kamienica, kościół, szpital czy niewielka kapliczka przechowują historię wielu pokoleń. Poznajemy je przez losy mieszkańców, fundatorów i twórców, a także przez zmiany, które przynosiły kolejne epoki. Chcemy rozumieć, do czego służyły te miejsca i co znaczyły dla ludzi. Dzięki temu architektura staje się bliska: możemy wyobrazić sobie codzienność, pracę i marzenia zapisane w znajomym budynku.",
@@ -48,7 +48,7 @@ export default {
     {
       "id": "ksiazki-o-pomnikach",
       "title": "Książki o pomnikach",
-      "image": media("Katedra PODPIS.jpg"),
+      "image": photo("pegaz-na-operze.webp"),
       "lead": "Chcemy zebrać pomnikowe opowieści w książkach, z którymi można wyruszyć przez Poznań.",
       "paragraphs": [
         "Nasze poszukiwania pragniemy połączyć w dwunastotomową serię „Pomniki Poznania”. Każda książka prowadziłaby wybranym szlakiem miejskiej pamięci. Osobne opowieści chcemy poświęcić między innymi powstaniu wielkopolskiemu, II wojnie światowej, Poznańskiemu Czerwcowi i pomnikom, które zniknęły z miasta. Przyjrzymy się także upamiętnionym Poznaniankom i Poznaniakom, figurom świętych, fontannom, zwierzętom na cokołach oraz rzeźbom umieszczonym wysoko ponad ulicami.",
@@ -58,7 +58,7 @@ export default {
     {
       "id": "pomnik-trzech-tramwajarek",
       "title": "Pomnik Trzech Tramwajarek",
-      "image": media("pomniki-stary-marych-T75_9128.jpg"),
+      "image": photo("mural-poznanski-czerwiec-1956.webp"),
       "lead": "Trzy kobiety ze słynnej fotografii odzyskały imiona, historie i miejsce w Poznaniu.",
       "paragraphs": [
         "Helena Przybyłek, Stanisława Sobańska i Maria Kapturska należą do bohaterek Poznańskiego Czerwca. Znany obraz kobiet z biało-czerwonym transparentem przez lata przesłaniał ich osobiste losy: odwagę, rany, represje i cierpienie. Przywracając pamięć o nich, chcieliśmy, żeby znalazły również trwałe upamiętnienie w mieście. Z inicjatywy Fundacji powstały skwer Trzech Tramwajarek i poświęcony im pomnik, którego koncepcję opracował Paweł Cieliczko.",
@@ -68,7 +68,7 @@ export default {
     {
       "id": "pomnik-jana-lubranskiego",
       "title": "Pomnik Jana Lubrańskiego",
-      "image": media("ULICZNIK_POZNANSKI_logo-poziom_CMYK.jpg"),
+      "image": photo("madonna-przy-farze.webp"),
       "lead": "Przypomnieliśmy człowieka, który otwierał przed Poznaniem nowe możliwości.",
       "paragraphs": [
         "Biskup Jan Lubrański należy do postaci, dzięki którym możemy lepiej zrozumieć renesansowy Poznań. Założona przez niego Akademia przypomina o znaczeniu nauki, edukacji i otwartości na nowe idee w dziejach miasta. Chcieliśmy przywrócić pamięć o jej fundatorze również poprzez pomnik. Byliśmy inicjatorami działań, które doprowadziły do jego wzniesienia. Cieszy nas, że postać związana z odległą epoką znalazła trwałe miejsce w dzisiejszym krajobrazie Poznania.",
@@ -78,7 +78,7 @@ export default {
     {
       "id": "powstancza-pieta",
       "title": "Powstańcza Pieta",
-      "image": media("literackiPoznanPawel.jpg"),
+      "image": photo("cmentarz-gorczynski.webp"),
       "lead": "Chcemy przywrócić miastu pomnik wdzięczności dla ludzi, którzy wywalczyli wolność.",
       "paragraphs": [
         "Powstańcza Pieta na cmentarzu Górczyńskim była ważnym miejscem pamięci międzywojennego Poznania. Pomnik autorstwa Stanisława Jagmina, odsłonięty w 1924 roku, upamiętniał Franciszka Ratajczaka i jego powstańczych towarzyszy. Zniszczony podczas niemieckiej okupacji monument chcemy odtworzyć. Zależy nam na zachowaniu pamięci zarówno o powstańcach, jak i o mieszkańcach, którzy po odzyskaniu niepodległości postanowili oddać im trwały hołd.",
@@ -88,7 +88,7 @@ export default {
     {
       "id": "inne-inicjatywy-pomnikowe",
       "title": "Inne inicjatywy pomnikowe",
-      "image": media("pomniki-stary-marych-T75_9128.jpg"),
+      "image": photo("pomnik-powstancow-wielkopolskich.webp"),
       "lead": "Chcemy tworzyć kolejne miejsca spotkania z ludźmi ważnymi dla Poznania.",
       "paragraphs": [
         "Z poznawania biografii wyrastają pomysły nowych upamiętnień. Bliska jest nam idea pomnika marszałka Ferdynanda Focha, którego działania pomogły zabezpieczyć zwycięstwo powstania wielkopolskiego. Dzięki naszej inicjatywie ma już swój skwer na Łazarzu; chcemy, żeby pojawił się tam również monument. Pragniemy także uhonorować Jarogniewa Drwęskiego, pierwszego prezydenta Poznania w odradzającej się Polsce. Obie postaci przypominają o ludziach, którzy wspierali odzyskanie wolności i budowali przyszłość miasta.",
