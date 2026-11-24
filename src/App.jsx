@@ -3,11 +3,17 @@ import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import { navigate, usePath } from "./navigation";
 import { projectBySlug } from "./data/projects";
+import { heroBySlug } from "./data/content/lazaret";
 import { site } from "./data/site";
 
 // Podstrony ładowane na żądanie – strona główna nie pobiera ich kodu.
 const Project = lazy(() => import("./pages/Project"));
 const Czerwiec56 = lazy(() => import("./pages/Czerwiec56"));
+const Lazaret = lazy(() => import("./pages/czerwiec/Lazaret"));
+const Bohater = lazy(() => import("./pages/czerwiec/Bohater"));
+const Wystawa = lazy(() => import("./pages/czerwiec/Wystawa"));
+const Przedstawienie = lazy(() => import("./pages/czerwiec/Przedstawienie"));
+const Groby = lazy(() => import("./pages/czerwiec/Groby"));
 const Fundacja = lazy(() => import("./pages/Fundacja"));
 const Blog = lazy(() => import("./pages/Blog"));
 const Przyjaciele = lazy(() => import("./pages/Przyjaciele"));
@@ -17,7 +23,11 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 
 const PAGES = {
   "/": { title: null, Component: Home },
-  "/czerwiec56": { title: "Czerwiec ’56 – Czerwcowe ulice", Component: Czerwiec56 },
+  "/czerwiec56": { title: "Powstańczy Lazaret ’56 – Czerwiec ’56", Component: Lazaret },
+  "/czerwiec56/czerwcowe-ulice": { title: "Czerwcowe ulice – Czerwiec ’56", Component: Czerwiec56 },
+  "/czerwiec56/wystawa": { title: "Wystawa „Kule wpadały do sali operacyjnej” – Czerwiec ’56", Component: Wystawa },
+  "/czerwiec56/przedstawienie": { title: "Przedstawienie „Bóg i dyrektor nad nami czuwał” – Czerwiec ’56", Component: Przedstawienie },
+  "/czerwiec56/groby": { title: "Groby bohaterów Poznańskiego Czerwca ’56", Component: Groby },
   "/fundacja": { title: "Fundacja", Component: Fundacja },
   "/blog": { title: "Blog", Component: Blog },
   "/przyjaciele": { title: "Przyjaciele i partnerzy", Component: Przyjaciele },
@@ -30,11 +40,22 @@ const REDIRECTS = {
   "/aktualnosci": "/blog",
   "/czerwiec": "/czerwiec56",
   "/czerwiec-56": "/czerwiec56",
+  "/lazaret": "/czerwiec56",
+  "/lazaret56": "/czerwiec56",
+  "/lazaret-linkownia": "/czerwiec56",
+  "/czerwiec56/bohaterowie": "/czerwiec56#bohaterowie",
   "/mowia-o-nas": "/ulicznikpoznanski#podcasty",
 };
 
 function resolve(path) {
   if (PAGES[path]) return PAGES[path];
+
+  // /czerwiec56/bohaterowie/<slug>
+  const heroMatch = path.match(/^\/czerwiec56\/bohaterowie\/([a-z-]+)$/);
+  if (heroMatch && heroBySlug[heroMatch[1]]) {
+    const hero = heroBySlug[heroMatch[1]];
+    return { title: `${hero.name} – Bohaterowie Czerwca ’56`, Component: Bohater, props: { hero } };
+  }
 
   const [, slug, rest] = path.split("/");
   const project = projectBySlug[slug];

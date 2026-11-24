@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { FaBars, FaXmark } from "react-icons/fa6";
 import { Link, NavLink } from "../router";
 import { site } from "../data/site";
@@ -7,7 +7,7 @@ import logoWebp from "../assets/logo.webp";
 import logoPng from "../assets/logo.png";
 
 const NAV_ITEMS = [
-  { label: "Czerwiec ’56", to: "/czerwiec56", highlight: true },
+  { label: "Czerwiec ’56", to: "/czerwiec56", highlight: true, matchPrefix: true },
   { label: "Fundacja", to: "/fundacja" },
   { label: "Blog", to: "/blog" },
   { label: "Przyjaciele i partnerzy", to: "/przyjaciele" },
@@ -17,6 +17,18 @@ const NAV_ITEMS = [
 
 export default function Layout({ children }) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const headerRef = useRef(null);
+
+  // Wysokość nagłówka w CSS (--header-h) – pod nim przykleja się podmenu Czerwca ’56.
+  useEffect(() => {
+    const header = headerRef.current;
+    if (!header || typeof ResizeObserver === "undefined") return undefined;
+    const update = () => document.documentElement.style.setProperty("--header-h", `${header.offsetHeight}px`);
+    const observer = new ResizeObserver(update);
+    observer.observe(header);
+    update();
+    return () => observer.disconnect();
+  }, []);
   const closeMenu = () => setMenuOpen(false);
 
   return (
@@ -25,7 +37,7 @@ export default function Layout({ children }) {
         Przejdź do treści
       </a>
 
-      <header className="site-header">
+      <header className="site-header" ref={headerRef}>
         <div className="site-header__inner">
           <Link to="/" className="site-header__logo" aria-label="Strona główna" onClick={closeMenu}>
             <picture>
@@ -49,7 +61,7 @@ export default function Layout({ children }) {
             <ul>
               {NAV_ITEMS.map((item) => (
                 <li key={item.to}>
-                  <NavLink to={item.to} className={`site-nav__link${item.highlight ? " site-nav__link--june" : ""}`} onClick={closeMenu}>
+                  <NavLink to={item.to} matchPrefix={item.matchPrefix} className={`site-nav__link${item.highlight ? " site-nav__link--june" : ""}`} onClick={closeMenu}>
                     {item.label}
                   </NavLink>
                 </li>

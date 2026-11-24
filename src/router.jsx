@@ -27,6 +27,9 @@ export function Link({ to, children, onClick, ...props }) {
     }
     event.preventDefault();
     navigate(to);
+    // Link z kotwicą na tej samej podstronie – przewiń od razu (przy zmianie podstrony robi to App).
+    const hash = to.split("#")[1];
+    if (hash) requestAnimationFrame(() => document.getElementById(decodeURIComponent(hash))?.scrollIntoView());
   };
 
   return (
@@ -36,9 +39,10 @@ export function Link({ to, children, onClick, ...props }) {
   );
 }
 
-export function NavLink({ to, className = "", activeClassName = "is-active", ...props }) {
+export function NavLink({ to, className = "", activeClassName = "is-active", matchPrefix = false, ...props }) {
   const path = usePath();
-  const active = path === normalize(to.split("#")[0]);
+  const target = normalize(to.split("#")[0]);
+  const active = path === target || (matchPrefix && path.startsWith(`${target}/`));
   return (
     <Link
       to={to}

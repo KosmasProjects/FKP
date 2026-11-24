@@ -17,6 +17,11 @@ import {
  * mogła otworzyć książkę na właściwym rozdziale.
  */
 export default function BookViewer({ book, page, onPageChange, id }) {
+  // layout "spread" – rozkładówki (na telefonie powiększone), "page" – pojedyncze strony.
+  const layout = book.layout || "spread";
+  const width = book.width || 1800;
+  const height = book.height || 976;
+  const label = book.label || "Strona";
   const rootRef = useRef(null);
   const frameRef = useRef(null);
   const thumbsRef = useRef(null);
@@ -95,15 +100,15 @@ export default function BookViewer({ book, page, onPageChange, id }) {
     <div
       id={id}
       ref={rootRef}
-      className={`book-viewer ${expanded ? "is-expanded" : ""}`}
+      className={`book-viewer book-viewer--${layout} ${expanded ? "is-expanded" : ""}`}
       tabIndex={-1}
       onKeyDown={onKeyDown}
       aria-roledescription="przeglądarka publikacji"
-      aria-label={`${book.series} – ${book.title}`}
+      aria-label={book.series ? `${book.series} – ${book.title}` : book.title}
     >
       <div className="book-viewer__toolbar">
         <p className="book-viewer__counter" aria-live="polite">
-          Strona <strong>{page}</strong> z {book.pages}
+          {label} <strong>{page}</strong> z {book.pages}
         </p>
         <div className="book-viewer__actions">
           <a className="book-viewer__icon" href={book.pdf} target="_blank" rel="noopener" title="Otwórz PDF w nowej karcie">
@@ -141,9 +146,9 @@ export default function BookViewer({ book, page, onPageChange, id }) {
           <img
             key={page}
             src={book.spread(page)}
-            alt={`${book.title} – strona ${page} z ${book.pages}`}
-            width="1800"
-            height="976"
+            alt={`${book.title} – ${label.toLowerCase()} ${page} z ${book.pages}`}
+            width={width}
+            height={height}
             decoding="async"
           />
         </div>
@@ -159,9 +164,11 @@ export default function BookViewer({ book, page, onPageChange, id }) {
         </button>
       </div>
 
+      {layout === "spread" && (
       <p className="book-viewer__hint">
-        Na telefonie przesuń palcem, żeby zobaczyć drugą połowę rozkładówki.
+        {book.hint || "Na telefonie przesuń palcem, żeby zobaczyć drugą połowę rozkładówki."}
       </p>
+      )}
 
       <ol className="book-viewer__thumbs" ref={thumbsRef} aria-label="Spis stron">
         {Array.from({ length: book.pages }, (_, i) => i + 1).map((n) => (
@@ -173,7 +180,7 @@ export default function BookViewer({ book, page, onPageChange, id }) {
               aria-current={n === page ? "page" : undefined}
               onClick={() => go(n)}
             >
-              <img src={book.thumb(n)} alt="" loading="lazy" decoding="async" width="240" height="130" />
+              <img src={book.thumb(n)} alt="" loading="lazy" decoding="async" width={240} height={Math.round((240 * height) / width)} />
               <span>{n}</span>
             </button>
           </li>

@@ -73,7 +73,7 @@ export default {
       "links": [
         {
           "label": "Czytaj online i pobierz PDF",
-          "href": "/czerwiec56"
+          "href": "/czerwiec56/czerwcowe-ulice"
         }
       ]
     },

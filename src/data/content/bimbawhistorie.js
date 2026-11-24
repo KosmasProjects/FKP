@@ -63,6 +63,12 @@ export default {
       "paragraphs": [
         "W Szpitalu Raszei Poznański Czerwiec ma twarze rannych, lekarzy, pielęgniarek i pozostałych pracowników. Pod kierunkiem Józefa Granatowicza organizowali pomoc, operowali i opatrywali poszkodowanych. Ich wspomnienia są podstawą projektu „Powstańczy Lazaret ’56”. Przyglądamy się wydarzeniom z perspektywy szpitala oraz ludzi, którzy nieśli pomoc także na ulicach i w bramach kamienic. Chcemy zachować pamięć o odwadze potrzebnej, by zatrzymać się przy rannym i podjąć działanie.",
         "Wystawa oparta na relacjach personelu, publikacje i lekcje historii przybliżają te doświadczenia kolejnym pokoleniom. Przygotowujemy także wydarzenie historyczne i edukacyjne na terenie Szpitala Raszei, zaplanowane na 24 października 2026 roku. Rekonstrukcje, spotkania oraz działania teatralne pozwolą poznać powstańczy lazaret i codzienność Poznania w 1956 roku. Zależy nam, żeby spotkanie z tą historią rozbudzało wrażliwość i zachęcało do pomagania innym również dzisiaj."
+      ],
+      "links": [
+        {
+          "label": "Zobacz Powstańczy Lazaret ’56",
+          "href": "/czerwiec56"
+        }
       ]
     },
     {

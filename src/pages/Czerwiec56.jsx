@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaBookOpen, FaDownload, FaLocationDot } from "react-icons/fa6";
 import PageTitle from "../components/PageTitle";
+import CzerwiecNav from "../components/czerwiec/CzerwiecNav";
 import BookViewer from "../components/BookViewer";
 import { book, lead, intro, outro, placeGroups } from "../data/content/czerwiec56";
 
@@ -16,7 +17,8 @@ export default function Czerwiec56() {
 
   return (
     <div className="czerwiec">
-      <PageTitle title="Czerwiec ’56" subtitle={`${book.title} – ${book.series}`} color="var(--color-june)" />
+      <CzerwiecNav />
+      <PageTitle title={book.title} subtitle={`${book.series} – Czerwiec 1956`} color="var(--color-june)" />
 
       <section className="container czerwiec-hero">
         <div className="czerwiec-hero__text">

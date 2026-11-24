@@ -1,0 +1,461 @@
+// Groby bohaterów Poznańskiego Czerwca ’56 – na podstawie „Wykazu grobów do akcji
+// »Zapal znicz dla Czerwca ’56«” (stan opracowania: 7 października 2026).
+// Linki prowadzą do miejskiej wyszukiwarki grobów (poznan.pl).
+
+export const graves = [
+ {
+  "name": "Walenty Cieślik",
+  "cemetery": "Cytadela",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "kw. 3, miejsce 2",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=9&id=505213&surname=CIE%C5%9ALIK&name=WALENTY#OpenMap"
+ },
+ {
+  "name": "Andrzej Gliński",
+  "cemetery": "Cytadela",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "kw. 3, miejsce 9",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=9&id=505220&surname=GLI%C5%83SKI&name=ANDRZEJ#OpenMap"
+ },
+ {
+  "name": "Zbigniew Janczewski",
+  "cemetery": "Cytadela",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "kw. 3, miejsce 17",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=9&id=505228&surname=JANCZEWSKI&name=ZBIGNIEW#OpenMap"
+ },
+ {
+  "name": "Władysław Kaczmarek",
+  "cemetery": "Cytadela",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "kw. 3, miejsce 1",
+  "unconfirmed": true
+ },
+ {
+  "name": "Marian Kubiak",
+  "cemetery": "Cytadela",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "kw. 3, miejsce 11",
+  "unconfirmed": true
+ },
+ {
+  "name": "Franciszek Lipski",
+  "cemetery": "Cytadela",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "kw. 3, miejsce 3",
+  "unconfirmed": true
+ },
+ {
+  "name": "Leszek Raś",
+  "cemetery": "Cytadela",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "kw. 3, miejsce 7",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=9&id=505218&surname=RA%C5%9A&name=LESZEK#OpenMap"
+ },
+ {
+  "name": "Wacław Toma",
+  "cemetery": "Cytadela",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "kw. 3, miejsce 12",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=9&id=505223&surname=TOMA&name=WAC%C5%81AW#OpenMap"
+ },
+ {
+  "name": "Feliks Wojewódzki",
+  "cemetery": "Cytadela",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "kw. 3, miejsce 5",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=9&id=505216&surname=WOJEW%C3%93DZKI&name=FELIKS#OpenMap"
+ },
+ {
+  "name": "Zdzisław Braun",
+  "cemetery": "Junikowo",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "pole 10, kw. 2, rz. 4, miejsce 120",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=2&id=982104&name_surname=Braun%20Zdzis%C5%82aw#OpenMap"
+ },
+ {
+  "name": "Tadeusz Franke",
+  "cemetery": "Junikowo",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "pole 10, kw. 2, rz. 4, miejsce 93",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=2&id=982112&name_surname=Franke%20Tadeusz#OpenMap"
+ },
+ {
+  "name": "Zbigniew Joachimiak",
+  "cemetery": "Junikowo",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "pole 10, kw. 2, rz. 4, miejsce 105",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=2&id=2680297&name_surname=Joachimiak%20Zbigniew#OpenMap"
+ },
+ {
+  "name": "Seweryn Kapitan",
+  "cemetery": "Junikowo",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "pole 26, kw. A, rz. 02, miejsce 4",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=2&id=2679134&name_surname=Kapitan%20Seweryn#OpenMap",
+  "unconfirmed": true
+ },
+ {
+  "name": "Zenon Kliche",
+  "cemetery": "Junikowo",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "pole 3, kw. 8, rz. 7, miejsce 264",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=2&id=2680589&name_surname=Kliche%20Zenon#OpenMap"
+ },
+ {
+  "name": "Stanisław Kołdon",
+  "cemetery": "Junikowo",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "pole 10, kw. 2, rz. 4, miejsce 106",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=2&id=2680298&name_surname=Ko%C5%82don%20Stanis%C5%82aw#OpenMap"
+ },
+ {
+  "name": "Wiesław Kuźnicki",
+  "cemetery": "Junikowo",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "pole 3, kw. 6, rz. 7, miejsce 264",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=2&id=2680585&name_surname=Ku%C5%BAnicki%20Wies%C5%82aw#OpenMap"
+ },
+ {
+  "name": "Czesław Milanowski",
+  "cemetery": "Junikowo",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "pole 3, kw. 6, rz. 7, miejsce 257",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=2&id=2625245&name_surname=Milanowski%20Czes%C5%82aw#OpenMap"
+ },
+ {
+  "name": "Feliks Niemczewski",
+  "cemetery": "Junikowo",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "pole 3, kw. 6, rz. 7, miejsce 259",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=2&id=2680581&name_surname=Niemczewski%20Feliks#OpenMap"
+ },
+ {
+  "name": "Jan Niemczyk",
+  "cemetery": "Junikowo",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "pole AZ, kw. 3, rz. L, miejsce 16",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=2&id=1137184&name_surname=Niemczyk%20Jan%2CW-w%2CB-%C5%82a#OpenMap"
+ },
+ {
+  "name": "Leon Ochocki",
+  "cemetery": "Junikowo",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "pole 10, kw. 2, rz. 5, miejsce 121",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=2&id=2680296&name_surname=Ochocki%20Leon#OpenMap"
+ },
+ {
+  "name": "Józef Porolniczak",
+  "cemetery": "Junikowo",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "pole R31, kw. 3, rz. 2, miejsce 4",
+  "unconfirmed": true
+ },
+ {
+  "name": "Jerzy Przybylski",
+  "cemetery": "Junikowo",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "pole 10, kw. 2, rz. 4, miejsce 96",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=2&id=2680295&name_surname=Przybylski%20Jerzy#OpenMap"
+ },
+ {
+  "name": "Roman Strzałkowski",
+  "cemetery": "Junikowo",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "pole 23, miejsce 34",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=2&id=2679942&name_surname=Strza%C5%82kowski%20Roman#OpenMap"
+ },
+ {
+  "name": "Andrzej Styperek",
+  "cemetery": "Junikowo",
+  "note": "Ranny w Czerwcu 1956; zmarł w 1964 wskutek następstw postrzału",
+  "location": "pole 17, kw. 3, rz. 2, miejsce 56",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=2&id=995540&name_surname=Styperek%20Andrzej#OpenMap"
+ },
+ {
+  "name": "Kazimierz Wieczorek",
+  "cemetery": "Junikowo",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "pole 3, kw. 8, rz. 7, miejsce 259",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=2&id=2680587&name_surname=Wieczorek%20Kazimierz#OpenMap"
+ },
+ {
+  "name": "Jan Witkiewicz",
+  "cemetery": "Junikowo",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "pole 3, kw. 8, rz. 7, miejsce 261",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=2&id=2680588&name_surname=Witkiewicz%20Jan#OpenMap"
+ },
+ {
+  "name": "Janusz Kulas",
+  "cemetery": "Junikowo",
+  "note": "Uczestnik demonstracji; oskarżony w procesie dziesięciu",
+  "location": "pole 24, kw. 5, rz. 10, miejsce 385",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=2&id=1010286&name_surname=Kulas%20Janusz#OpenMap"
+ },
+ {
+  "name": "Jan Suwart",
+  "cemetery": "Junikowo",
+  "note": "Uczestnik walk; oskarżony w procesie dziewięciu",
+  "location": "pole AZ, kw. 2, rz. L2, miejsce 108",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=2&id=1137286&name_surname=Suwart%20Jan#OpenMap"
+ },
+ {
+  "name": "Jerzy Majchrzak",
+  "cemetery": "Junikowo",
+  "note": "Uczestnik walk, ranny; prezes Stowarzyszenia Poznański Czerwiec 56",
+  "location": "pole 42, rz. 02, miejsce 2",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=2&id=2646351&name_surname=Majchrzak%20Jerzy%20Kazimierz#OpenMap"
+ },
+ {
+  "name": "Zenon Wechmann",
+  "cemetery": "Junikowo",
+  "note": "Harcerz i uczestnik Poznańskiego Czerwca 1956",
+  "location": "pole 42, rz. 1, miejsce 10",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=2&id=2628409&name_surname=Wechmann%20Zenon%20Zbigniew#OpenMap"
+ },
+ {
+  "name": "Stanisław Hejmowski",
+  "cemetery": "Junikowo",
+  "note": "Adwokat oskarżonych w procesach po Czerwcu 1956",
+  "location": "pole 15, kw. D, rz. 10, miejsce 27",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=2&id=1063095&name_surname=Hejmowski%20Stanis%C5%82aw#OpenMap"
+ },
+ {
+  "name": "Maciej Józef Sikorski",
+  "cemetery": "Junikowo",
+  "note": "Lekarz Szpitala Raszei; wskazany przez Fundację do upamiętnienia",
+  "location": "pole 28, kw. 7, rz. 19, miejsce 5",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=2&id=2541253&name_surname=Sikorski%20Maciej%20J%C3%B3zef#OpenMap"
+ },
+ {
+  "name": "Bolesław Śliwiński",
+  "cemetery": "Junikowo",
+  "note": "Chirurg Szpitala Raszei; pomoc rannym podczas Czerwca 1956",
+  "location": "pole 9, kw. 1, rz. A, miejsce 07",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=2&id=1128215&name_surname=%C5%9Aliwi%C5%84ski%20Boles%C5%82aw#OpenMap"
+ },
+ {
+  "name": "Maciej Frankiewicz",
+  "cemetery": "Junikowo",
+  "note": "Propagator pamięci o Czerwcu; inauguracja muzealnej akcji w 2017",
+  "location": "pole AZ, kw. 2, rz. P2, miejsce 126",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=2&id=2553474&name_surname=Frankiewicz%20Maciej#OpenMap"
+ },
+ {
+  "name": "Stanisław Nowak",
+  "cemetery": "Junikowo",
+  "note": "Twórca robotniczych transparentów w Czerwcu 1956; artysta",
+  "location": "pole 6, kw. 4, rz. 3, miejsce 87",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=2&id=1155465&name_surname=Nowak%20Stanis%C5%82aw#OpenMap"
+ },
+ {
+  "name": "Henryk Grześkowiak",
+  "cemetery": "Miłostowo",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "pole 20, rz. 11, miejsce 319",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=1&id=2678846&name_surname=Grze%C5%9Bkowiak%20Henryk#OpenMap"
+ },
+ {
+  "name": "Czesław Kłos",
+  "cemetery": "Miłostowo",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "pole 20, rz. 11, miejsce 320",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=1&id=2678847&name_surname=K%C5%82os%20Czes%C5%82aw#OpenMap"
+ },
+ {
+  "name": "Stanisław Matyja",
+  "cemetery": "Miłostowo",
+  "note": "Delegat robotników ZISPO i przywódca protestu",
+  "location": "pole 35, kw. 1, rz. 1, miejsce 4",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=1&id=938849&name_surname=Matyja%20Stanis%C5%82aw#OpenMap"
+ },
+ {
+  "name": "Maria Kapturska-Popiela",
+  "cemetery": "Miłostowo",
+  "note": "Tramwajarka niosąca biało-czerwony sztandar",
+  "location": "pole CZ, kw. 56, rz. A, miejsce 7",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=1&id=973016&name_surname=Popiela%20Maria#OpenMap"
+ },
+ {
+  "name": "Józef Granatowicz",
+  "cemetery": "Miłostowo",
+  "note": "Dyrektor Szpitala Raszei; organizator pomocy rannym",
+  "location": "pole 31, kw. A, rz. 11, miejsce 1",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=1&id=1169698&name_surname=Granatowicz%20J%C3%B3zef#OpenMap"
+ },
+ {
+  "name": "Edmund Makowski",
+  "cemetery": "Miłostowo",
+  "note": "Historyk; autor i redaktor opracowań o Poznańskim Czerwcu",
+  "location": "pole AZ, rz. 1, miejsce 1E",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=1&id=972468&name_surname=Makowski%20Edmund#OpenMap"
+ },
+ {
+  "name": "Henryk Błażejak",
+  "cemetery": "Bluszczowa",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "kw. NM, rz. 17, miejsce 2",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=20&id=439179&surname=B%C5%82a%C5%BCejak&name=Henryk#OpenMap"
+ },
+ {
+  "name": "Czesław Jackowski",
+  "cemetery": "Bluszczowa",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "kw. NM, rz. 19, miejsce 27",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=20&id=439235&surname=Jackowski&name=Czes%C5%82aw#OpenMap",
+  "unconfirmed": true
+ },
+ {
+  "name": "Roman Jankowski",
+  "cemetery": "Bluszczowa",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "kw. NM, rz. 17, miejsce 12",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=20&id=439172&surname=Jankowski&name=Roman#OpenMap"
+ },
+ {
+  "name": "Henryk Nowicki",
+  "cemetery": "Bluszczowa",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "kw. NM, rz. 17, miejsce 6",
+  "unconfirmed": true
+ },
+ {
+  "name": "Marian Bogdan Sobalak",
+  "cemetery": "Bluszczowa",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "kw. NM, rz. 17, miejsce 7",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=20&id=439188&surname=Sobalak&name=Bogdan#OpenMap"
+ },
+ {
+  "name": "Zofia Bartoszewska (z domu Pawłowska)",
+  "cemetery": "Bluszczowa",
+  "note": "Pielęgniarka Szpitala Raszei; pomoc rannym w Czerwcu 1956",
+  "unconfirmed": true
+ },
+ {
+  "name": "Kazimierz Dutkiewicz",
+  "cemetery": "Górczyn",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "kw. IPb, rz. 5, miejsce 26",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=6&id=315660&surname=Dutkiewicz&name=Kazimierz#OpenMap"
+ },
+ {
+  "name": "Jerzy Jankowiak",
+  "cemetery": "Górczyn",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "kw. IVP, rz. 33, miejsce 39",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=6&id=325918&surname=Jankowiak&name=Jerzy#OpenMap"
+ },
+ {
+  "name": "Leon Klój",
+  "cemetery": "Górczyn",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "kw. IPb, rz. 6, miejsce 13",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=6&id=315700&surname=Kl%C3%B3j&name=Leon#OpenMap"
+ },
+ {
+  "name": "Jan Kowalczyk",
+  "cemetery": "Górczyn",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "kw. IPb, rz. 6, miejsce 16",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=6&id=315703&surname=Kowalczyk&name=Jan#OpenMap"
+ },
+ {
+  "name": "Zdzisław Piskorski",
+  "cemetery": "Górczyn",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "kw. IIIL, rz. 13, miejsce 11",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=6&id=297081&surname=Piskorski&name=Zdzis%C5%82aw#OpenMap"
+ },
+ {
+  "name": "Józef Pudys",
+  "cemetery": "Górczyn",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "kw. IPb, rz. 5, miejsce 20",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=6&id=315645&surname=Pudys&name=J%C3%B3zef#OpenMap"
+ },
+ {
+  "name": "Mieczysław Wysocki",
+  "cemetery": "Górczyn",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "kw. IVP, rz. 2, miejsce 19",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=6&id=325400&surname=Wysocki&name=Mieczys%C5%82aw#OpenMap"
+ },
+ {
+  "name": "Roman Bentke",
+  "cemetery": "Lutycka",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "kw. św. Michała, rz. 15, miejsce 19",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=21&id=639202&surname=Bentke&name=Roman#OpenMap"
+ },
+ {
+  "name": "Roman Makowski",
+  "cemetery": "Lutycka",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "kw. św. Barbary, rz. 25, miejsce 1",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=21&id=630144&surname=Makowski&name=Roman#OpenMap"
+ },
+ {
+  "name": "Jarosław Maciejewski",
+  "cemetery": "Lutycka",
+  "note": "Współredaktor książki Poznański Czerwiec 1956 i działacz komitetu budowy pomnika",
+  "location": "kw. św.Barbary, rz. 29, miejsce 1",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=21&id=632300&surname=Maciejewski&name=Jaros%C5%82aw#OpenMap"
+ },
+ {
+  "name": "Andrzej Hoppe",
+  "cemetery": "Nowina",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "kw. L, rz. 47, miejsce 5",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=4&id=575760&surname=Hoppe&name=Andrzej#OpenMap"
+ },
+ {
+  "name": "Bogdan Nowak",
+  "cemetery": "Nowina",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "kw. L, rz. 50, miejsce 39",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=4&id=572434&surname=Nowak&name=Bogdan#OpenMap"
+ },
+ {
+  "name": "Ireneusz Sikora",
+  "cemetery": "Nowina",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "kw. L, rz. 86, miejsce 13",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=4&id=579532&surname=Sikora&name=Ireneusz#OpenMap"
+ },
+ {
+  "name": "Alfred Rau",
+  "cemetery": "Braniewska",
+  "note": "Ofiara Poznańskiego Czerwca 1956",
+  "location": "kw. V, miejsce 260",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=3&id=2021972&name_surname=Rau%20Alfred#OpenMap"
+ },
+ {
+  "name": "Jan Sandorski",
+  "cemetery": "Naramowice",
+  "note": "Prawnik; badacz procesów poznańskich i propagator pamięci o Czerwcu",
+  "location": "kw. B1, rz. I, miejsce 6",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=24&id=1190367&surname=Sandorski&name=Jan#OpenMap"
+ },
+ {
+  "name": "Lech Trzeciakowski",
+  "cemetery": "Zasłużonych Wielkopolan",
+  "note": "Historyk; badacz i komentator Poznańskiego Czerwca 1956",
+  "location": "kw. 6, miejsce 61",
+  "map": "https://www.poznan.pl/mim/public/necropolis/plan.html?mtype=cemeteries&cm_id=5&id=619227&surname=Trzeciakowski&name=Lech#OpenMap"
+ }
+];
+
+export const gravesOutside = [
+ {
+  "name": "Stanisława Sobańska-Przybylska",
+  "place": "Konarzewo, gmina Dopiewo",
+  "note": "Jedna z trzech tramwajarek"
+ },
+ {
+  "name": "Helena Przybyłek-Porębna",
+  "place": "Dębe, gmina Żelazków, powiat kaliski",
+  "note": "Jedna z trzech tramwajarek"
+ }
+];
