@@ -89,11 +89,6 @@ export const heroes = [
     }
   },
   {
-    "slug": "siejek",
-    "name": "Aleksandra Siejek",
-    "group": "Szpital Raszei"
-  },
-  {
     "slug": "kozlowska",
     "name": "Aleksandra Kozłowska",
     "role": "laborantka i sanitariuszka",
@@ -354,7 +349,7 @@ export const memory = [
 ];
 
 // --- Media o nas ---
-const miastopoznaj = ["Dr Józef Granatowicz", "Dr Henryk Karoń", "Dr Maciej Sikorski", "Dr Ireneusz Cieśliński", "Dr Bolesław Śliwiński", "Aleksandra Banasiak", "Aleksandra Siejek", "Zofia Pawłowska", "Barbara Gorczyca", "Bogumił Kapelski"];
+const miastopoznaj = ["Dr Józef Granatowicz", "Dr Henryk Karoń", "Dr Maciej Sikorski", "Dr Ireneusz Cieśliński", "Dr Bolesław Śliwiński", "Aleksandra Banasiak", "Aleksandra Kozłowska", "Zofia Pawłowska", "Barbara Gorczyca", "Bogumił Kapelski"];
 
 export const media = [
   {
