@@ -8,9 +8,8 @@ const ITEMS = [
   { label: "Przedstawienie", to: "/czerwiec56/przedstawienie" },
   { label: "Rekonstrukcje", to: "/czerwiec56#rekonstrukcje" },
   { label: "Spacery", to: "/czerwiec56#spacery" },
-  { label: "Pamięć o ofiarach", to: "/czerwiec56/groby" },
+  { label: "Pamięć", to: "/czerwiec56/groby" },
   { label: "Media o nas", to: "/czerwiec56#media" },
-  { label: "Dokumentacja", to: "/czerwiec56/prasa" },
   { label: "Czerwcowe ulice", to: "/czerwiec56/czerwcowe-ulice" },
 ];
 

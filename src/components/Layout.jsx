@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { FaBars, FaXmark } from "react-icons/fa6";
 import { Link, NavLink } from "../router";
 import { site } from "../data/site";
+import AccessibilityMenu from "./AccessibilityMenu";
 import SocialLinks from "./SocialLinks";
 import logoWebp from "../assets/logo.webp";
 import logoPng from "../assets/logo.png";
@@ -74,6 +75,8 @@ export default function Layout({ children }) {
       <main id="main" tabIndex={-1}>
         {children}
       </main>
+
+      <AccessibilityMenu />
 
       <footer className="site-footer">
         <SocialLinks links={site.social} />
