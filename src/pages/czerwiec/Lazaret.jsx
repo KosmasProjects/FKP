@@ -19,20 +19,17 @@ import {
   walks,
   memory,
   media,
-  archiveUrl,
 } from "../../data/content/lazaret";
+import { pressByUrl } from "../../data/content/prasa";
 
 // Dodatkowe odnośniki pod pozycją: kopia tekstu u nas i kopia w Internet Archive.
 function ItemExtras({ item }) {
-  if (!item.local && (!item.url || item.noArchive)) return null;
+  const copy = item.url && pressByUrl[item.url];
+  if (!item.local && !copy) return null;
   return (
     <p className="link-list__extra">
       {item.local && <Link to={item.local}>{item.localLabel || "czytaj u nas"}</Link>}
-      {item.url && !item.noArchive && (
-        <a href={archiveUrl(item.url)} target="_blank" rel="noopener noreferrer" title="Kopia strony w Internet Archive (web.archive.org)">
-          kopia archiwalna
-        </a>
-      )}
+      {copy && <Link to={`/czerwiec56/prasa/${copy.id}`}>kopia (PDF)</Link>}
     </p>
   );
 }
@@ -205,6 +202,11 @@ export default function Lazaret() {
 
       <section id="media" className="container section">
         <h2 className="section__title">Media o nas</h2>
+        <p className="center">
+          <Link to="/czerwiec56/prasa" className="button">
+            Dokumentacja publikacji – wszystkie kopie w PDF
+          </Link>
+        </p>
         <div className="media-grid">
           {media.map((group) => (
             <div key={group.outlet} className="media-group">

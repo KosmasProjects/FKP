@@ -426,9 +426,8 @@ export const memory = [
 ];
 
 // --- Media o nas ---
-// url – oryginał; local – kopia tekstu na naszej stronie; każdy link z url ma też odnośnik do kopii
-// w Internet Archive (web.archive.org), która działa, jeśli strona została tam zarchiwizowana.
-export const archiveUrl = (url) => `https://web.archive.org/web/2026/${url}`;
+// url – oryginał; local – kopia tekstu na naszej stronie. Kopie PDF (dokumentacja publikacji)
+// są w prasa.js i podpinają się automatycznie po tym samym adresie url.
 
 export const media = [
   {
@@ -495,11 +494,11 @@ export const media = [
     outlet: "Facebook",
     note: "Zdjęcia i rolki z wydarzenia.",
     items: [
-      { title: "Zdjęcie z wydarzenia", kind: "post", url: "https://www.facebook.com/photo?fbid=1800072144996793&set=a.559608782376475", noArchive: true },
-      { title: "Zdjęcie z wydarzenia", kind: "post", url: "https://www.facebook.com/photo/?fbid=1798065291864145&set=a.559608795709807", noArchive: true },
-      { title: "Zdjęcia z wydarzenia", kind: "post", url: "https://www.facebook.com/photo/?fbid=1427597252921798&set=pcb.1427597306255126", noArchive: true },
-      { title: "Zdjęcia z wydarzenia", kind: "post", url: "https://www.facebook.com/photo?fbid=1407900434839363&set=pcb.1407900854839321", noArchive: true },
-      { title: "Rolka z wydarzenia", kind: "film", url: "https://www.facebook.com/reel/1604853511322525", noArchive: true },
+      { title: "Zdjęcie z wydarzenia", kind: "post", url: "https://www.facebook.com/photo?fbid=1800072144996793&set=a.559608782376475" },
+      { title: "Zdjęcie z wydarzenia", kind: "post", url: "https://www.facebook.com/photo/?fbid=1798065291864145&set=a.559608795709807" },
+      { title: "Zdjęcia z wydarzenia", kind: "post", url: "https://www.facebook.com/photo/?fbid=1427597252921798&set=pcb.1427597306255126" },
+      { title: "Zdjęcia z wydarzenia", kind: "post", url: "https://www.facebook.com/photo?fbid=1407900434839363&set=pcb.1407900854839321" },
+      { title: "Rolka z wydarzenia", kind: "film", url: "https://www.facebook.com/reel/1604853511322525" },
     ],
   },
   { outlet: "Radio Afera", items: [{ title: "Rozmowa z Pawłem Cieliczką" }] },

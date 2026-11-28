@@ -3,7 +3,7 @@ import { FaArrowLeft, FaArrowRight, FaBookOpen, FaFilm, FaMicrophoneLines, FaNew
 import { Link } from "../../router";
 import CzerwiecNav from "../../components/czerwiec/CzerwiecNav";
 import BookViewer from "../../components/BookViewer";
-import { heroes, heroCover, heroArticle, brochureBook, interviewBook, archiveUrl } from "../../data/content/lazaret";
+import { heroes, heroCover, heroArticle, brochureBook, interviewBook } from "../../data/content/lazaret";
 
 function Viewer({ book }) {
   const [page, setPage] = useState(1);
@@ -37,9 +37,7 @@ function Article({ hero }) {
           oryginał
         </a>{" "}
         ·{" "}
-        <a href={archiveUrl(article.url)} target="_blank" rel="noopener noreferrer">
-          kopia archiwalna
-        </a>
+        <Link to={`/czerwiec56/prasa/miastopoznaj-${hero.slug}`}>kopia (PDF)</Link>
       </p>
     </article>
   );

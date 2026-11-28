@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import { navigate, usePath } from "./navigation";
 import { projectBySlug } from "./data/projects";
 import { heroBySlug } from "./data/content/lazaret";
+import { pressById } from "./data/content/prasa";
 import { site } from "./data/site";
 
 // Podstrony ładowane na żądanie – strona główna nie pobiera ich kodu.
@@ -14,6 +15,8 @@ const Bohater = lazy(() => import("./pages/czerwiec/Bohater"));
 const Wystawa = lazy(() => import("./pages/czerwiec/Wystawa"));
 const Przedstawienie = lazy(() => import("./pages/czerwiec/Przedstawienie"));
 const Groby = lazy(() => import("./pages/czerwiec/Groby"));
+const Prasa = lazy(() => import("./pages/czerwiec/Prasa"));
+const PressCopy = lazy(() => import("./pages/czerwiec/Prasa").then((m) => ({ default: m.PressCopy })));
 const Fundacja = lazy(() => import("./pages/Fundacja"));
 const Blog = lazy(() => import("./pages/Blog"));
 const Przyjaciele = lazy(() => import("./pages/Przyjaciele"));
@@ -28,6 +31,7 @@ const PAGES = {
   "/czerwiec56/wystawa": { title: "Wystawa „Kule wpadały do sali operacyjnej” – Czerwiec ’56", Component: Wystawa },
   "/czerwiec56/przedstawienie": { title: "Przedstawienie „Bóg i dyrektor nad nami czuwał” – Czerwiec ’56", Component: Przedstawienie },
   "/czerwiec56/groby": { title: "Groby bohaterów Poznańskiego Czerwca ’56", Component: Groby },
+  "/czerwiec56/prasa": { title: "Dokumentacja publikacji – Czerwiec ’56", Component: Prasa },
   "/fundacja": { title: "Fundacja", Component: Fundacja },
   "/blog": { title: "Blog", Component: Blog },
   "/przyjaciele": { title: "Przyjaciele i partnerzy", Component: Przyjaciele },
@@ -55,6 +59,12 @@ function resolve(path) {
   if (heroMatch && heroBySlug[heroMatch[1]]) {
     const hero = heroBySlug[heroMatch[1]];
     return { title: `${hero.name} – Bohaterowie Czerwca ’56`, Component: Bohater, props: { hero } };
+  }
+
+  const pressMatch = path.match(/^\/czerwiec56\/prasa\/([a-z0-9-]+)$/);
+  if (pressMatch && pressById[pressMatch[1]]) {
+    const item = pressById[pressMatch[1]];
+    return { title: `${item.title} – ${item.site}`, Component: PressCopy, props: { item } };
   }
 
   const [, slug, rest] = path.split("/");

@@ -10,6 +10,7 @@ const ITEMS = [
   { label: "Spacery", to: "/czerwiec56#spacery" },
   { label: "Pamięć o ofiarach", to: "/czerwiec56/groby" },
   { label: "Media o nas", to: "/czerwiec56#media" },
+  { label: "Dokumentacja", to: "/czerwiec56/prasa" },
   { label: "Czerwcowe ulice", to: "/czerwiec56/czerwcowe-ulice" },
 ];
 
