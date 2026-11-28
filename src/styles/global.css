@@ -3085,3 +3085,57 @@ a.link-list__link:hover {
 .czerwiec [id] {
   scroll-margin-top: calc(var(--header-h, 81px) + 60px);
 }
+
+/* Kopia artykułu i dodatkowe odnośniki w „Media o nas” */
+.archived-article {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: clamp(20px, 4vw, 44px);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  box-shadow: var(--shadow);
+  line-height: 1.75;
+}
+
+.archived-article__title {
+  margin: 0 0 6px;
+  font-size: clamp(1.3rem, 3.5vw, 1.7rem);
+  line-height: 1.25;
+}
+
+.archived-article__meta {
+  margin: 0 0 24px;
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}
+
+.archived-article h3 {
+  margin: 1.6em 0 0.5em;
+  font-size: 1.1rem;
+  color: var(--color-june-dark);
+}
+
+.archived-article p {
+  margin: 0 0 1em;
+}
+
+.archived-article__source {
+  margin-top: 28px !important;
+  padding-top: 14px;
+  border-top: 1px solid var(--color-border);
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}
+
+.archived-article__source a,
+.link-list__extra a {
+  color: var(--color-june);
+  font-weight: 600;
+}
+
+.link-list__extra {
+  display: flex;
+  gap: 14px;
+  margin: 4px 0 0 4px;
+  font-size: 0.78rem;
+}

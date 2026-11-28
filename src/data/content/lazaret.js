@@ -25,7 +25,7 @@ export const intro = [
   "Projektem „Powstańczy Lazaret ’56” zamknęliśmy obchody 70. rocznicy Poznańskiego Czerwca. Złożyły się na niego broszury i rozmowy z bohaterami tamtych dni, plenerowa wystawa na ogrodzeniu szpitala, przedstawienie, stanowiska rekonstrukcyjne, spacery oraz akcja pamięci na grobach powstańców czerwcowych.",
 ];
 
-export const heroGroups = ["Szpital Raszei", "Ratownicy", "Robotnicy i tramwajarki", "Świadkowie i obrońcy pamięci"];
+export const heroGroups = ["Szpital Raszei", "Inne szpitale i ratownicy", "Robotnicy i tramwajarki", "Świadkowie i obrońcy pamięci"];
 
 export const heroes = [
   {
@@ -36,6 +36,11 @@ export const heroes = [
     "brochure": {
       "title": "Człowiek, który wiedział, co robić",
       "lead": "W opowieściach pracowników Raszei nazwisko dyrektora wraca przy sprawach pozornie mało bohaterskich: wolnych łóżkach, opatrunkach, jedzeniu, przydzielaniu zadań. Właśnie z tych drobnych decyzji wyłania się człowiek, który 28 czerwca 1956 roku wziął odpowiedzialność za cały szpital."
+    },
+    "article": {
+      "title": "Józef Granatowicz - Człowiek, który wiedział, co robić",
+      "date": "2026-10-15",
+      "url": "https://miastopoznaj.pl/blogi/z-poznania/17607-jozef-granatowicz-czlowiek-ktory-wiedzial-co-robic"
     }
   },
   {
@@ -46,6 +51,11 @@ export const heroes = [
     "brochure": {
       "title": "Z okien szpitala raszei",
       "lead": "Najpierw patrzył przez okno. Potem przy stole operacyjnym próbował ratować ludzi przynoszonych z ulicy. We wspomnieniu Henryka Karonia szczególnie porusza mnie chwila, w której widok miasta zmienia się w osobistą odpowiedzialność za pojedynczego człowieka."
+    },
+    "article": {
+      "title": "Henryk Karoń - Z okien szpitala",
+      "date": "2026-10-15",
+      "url": "https://miastopoznaj.pl/blogi/z-poznania/17608-henryk-karon-z-okien-szpitala"
     }
   },
   {
@@ -56,6 +66,11 @@ export const heroes = [
     "brochure": {
       "title": "Nie chciał być bohaterem",
       "lead": "W jego wspomnieniach jest miejsce na strach, niedokończone badanie i różę od pacjenta. Maciej Sikorski nie chciał upiększać swojego Czerwca. Właśnie dlatego chcę opowiedzieć o nim jako o człowieku, który przez trzy doby pomagał rannym."
+    },
+    "article": {
+      "title": "Maciej Sikorski - Nie chciał być bohaterem",
+      "date": "2026-10-18",
+      "url": "https://miastopoznaj.pl/blogi/z-poznania/17614-maciej-sikorski-nie-chcial-byc-bohaterem"
     }
   },
   {
@@ -66,6 +81,11 @@ export const heroes = [
     "brochure": {
       "title": "Z księgą przyjęć do sądu",
       "lead": "Gdy pojawili się pierwsi ranni, Ireneusz Cieśliński zbiegł na dół i przywołał dwie rejestratorki. Miały zapisywać nazwiska oraz godziny przyjęć. Potem wrócił do pracy chirurga. Nie wiedział jeszcze, że jesienią zabierze szpitalną księgę na salę sądową."
+    },
+    "article": {
+      "title": "Ireneusz Cieśliński - Z księgą przyjęć do sądu",
+      "date": "2026-10-18",
+      "url": "https://miastopoznaj.pl/blogi/z-poznania/17613-ireneusz-cieslinski-z-ksiega-przyjec-do-sadu"
     }
   },
   {
@@ -76,6 +96,11 @@ export const heroes = [
     "brochure": {
       "title": "Po drugiej stronie barykady",
       "lead": "Od Raszei do gmachu Urzędu Bezpieczeństwa było niedaleko. 28 czerwca 1956 roku kilka minut drogi oznaczało jednak przejście przez teren walk. Bolesław Śliwiński poszedł tam jako lekarz, do ludzi potrzebujących pomocy, choć instytucja budziła gniew i strach Poznaniaków."
+    },
+    "article": {
+      "title": "Bolesław Śliwiński - Z pomocą do Urzędu Bezpieczeństwa",
+      "date": "2026-10-18",
+      "url": "https://miastopoznaj.pl/blogi/z-poznania/17612-boleslaw-sliwinski-z-pomoca-do-urzedu-bezpieczenstwa"
     }
   },
   {
@@ -86,21 +111,31 @@ export const heroes = [
     "brochure": {
       "title": "Dzień wolny siostry awany",
       "lead": "28 czerwca 1956 roku Aleksandra Banasiak miała wolne. Chciała obejrzeć sklepy, trochę pochodzić po Poznaniu i odebrać ojca z dworca. Gdy później usłyszała wołania rannych, włożyła fartuch. Jej najważniejszy dyżur zaczął się w dniu, w którym nie planowała pracować."
+    },
+    "article": {
+      "title": "Aleksandra Banasiak - Dzień wolny siostry Awany",
+      "date": "2026-10-25",
+      "url": "https://miastopoznaj.pl/blogi/z-poznania/17626-aleksandra-banasiak-dzien-wolny-siostry-awany"
     }
   },
   {
     "slug": "kozlowska",
-    "name": "Aleksandra Kozłowska",
+    "name": "Aleksandra Kozłowska-Siejek",
     "role": "laborantka i sanitariuszka",
     "group": "Szpital Raszei",
     "brochure": {
       "title": "Do dziś pamiętam jego twarz",
       "lead": "Aleksandra Kozłowska miała osiemnaście lat i pracowała w Raszei jako pomoc laboratoryjna. Nie była jeszcze wykwalifikowaną pielęgniarką. Gdy 28 czerwca 1956 roku zaczęto wołać o pomoc, wyszła z koleżankami po rannych. Bała się, ale wracała na ulicę."
+    },
+    "article": {
+      "title": "Aleksandra Kozłowska-Siejek - Do dziś pamiętam jego twarz",
+      "date": "2026-10-24",
+      "url": "https://miastopoznaj.pl/blogi/z-poznania/17624-aleksandra-kozlowska-siejek-do-dzis-pamietam-jego-twarz"
     }
   },
   {
     "slug": "pawlowska",
-    "name": "Zofia Pawłowska",
+    "name": "Zofia Pawłowska-Bartoszewska",
     "role": "pielęgniarka",
     "group": "Szpital Raszei",
     "brochure": {
@@ -111,6 +146,11 @@ export const heroes = [
       "slug": "pawlowska",
       "title": "„Wczoraj byłam pacjentką. Noc spędziłam przy rannych”",
       "pages": 19
+    },
+    "article": {
+      "title": "Zofia Pawłowska-Bartoszewska - Pacjentka, która wróciła do pracy",
+      "date": "2026-10-21",
+      "url": "https://miastopoznaj.pl/blogi/z-poznania/17620-zofia-pawlowska-bartoszewska-pacjentka-ktora-wrocila-do-pracy"
     }
   },
   {
@@ -121,6 +161,11 @@ export const heroes = [
     "brochure": {
       "title": "Została do niedzieli",
       "lead": "Barbara Gorczyca miała rozpocząć pracę o ósmej. Gdy 28 czerwca 1956 roku wyszła na balkon przy Chłapowskiego, zobaczyła robotników idących od Cegielskiego. Chwyciła torebkę i ruszyła do szpitala. Nie wiedziała jeszcze, że wróci dopiero w niedzielę."
+    },
+    "article": {
+      "title": "Barbara Gorczyca - Została do niedzieli",
+      "date": "2026-10-25",
+      "url": "https://miastopoznaj.pl/blogi/z-poznania/17625-barbara-gorczyca-zostala-do-niedzieli"
     }
   },
   {
@@ -139,21 +184,26 @@ export const heroes = [
     }
   },
   {
-    "slug": "szarytki",
-    "name": "Siostry szarytki",
-    "role": "s. Gertruda Laskowska i s. Regina Szypura",
-    "group": "Szpital Raszei",
+    "slug": "laskowska",
+    "name": "s. Gertruda Laskowska",
+    "role": "szarytka, pielęgniarka izby przyjęć Szpitala Przemienienia Pańskiego",
+    "group": "Inne szpitale i ratownicy",
+    "brochure": {
+      "title": "Przy drzwiach izby przyjęć",
+      "lead": "Siostra Gertruda Laskowska pełniła 28 czerwca 1956 roku dyżur w izbie przyjęć Szpitala Przemienienia Pańskiego przy ulicy Długiej. Do niej trafiali ludzie przywożeni z ulic Poznania. Opatrywała rannych, pomagała kierować ich do dalszego leczenia, odpowiadała na pytania rodzin. Wkrótce musiała także chronić pacjentów przed aresztowaniem."
+    },
     "interview": {
       "slug": "szarytki",
       "title": "„Od izby przyjęć do sali operacyjnej”",
-      "pages": 18
+      "pages": 18,
+      "note": "rozmowa z s. Gertrudą Laskowską i s. Reginą Szypurą"
     }
   },
   {
     "slug": "imielinski",
     "name": "Zdzisław Imieliński",
     "role": "mechanik, kierowca improwizowanej karetki",
-    "group": "Ratownicy",
+    "group": "Inne szpitale i ratownicy",
     "interview": {
       "slug": "imielinski",
       "title": "„Nie miałem karetki. Miałem klucze”",
@@ -204,13 +254,21 @@ export const heroes = [
     "slug": "kulas",
     "name": "Janusz Kulas",
     "role": "uczestnik walk, oskarżony w procesie dziesięciu",
-    "group": "Robotnicy i tramwajarki"
+    "group": "Robotnicy i tramwajarki",
+    "brochure": {
+      "title": "Chłopak z transparentem",
+      "lead": "Janusz Kulas miał dziewiętnaście lat i pracował jako kierowca. 28 czerwca 1956 roku namówił kolegów do wyjścia na ulicę i stanął na czele grupy demonstrantów. Kilka miesięcy później siedział na ławie oskarżonych. Władza chciała pokazać przywódcę chuliganów. On opowiadał przed sądem o biciu, którym wymuszono jego zeznania."
+    }
   },
   {
     "slug": "suwart",
     "name": "Jan Suwart",
     "role": "uczestnik walk, oskarżony w procesie dziewięciu",
-    "group": "Robotnicy i tramwajarki"
+    "group": "Robotnicy i tramwajarki",
+    "brochure": {
+      "title": "Oskarżony, który oskarżył system",
+      "lead": "Jan Suwart znał gmach Urzędu Bezpieczeństwa przy Kochanowskiego. Pracował tam jego ojciec, przedwojenny komunista. 28 czerwca 1956 roku Jan zobaczył, jak z tego budynku strzela się do demonstrantów. Włączył się do walki. Kilka miesięcy później, już jako oskarżony, opowiedział przed sądem o krzywdach wyrządzonych jego rodzinie przez tę samą władzę."
+    }
   },
   {
     "slug": "strzalkowski",
@@ -221,19 +279,32 @@ export const heroes = [
   {
     "slug": "naganowski",
     "name": "Egon Naganowski",
-    "group": "Świadkowie i obrońcy pamięci"
+    "role": "świadek wydarzeń, ranny przed Urzędem Bezpieczeństwa",
+    "group": "Świadkowie i obrońcy pamięci",
+    "brochure": {
+      "title": "Z balkonu do szpitala raszei",
+      "lead": "Egon Naganowski patrzył na ulicę Kochanowskiego z balkonu mieszkania znajomej dentystki. Widział tłum przed Urzędem Bezpieczeństwa i ludzi padających po strzałach. Po kilkudziesięciu minutach sam został ranny. Jego opowieść prowadzi z balkonu do pokoju, w którym zakładano mu opatrunek, a potem do ostrzelanej sali Szpitala Raszei."
+    }
   },
   {
     "slug": "hejmowski",
     "name": "Stanisław Hejmowski",
     "role": "adwokat oskarżonych w procesach poznańskich",
-    "group": "Świadkowie i obrońcy pamięci"
+    "group": "Świadkowie i obrońcy pamięci",
+    "brochure": {
+      "title": "Adwokat poznańskich robotników",
+      "lead": "Młody oskarżony ukłonił się sędziom i podziękował, że nie bito go w areszcie. Stanisław Hejmowski nie mógł przejść nad tym do porządku. Przypomniał sądowi, że wolny człowiek nie powinien musieć dziękować władzy za brak przemocy. Jesienią 1956 roku tak właśnie bronił uczestników Poznańskiego Czerwca: pokazując krzywdę kryjącą się za językiem oskarżenia."
+    }
   },
   {
     "slug": "doberschuetz",
     "name": "Konrad Doberschuetz",
     "role": "poeta i dziennikarz",
-    "group": "Świadkowie i obrońcy pamięci"
+    "group": "Świadkowie i obrońcy pamięci",
+    "brochure": {
+      "title": "Skazany za poezję",
+      "lead": "Konrad Doberschuetz opisał Czerwiec jako świadek i poeta. Widział maszerujących robotników, a potem napisał kołysankę dla Romka Strzałkowskiego. Za ten wiersz i inne utwory stanął przed sądem. W 1959 roku usłyszał wyrok trzech lat więzienia. Jego pisanie uznano za zbrodnię przeciwko państwu."
+    }
   }
 ];
 
@@ -262,6 +333,8 @@ export const interviewBook = (hero) => ({
   pdf: asset(`rozmowy/${hero.interview.slug}/rozmowa.pdf`),
   pdfFileName: `Rozmowa-${hero.interview.slug}.pdf`,
 });
+
+export const heroArticle = (hero) => asset(`artykuly/${hero.slug}.json`);
 
 export const heroCover = (hero) =>
   hero.brochure ? asset(`bohaterowie/${hero.slug}/01-min.webp`) : null;
@@ -322,8 +395,12 @@ export const videos = {
 };
 
 export const recordings = [
-  { title: "Nagranie z pikniku – część 3", src: asset("audio/piknik-raszei-3.mp3"), duration: "8:01" },
-  { title: "Nagranie z pikniku – część 4", src: asset("audio/piknik-raszei-4.mp3"), duration: "7:14" },
+  { title: "Radio Poznań – relacja z pikniku, cz. 1", src: asset("audio/piknik-raszei-1.mp3"), duration: "5:17" },
+  { title: "Radio Poznań – relacja z pikniku, cz. 2", src: asset("audio/piknik-raszei-2.mp3"), duration: "6:20" },
+  { title: "Radio Poznań – relacja z pikniku, cz. 3", src: asset("audio/piknik-raszei-3.mp3"), duration: "7:14" },
+  { title: "Radio Poznań – relacja z pikniku, cz. 4", src: asset("audio/piknik-raszei-4.mp3"), duration: "8:01" },
+  { title: "Radio Poznań – „Kultura w obiegu”: Powstańczy Lazaret ’56", src: asset("audio/kultura-w-obiegu-lazaret56.mp3"), duration: "12:19" },
+  { title: "Radio Emaus – rozmowa z Pawłem Cieliczką (20.10.2026)", src: asset("audio/radio-emaus-pawel-cieliczko-2026-10-20.mp3"), duration: "15:51" },
 ];
 
 // --- Stanowiska rekonstrukcyjne ---
@@ -349,22 +426,41 @@ export const memory = [
 ];
 
 // --- Media o nas ---
-const miastopoznaj = ["Dr Józef Granatowicz", "Dr Henryk Karoń", "Dr Maciej Sikorski", "Dr Ireneusz Cieśliński", "Dr Bolesław Śliwiński", "Aleksandra Banasiak", "Aleksandra Kozłowska", "Zofia Pawłowska", "Barbara Gorczyca", "Bogumił Kapelski"];
+// url – oryginał; local – kopia tekstu na naszej stronie; każdy link z url ma też odnośnik do kopii
+// w Internet Archive (web.archive.org), która działa, jeśli strona została tam zarchiwizowana.
+export const archiveUrl = (url) => `https://web.archive.org/web/2026/${url}`;
 
 export const media = [
   {
     outlet: "Głos Wielkopolski",
     items: [
-      { title: "Kule wpadały do sal operacyjnych w Szpitalu Raszei. Poznański Czerwiec ’56 opowiadają ci, którzy ratowali życie", url: "https://gloswielkopolski.pl/kule-wpadaly-do-sal-operacyjnych-w-szpitalu-raszei-poznanski-czerwiec-56-opowiadaja-ci-ktorzy-ratowali-zycie/ar/c1p2-29443957" },
-      { title: "Dlaczego Czerwiec ’56 świętujemy w październiku? Paweł Cieliczko: trzeba opowiedzieć także o zwycięstwie", kind: "rozmowa z Pawłem Cieliczką", url: "https://gloswielkopolski.pl/dlaczego-czerwiec-56-swietujemy-w-pazdzierniku-pawel-cieliczko-trzeba-opowiedziec-takze-o-zwyciestwie/ar/c1p2-29455257" },
-      { title: "Lazaret, teatr i pierwsza pomoc także psom oraz kotom. Co czeka nas 24 października w Szpitalu Raszei?", kind: "zapowiedź wydarzenia", date: "23.10.2026", url: "https://gloswielkopolski.pl/wyjatkowe-wydarzenie-w-poznaniu-lazaret-teatr-i-pierwsza-pomoc-takze-psom-oraz-kotom-co-czeka-nas-24-pazdziernika-w-szpitalu-raszei/ar/c1p2-29461485" },
+      { title: "„Kule wpadały do sal operacyjnych”. Czerwiec ’56 opowiadają ci, którzy ratowali życie", kind: "Grzegorz Okoński", date: "19.10.2026", url: "https://gloswielkopolski.pl/kule-wpadaly-do-sal-operacyjnych-w-szpitalu-raszei-poznanski-czerwiec-56-opowiadaja-ci-ktorzy-ratowali-zycie/ar/c1p2-29443957" },
+      { title: "„Poznański Czerwiec zapoczątkował Polski Październik”. Zbliża się wyjątkowy piknik", kind: "Sylwia Rycharska", date: "21.10.2026", url: "https://gloswielkopolski.pl/dlaczego-czerwiec-56-swietujemy-w-pazdzierniku-pawel-cieliczko-trzeba-opowiedziec-takze-o-zwyciestwie/ar/c1p2-29455257" },
+      { title: "Lazaret, teatr i pierwsza pomoc także psom oraz kotom. Co czeka nas 24 października w Szpitalu Raszei?", kind: "Sylwia Rycharska", date: "23.10.2026", url: "https://gloswielkopolski.pl/wyjatkowe-wydarzenie-w-poznaniu-lazaret-teatr-i-pierwsza-pomoc-takze-psom-oraz-kotom-co-czeka-nas-24-pazdziernika-w-szpitalu-raszei/ar/c1p2-29461485" },
     ],
   },
   {
-    outlet: "Sukces po poznańsku",
+    outlet: "miastopoznaj.pl",
+    note: "Cykl „Najważniejszy dyżur w życiu” – teksty Pawła Cieliczki są też do przeczytania u nas, na stronach bohaterów.",
     items: [
-      { title: "Zapowiedź pikniku „Powstańczy Lazaret ’56”", kind: "nr 10/2026", url: "https://wydawnictwa.grupamtp.pl/spp/102026/38/" },
-      { title: "Rozmowa z Pawłem Cieliczką" },
+      { title: "„Najważniejszy dyżur w życiu”. Nowy cykl historyczny na Miastopoznaj.pl", kind: "zapowiedź cyklu", date: "15.10.2026", url: "https://miastopoznaj.pl/wiadomosci/17606-najwazniejszy-dyzur-w-zyciu-nowy-cykl-historyczny-na-miastopoznaj-pl" },
+      { title: "Józef Granatowicz - Człowiek, który wiedział, co robić", kind: "Paweł Cieliczko", date: "15.10.2026", url: "https://miastopoznaj.pl/blogi/z-poznania/17607-jozef-granatowicz-czlowiek-ktory-wiedzial-co-robic", local: "/czerwiec56/bohaterowie/granatowicz#artykul" },
+      { title: "Henryk Karoń - Z okien szpitala", kind: "Paweł Cieliczko", date: "15.10.2026", url: "https://miastopoznaj.pl/blogi/z-poznania/17608-henryk-karon-z-okien-szpitala", local: "/czerwiec56/bohaterowie/karon#artykul" },
+      { title: "Bolesław Śliwiński - Z pomocą do Urzędu Bezpieczeństwa", kind: "Paweł Cieliczko", date: "18.10.2026", url: "https://miastopoznaj.pl/blogi/z-poznania/17612-boleslaw-sliwinski-z-pomoca-do-urzedu-bezpieczenstwa", local: "/czerwiec56/bohaterowie/sliwinski#artykul" },
+      { title: "Ireneusz Cieśliński - Z księgą przyjęć do sądu", kind: "Paweł Cieliczko", date: "18.10.2026", url: "https://miastopoznaj.pl/blogi/z-poznania/17613-ireneusz-cieslinski-z-ksiega-przyjec-do-sadu", local: "/czerwiec56/bohaterowie/cieslinski#artykul" },
+      { title: "Maciej Sikorski - Nie chciał być bohaterem", kind: "Paweł Cieliczko", date: "18.10.2026", url: "https://miastopoznaj.pl/blogi/z-poznania/17614-maciej-sikorski-nie-chcial-byc-bohaterem", local: "/czerwiec56/bohaterowie/sikorski#artykul" },
+      { title: "Zofia Pawłowska-Bartoszewska - Pacjentka, która wróciła do pracy", kind: "Paweł Cieliczko", date: "21.10.2026", url: "https://miastopoznaj.pl/blogi/z-poznania/17620-zofia-pawlowska-bartoszewska-pacjentka-ktora-wrocila-do-pracy", local: "/czerwiec56/bohaterowie/pawlowska#artykul" },
+      { title: "Aleksandra Kozłowska-Siejek - Do dziś pamiętam jego twarz", kind: "Paweł Cieliczko", date: "24.10.2026", url: "https://miastopoznaj.pl/blogi/z-poznania/17624-aleksandra-kozlowska-siejek-do-dzis-pamietam-jego-twarz", local: "/czerwiec56/bohaterowie/kozlowska#artykul" },
+      { title: "Barbara Gorczyca - Została do niedzieli", kind: "Paweł Cieliczko", date: "25.10.2026", url: "https://miastopoznaj.pl/blogi/z-poznania/17625-barbara-gorczyca-zostala-do-niedzieli", local: "/czerwiec56/bohaterowie/gorczyca#artykul" },
+      { title: "Aleksandra Banasiak - Dzień wolny siostry Awany", kind: "Paweł Cieliczko", date: "25.10.2026", url: "https://miastopoznaj.pl/blogi/z-poznania/17626-aleksandra-banasiak-dzien-wolny-siostry-awany", local: "/czerwiec56/bohaterowie/banasiak#artykul" },
+      { title: "Powstańczy Lazaret 56 roku", kind: "zapowiedź wydarzenia", date: "22.10.2026", url: "https://miastopoznaj.pl/kultura-i-styl/17622-powstanczy-lazaret-56-roku" },
+    ],
+  },
+  {
+    outlet: "wpoznaniu.pl",
+    items: [
+      { title: "Tramwaj nie przyjechał. Kilka godzin później Szpital Raszei był powstańczym lazaretem", kind: "rozmowa z Pawłem Cieliczką", date: "13.10.2026", url: "https://wpoznaniu.pl/tramwaj-nie-przyjechal-kilka-godzin-pozniej-szpital-raszei-byl-powstanczym-lazaretem/" },
+      { title: "Przed szpitalem Raszei przypominają bohaterów Czerwca ’56", kind: "Aleksandra Wróblewska", date: "24.10.2026", url: "https://wpoznaniu.pl/przed-szpitalem-raszei-przypominaja-bohaterow-czerwca-56/" },
     ],
   },
   {
@@ -374,15 +470,41 @@ export const media = [
       { title: "Bimbą w historię. W poznańskich tramwajach pojawią się wędrowcy w czasie", date: "19.10.2026", url: "https://www.radiopoznan.fm/patronaty/bimba-w-historie-w-poznanskich-tramwajach-pojawia-sie-wedrowcy-w-czasie" },
       { title: "Tu ratowano rannych robotników. Powstańczy lazaret przed szpitalem Raszei", date: "24.10.2026", url: "https://radiopoznan.fm/informacje/pozostale/tu-ratowano-rannych-robotnikow-powstanczy-lazaret-przed-szpitalem-raszei" },
       { title: "Rozmowa Łukasza Kaźmierczaka z Pawłem Cieliczką" },
-      { title: "Relacje z wydarzenia" },
     ],
   },
-  { outlet: "Radio Emaus", items: [{ title: "Rozmowa" }] },
-  { outlet: "Radio Afera", items: [{ title: "Rozmowa" }] },
-  { outlet: "miastopoznaj.pl", note: "Artykuły o bohaterach Poznańskiego Czerwca ’56", items: miastopoznaj.map((title) => ({ title })) },
+  {
+    outlet: "Radio Emaus",
+    items: [
+      { title: "Poznański Lazaret ’56 – Paweł Cieliczko, prezes Fundacji Kochania Poznania", kind: "rozmowa (audio)", date: "20.10.2026", url: "https://radioemaus.pl/aktualnosci/poznanski-lazaret56-pawel-cieliczko-prezes-fundacji-kochania-poznania/", local: "/czerwiec56#nagrania", localLabel: "posłuchaj u nas" },
+    ],
+  },
+  {
+    outlet: "Centrum Inicjatyw Senioralnych",
+    items: [
+      { title: "Powstańczy Lazaret ’56", kind: "zapowiedź wydarzenia", date: "29.09.2026", url: "https://centrumis.pl/powstanczy-lazaret-56/" },
+    ],
+  },
+  {
+    outlet: "Sukces po poznańsku",
+    items: [
+      { title: "Zapowiedź pikniku „Powstańczy Lazaret ’56”", kind: "nr 10/2026, s. 38–39", url: "https://wydawnictwa.grupamtp.pl/spp/102026/38/" },
+      { title: "Artykuł na stronie internetowej" },
+    ],
+  },
+  {
+    outlet: "Facebook",
+    note: "Zdjęcia i rolki z wydarzenia.",
+    items: [
+      { title: "Zdjęcie z wydarzenia", kind: "post", url: "https://www.facebook.com/photo?fbid=1800072144996793&set=a.559608782376475", noArchive: true },
+      { title: "Zdjęcie z wydarzenia", kind: "post", url: "https://www.facebook.com/photo/?fbid=1798065291864145&set=a.559608795709807", noArchive: true },
+      { title: "Zdjęcia z wydarzenia", kind: "post", url: "https://www.facebook.com/photo/?fbid=1427597252921798&set=pcb.1427597306255126", noArchive: true },
+      { title: "Zdjęcia z wydarzenia", kind: "post", url: "https://www.facebook.com/photo?fbid=1407900434839363&set=pcb.1407900854839321", noArchive: true },
+      { title: "Rolka z wydarzenia", kind: "film", url: "https://www.facebook.com/reel/1604853511322525", noArchive: true },
+    ],
+  },
+  { outlet: "Radio Afera", items: [{ title: "Rozmowa z Pawłem Cieliczką" }] },
   { outlet: "McRadio", items: [{ title: "Materiał o wydarzeniu" }] },
   { outlet: "Senioralny Poznań", items: [{ title: "Materiał o wydarzeniu" }] },
-  { outlet: "wpoznaniu.pl", items: [{ title: "Materiał o wydarzeniu" }] },
   { outlet: "Goniec Poznański", items: [{ title: "Materiał o wydarzeniu" }] },
   { outlet: "Tramwaje", items: [{ title: "Akcja „Bimbą w historię” w poznańskich tramwajach" }] },
 ];

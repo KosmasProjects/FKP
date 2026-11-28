@@ -1,4 +1,4 @@
-import { FaBookOpen, FaMicrophoneLines } from "react-icons/fa6";
+import { FaBookOpen, FaMicrophoneLines, FaNewspaper } from "react-icons/fa6";
 import { Link } from "../../router";
 import { heroCover } from "../../data/content/lazaret";
 
@@ -12,7 +12,7 @@ const initials = (name) =>
 
 export default function HeroCard({ hero }) {
   const cover = heroCover(hero);
-  const ready = hero.brochure || hero.interview;
+  const ready = hero.brochure || hero.interview || hero.article;
   return (
     <li className={`hero-card ${ready ? "" : "hero-card--soon"}`}>
       <Link to={`/czerwiec56/bohaterowie/${hero.slug}`} className="hero-card__link">
@@ -38,6 +38,11 @@ export default function HeroCard({ hero }) {
             {hero.interview && (
               <span>
                 <FaMicrophoneLines aria-hidden="true" /> rozmowa
+              </span>
+            )}
+            {hero.article && (
+              <span>
+                <FaNewspaper aria-hidden="true" /> artykuł
               </span>
             )}
             {!ready && <span className="hero-card__soon">materiały wkrótce</span>}

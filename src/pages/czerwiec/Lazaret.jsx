@@ -19,7 +19,23 @@ import {
   walks,
   memory,
   media,
+  archiveUrl,
 } from "../../data/content/lazaret";
+
+// Dodatkowe odnośniki pod pozycją: kopia tekstu u nas i kopia w Internet Archive.
+function ItemExtras({ item }) {
+  if (!item.local && (!item.url || item.noArchive)) return null;
+  return (
+    <p className="link-list__extra">
+      {item.local && <Link to={item.local}>{item.localLabel || "czytaj u nas"}</Link>}
+      {item.url && !item.noArchive && (
+        <a href={archiveUrl(item.url)} target="_blank" rel="noopener noreferrer" title="Kopia strony w Internet Archive (web.archive.org)">
+          kopia archiwalna
+        </a>
+      )}
+    </p>
+  );
+}
 
 function ItemLink({ item }) {
   if (item.to) {
@@ -198,6 +214,7 @@ export default function Lazaret() {
                 {group.items.map((item) => (
                   <li key={item.title + (item.url || "")}>
                     <ItemLink item={item} />
+                    <ItemExtras item={item} />
                   </li>
                 ))}
               </ul>
@@ -205,7 +222,7 @@ export default function Lazaret() {
           ))}
         </div>
 
-        <h3 className="lazaret-subtitle">Nagrania z pikniku</h3>
+        <h3 id="nagrania" className="lazaret-subtitle">Nagrania radiowe</h3>
         <ul className="audio-list">
           {recordings.map((rec) => (
             <li key={rec.src}>

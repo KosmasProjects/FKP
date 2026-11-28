@@ -1,13 +1,48 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaArrowLeft, FaArrowRight, FaBookOpen, FaFilm, FaMicrophoneLines, FaNewspaper } from "react-icons/fa6";
 import { Link } from "../../router";
 import CzerwiecNav from "../../components/czerwiec/CzerwiecNav";
 import BookViewer from "../../components/BookViewer";
-import { heroes, heroCover, brochureBook, interviewBook } from "../../data/content/lazaret";
+import { heroes, heroCover, heroArticle, brochureBook, interviewBook, archiveUrl } from "../../data/content/lazaret";
 
 function Viewer({ book }) {
   const [page, setPage] = useState(1);
   return <BookViewer book={book} page={page} onPageChange={setPage} />;
+}
+
+// Kopia artykułu z miastopoznaj.pl – tekst trzymamy u siebie na wypadek, gdyby link przestał działać.
+function Article({ hero }) {
+  const [article, setArticle] = useState(null);
+  const [error, setError] = useState(false);
+  useEffect(() => {
+    fetch(heroArticle(hero))
+      .then((response) => response.json())
+      .then(setArticle)
+      .catch(() => setError(true));
+  }, [hero]);
+  if (error) return <p className="hero-detail__soon">Nie udało się wczytać artykułu.</p>;
+  if (!article) return <p className="muted">Wczytywanie…</p>;
+  return (
+    <article className="archived-article">
+      <h2 className="archived-article__title">{article.title}</h2>
+      <p className="archived-article__meta">
+        {article.author} · {article.date.split("-").reverse().join(".")} · {article.source}
+      </p>
+      {article.blocks.map(([type, text], i) =>
+        type === "h" ? <h3 key={i}>{text}</h3> : <p key={i}>{text}</p>,
+      )}
+      <p className="archived-article__source">
+        Tekst ukazał się w portalu miastopoznaj.pl:{" "}
+        <a href={article.url} target="_blank" rel="noopener noreferrer">
+          oryginał
+        </a>{" "}
+        ·{" "}
+        <a href={archiveUrl(article.url)} target="_blank" rel="noopener noreferrer">
+          kopia archiwalna
+        </a>
+      </p>
+    </article>
+  );
 }
 
 export default function Bohater({ hero }) {
@@ -19,9 +54,10 @@ export default function Bohater({ hero }) {
     hero.brochure && { id: "broszura", label: "Broszura", icon: FaBookOpen },
     hero.interview && { id: "rozmowa", label: "Rozmowa (scenariusz)", icon: FaMicrophoneLines },
     { id: "film", label: "Film", icon: FaFilm, soon: true },
-    { id: "artykul", label: "Artykuł", icon: FaNewspaper, soon: true },
+    { id: "artykul", label: "Artykuł", icon: FaNewspaper, soon: !hero.article },
   ].filter(Boolean);
-  const [tab, setTab] = useState(tabs[0].id);
+  const initialTab = typeof window !== "undefined" && window.location.hash === "#artykul" && hero.article ? "artykul" : tabs[0].id;
+  const [tab, setTab] = useState(initialTab);
   const cover = heroCover(hero);
 
   return (
@@ -54,7 +90,7 @@ export default function Bohater({ hero }) {
           </div>
         </div>
 
-        {(hero.brochure || hero.interview) && (
+        {(hero.brochure || hero.interview || hero.article) && (
         <>
         <div className="hero-tabs" role="tablist" aria-label="Materiały">
           {tabs.map(({ id, label, icon: Icon, soon }) => (
@@ -72,17 +108,18 @@ export default function Bohater({ hero }) {
           ))}
         </div>
 
-        <div className="hero-tabs__panel" role="tabpanel">
+        <div className="hero-tabs__panel" role="tabpanel" id="artykul">
           {tab === "broszura" && <Viewer key="b" book={brochureBook(hero)} />}
           {tab === "rozmowa" && (
             <>
               <p className="muted hero-detail__note">
-                {hero.interview.title} – scenariusz rozmowy nieautoryzowanej, przygotowany do odegrania podczas pikniku.
+                {hero.interview.title} – scenariusz rozmowy nieautoryzowanej{hero.interview.note ? ` (${hero.interview.note})` : ""}, przygotowany do odegrania podczas pikniku.
               </p>
               <Viewer key="r" book={interviewBook(hero)} />
             </>
           )}
-          {(tab === "film" || tab === "artykul") && (
+          {tab === "artykul" && hero.article && <Article hero={hero} />}
+          {(tab === "film" || (tab === "artykul" && !hero.article)) && (
             <p className="hero-detail__soon">
               {tab === "film" ? "Film z rozmową" : "Artykuł o bohaterze"} pojawi się tu wkrótce.
             </p>
@@ -91,7 +128,7 @@ export default function Bohater({ hero }) {
         </>
         )}
 
-        {!hero.brochure && !hero.interview && (
+        {!hero.brochure && !hero.interview && !hero.article && (
           <p className="hero-detail__soon">Materiały o tej osobie przygotowujemy – zajrzyj tu wkrótce.</p>
         )}
 
